@@ -1,0 +1,3 @@
+- [x] Build the selection flow with illustrative vocabulary data and local browser persistence.
+- [x] Build the four learning modes and end-scored practice tests.
+- [ ] Review responsive and keyboard behavior when implementation is ready.

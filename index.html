@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5f0">
+    <meta name="description" content="Mit Voci den Prüfungsstoff in Englisch und Französisch üben.">
+    <title>Voci – Vokabeln lernen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#start" data-action="home" aria-label="Voci Startseite">
+        <span class="brand-mark" aria-hidden="true">v</span>
+        <span>voci<span class="brand-period">.</span></span>
+      </a>
+      <span class="header-note">Dein Lernplatz für Englisch &amp; Französisch</span>
+      <div id="account-controls" class="account-controls"></div>
+    </header>
+    <main id="app" class="app-shell" aria-live="off" data-ui>
+      <p class="loading">Dein Lernplatz wird vorbereitet …</p>
+    </main>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+    <dialog id="auth-dialog" class="auth-dialog" aria-labelledby="auth-title">
+      <form id="auth-form" method="dialog">
+        <div class="auth-dialog-head">
+          <div>
+            <h2 id="auth-title">Lernstand sichern</h2>
+            <p id="auth-copy">Melde dich an, um deine Lernsets auf deinen Geräten zu verwenden.</p>
+          </div>
+          <button class="dialog-close" type="button" data-account-action="close-auth" aria-label="Schliessen">×</button>
+        </div>
+        <p id="auth-status" class="auth-status" role="status" aria-live="polite" hidden></p>
+        <label class="date-field"><span class="section-label">E-Mail-Adresse</span><input id="auth-email" name="email" type="email" autocomplete="email" required></label>
+        <label class="date-field"><span class="section-label">Passwort</span><input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+        <div class="auth-dialog-actions">
+          <button id="auth-submit" class="button" type="submit">Anmelden</button>
+          <button id="auth-switch" class="text-link" type="button" data-account-action="switch-auth">Konto erstellen</button>
+        </div>
+      </form>
+    </dialog>
+    <footer class="site-footer">
+      <span>Voci · Schritt für Schritt sicherer</span>
+      <span id="storage-note">Dein Lernstand bleibt auf diesem Gerät.</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "instrument sans",
+        "createdAt": "2026-10-24T14:56:57.933Z",
+        "reason": "Instrument Sans is the approved interface typeface in DESIGN.md."
+      },
+      {
+        "rule": "overused-font",
+        "value": "instrument serif",
+        "createdAt": "2026-10-24T18:51:08.999Z",
+        "reason": "Instrument Serif is the approved display typeface in DESIGN.md."
+      }
+    ]
+  }
+}

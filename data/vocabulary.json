@@ -1,0 +1,20 @@
+[
+  { "language": "en", "unit": "Unit 1 · At school", "objective": "LZ 1 · Im Klassenzimmer", "words": [
+    { "id": "en-school-book", "term": "book", "translation": "das Buch" }, { "id": "en-school-chair", "term": "chair", "translation": "der Stuhl" }, { "id": "en-school-notebook", "term": "notebook", "translation": "das Heft" }, { "id": "en-school-pencil", "term": "pencil", "translation": "der Bleistift" }, { "id": "en-school-ruler", "term": "ruler", "translation": "das Lineal" }, { "id": "en-school-teacher", "term": "teacher", "translation": "die Lehrperson" }
+  ] },
+  { "language": "en", "unit": "Unit 1 · At school", "objective": "LZ 2 · Schulfächer", "words": [
+    { "id": "en-school-maths", "term": "maths", "translation": "Mathematik" }, { "id": "en-school-science", "term": "science", "translation": "Naturwissenschaften" }, { "id": "en-school-history", "term": "history", "translation": "Geschichte" }, { "id": "en-school-art", "term": "art", "translation": "Kunst" }, { "id": "en-school-music", "term": "music", "translation": "Musik" }, { "id": "en-school-geography", "term": "geography", "translation": "Geografie" }
+  ] },
+  { "language": "en", "unit": "Unit 2 · Daily life", "objective": "LZ 1 · Tagesablauf", "words": [
+    { "id": "en-day-wake", "term": "wake up", "translation": "aufwachen" }, { "id": "en-day-breakfast", "term": "breakfast", "translation": "das Frühstück" }, { "id": "en-day-early", "term": "early", "translation": "früh" }, { "id": "en-day-leave", "term": "leave", "translation": "weggehen" }, { "id": "en-day-often", "term": "often", "translation": "oft" }, { "id": "en-day-tired", "term": "tired", "translation": "müde" }
+  ] },
+  { "language": "fr", "unit": "Unité 1 · À l’école", "objective": "LZ 1 · Im Schulzimmer", "words": [
+    { "id": "fr-school-livre", "term": "le livre", "translation": "das Buch" }, { "id": "fr-school-chaise", "term": "la chaise", "translation": "der Stuhl" }, { "id": "fr-school-cahier", "term": "le cahier", "translation": "das Heft" }, { "id": "fr-school-crayon", "term": "le crayon", "translation": "der Bleistift" }, { "id": "fr-school-regle", "term": "la règle", "translation": "das Lineal" }, { "id": "fr-school-prof", "term": "le professeur", "translation": "die Lehrperson" }
+  ] },
+  { "language": "fr", "unit": "Unité 1 · À l’école", "objective": "LZ 2 · Schulfächer", "words": [
+    { "id": "fr-school-francais", "term": "le français", "translation": "Französisch" }, { "id": "fr-school-maths", "term": "les maths", "translation": "Mathematik" }, { "id": "fr-school-histoire", "term": "l’histoire", "translation": "Geschichte" }, { "id": "fr-school-geo", "term": "la géographie", "translation": "Geografie" }, { "id": "fr-school-musique", "term": "la musique", "translation": "Musik" }, { "id": "fr-school-arts", "term": "les arts", "translation": "Kunst" }
+  ] },
+  { "language": "fr", "unit": "Unité 2 · La famille", "objective": "LZ 1 · Familie und Freunde", "words": [
+    { "id": "fr-family-mere", "term": "la mère", "translation": "die Mutter" }, { "id": "fr-family-pere", "term": "le père", "translation": "der Vater" }, { "id": "fr-family-frere", "term": "le frère", "translation": "der Bruder" }, { "id": "fr-family-soeur", "term": "la sœur", "translation": "die Schwester" }, { "id": "fr-family-ami", "term": "l’ami", "translation": "der Freund" }, { "id": "fr-family-enfant", "term": "l’enfant", "translation": "das Kind" }
+  ] }
+]
