@@ -130,3 +130,14 @@ Wenn du mehrere Adressen verwendest, etwa eine Netlify-Vorschau und eine eigene 
 - [app.js](C:/Users/dario/Documents/Coding/Voci/app.js): Enthält Anmeldung, Abmeldung und Synchronisation.
 
 Weiterführende offizielle Dokumentation: [Passwort-Authentifizierung](https://supabase.com/docs/guides/auth/passwords), [Redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls) und [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).
+
+## Lehrmittel, Schulstufe und Teil-Links
+
+Führe nach dem Aktualisieren der App den gesamten Inhalt von `supabase-schema.sql` nochmals im **SQL Editor** aus. Das Script ergänzt die Tabelle `shared_sets`, zwei Datenbankfunktionen und einen täglichen Cron-Auftrag. Bereits gespeicherte Lernstände bleiben erhalten.
+
+- Beim Erstellen eines Kontos wird Primarschule oder Sekundarschule gewählt.
+- Standardmässig erscheinen nur passende Lehrmittel. Die Auswahl kann in der App für die andere Stufe erweitert werden.
+- Ein Teil-Link enthält eine Kopie ohne persönlichen Lernfortschritt, läuft nach sieben Tagen ab und wird danach täglich aus der Datenbank entfernt.
+- Empfänger müssen angemeldet sein, damit sie ein geteiltes Lernset importieren können.
+
+Wenn der SQL Editor bei `pg_cron` einen Fehler meldet, aktiviere die Erweiterung **pg_cron** unter **Database → Extensions** und führe das Script erneut aus.

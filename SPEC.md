@@ -58,13 +58,13 @@ Keine Testbibliothek für den MVP. Vor Freigabe manuell prüfen: Unit/Unité und
 
 ## Boundaries
 
-- **Immer:** Eingaben und Vokabeldaten vor der Nutzung prüfen; Bedienung per Tastatur ermöglichen; bei fehlenden oder ungültigen Daten verständlich reagieren.
+- **Immer:** Eingaben und Vokabeldaten vor der Nutzung prüfen; Bedienung per Tastatur ermöglichen; bei fehlenden oder ungültigen Daten verständlich reagieren. Teil-Links müssen nach sieben Tagen ablaufen.
 - **Zuerst abstimmen:** Konten, Synchronisation, automatische Lernplanung, Lehrpersonenfunktionen, Import von Lehrmittel-Inhalten und zusätzliche Abhängigkeiten.
 - **Nie:** Zugangsdaten oder persönliche Schülerdaten in den Vokabeldateien ablegen.
 
 ## Success Criteria
 
-- Schüler können Englisch oder Französisch und danach Unit/Unité sowie Lernziele wählen.
+- Schüler können Englisch oder Französisch sowie Lehrmittel, Unit/Unité und Lernziele wählen.
 - Ein Prüfungstermin lässt sich setzen und bleibt nach Neuladen im selben Browser erhalten.
 - Die vier oben beschriebenen Modi verwenden die ausgewählten Vokabeln.
 - Lernstand bleibt lokal erhalten; ungültige oder leere Datensätze führen nicht zu einem kaputten Lernmodus.

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
+    <script src="app-data.js"></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -37,12 +38,31 @@
           <button class="dialog-close" type="button" data-account-action="close-auth" aria-label="Schliessen">×</button>
         </div>
         <p id="auth-status" class="auth-status" role="status" aria-live="polite" hidden></p>
+        <fieldset id="school-level-field" class="form-fieldset auth-school-level" hidden>
+          <legend class="section-label">Welche Schulstufe besuchst du?</legend>
+          <label class="school-level-choice"><input type="radio" name="school-level" value="primary" checked><span>Primarschule</span></label>
+          <label class="school-level-choice"><input type="radio" name="school-level" value="secondary"><span>Sekundarschule</span></label>
+        </fieldset>
         <label class="date-field"><span class="section-label">E-Mail-Adresse</span><input id="auth-email" name="email" type="email" autocomplete="email" required></label>
         <label class="date-field"><span class="section-label">Passwort</span><input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" required></label>
         <div class="auth-dialog-actions">
           <button id="auth-submit" class="button" type="submit">Anmelden</button>
           <button id="auth-switch" class="text-link" type="button" data-account-action="switch-auth">Konto erstellen</button>
         </div>
+      </form>
+    </dialog>
+    <dialog id="account-dialog" class="auth-dialog" aria-labelledby="account-title">
+      <form id="account-form" method="dialog">
+        <div class="auth-dialog-head">
+          <div><h2 id="account-title">Konto</h2><p>Deine Schulstufe steuert die Vorauswahl der Lehrmittel.</p></div>
+          <button class="dialog-close" type="button" data-account-action="close-settings" aria-label="Schliessen">×</button>
+        </div>
+        <fieldset class="form-fieldset auth-school-level">
+          <legend class="section-label">Schulstufe</legend>
+          <label class="school-level-choice"><input type="radio" name="account-school-level" value="primary"><span>Primarschule</span></label>
+          <label class="school-level-choice"><input type="radio" name="account-school-level" value="secondary"><span>Sekundarschule</span></label>
+        </fieldset>
+        <div class="auth-dialog-actions"><button class="button" type="submit">Schulstufe speichern</button></div>
       </form>
     </dialog>
     <footer class="site-footer">

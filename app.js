@@ -3,6 +3,8 @@ const notice = document.querySelector('#notice');
 const accountControls = document.querySelector('#account-controls');
 const authDialog = document.querySelector('#auth-dialog');
 const authForm = document.querySelector('#auth-form');
+const accountDialog = document.querySelector('#account-dialog');
+const accountForm = document.querySelector('#account-form');
 const storageNote = document.querySelector('#storage-note');
 // shortcut: progress stays in this browser; upgrade when students need cross-device sync.
 const STORAGE_KEY = 'voci-learning-state';
@@ -23,6 +25,11 @@ let currentUser = null;
 let cloudReady = false;
 let cloudSaveTimer = 0;
 let authMode = 'login';
+let showOtherSchoolLevel = false;
+let latestShareLink = '';
+let latestShareSetId = '';
+let pendingShareToken = new URLSearchParams(window.location.search).get('share');
+let shareImportChecked = false;
 
 function escapeHTML(value) {
   return String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -54,7 +61,8 @@ function normalizeSet(value) {
 }
 function normalizeStore(value) {
   const sets = Array.isArray(value?.sets) ? value.sets.map(normalizeSet) : [];
-  return { sets, activeSetId: sets.some(set => set.id === value?.activeSetId) ? value.activeSetId : sets[0]?.id || '' };
+  const schoolLevel = value?.profile?.schoolLevel === 'secondary' ? 'secondary' : 'primary';
+  return { sets, activeSetId: sets.some(set => set.id === value?.activeSetId) ? value.activeSetId : sets[0]?.id || '', profile: { schoolLevel } };
 }
 function loadStore() {
   try {
@@ -68,7 +76,7 @@ function loadStore() {
       return { sets: [migrated], activeSetId: migrated.id };
     }
   } catch { /* Start with an empty local state. */ }
-  return { sets: [], activeSetId: '' };
+  return { sets: [], activeSetId: '', profile: { schoolLevel: 'primary' } };
 }
 function persistLocalStore() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); return true; }
@@ -96,7 +104,7 @@ async function saveCloudStore() {
 }
 function updateAccountControls() {
   if (currentUser) {
-    accountControls.innerHTML = `<span class="account-email" title="${escapeHTML(currentUser.email || '')}">${escapeHTML(currentUser.email || 'Angemeldet')}</span><button class="button button-secondary button-small account-button" data-account-action="logout">Abmelden</button>`;
+    accountControls.innerHTML = `<span class="account-email" title="${escapeHTML(currentUser.email || '')}">${escapeHTML(currentUser.email || 'Angemeldet')}</span><button class="button button-secondary button-small account-button" data-account-action="open-settings">Konto</button><button class="button button-secondary button-small account-button" data-account-action="logout">Abmelden</button>`;
     storageNote.textContent = 'Dein Lernstand wird mit deinem Konto synchronisiert.';
   } else {
     accountControls.innerHTML = supabaseClient ? '<button class="button button-small account-button" data-account-action="open-auth">Anmelden</button>' : '';
@@ -110,6 +118,8 @@ function updateAuthDialog() {
   document.querySelector('#auth-submit').textContent = signup ? 'Konto erstellen' : 'Anmelden';
   document.querySelector('#auth-switch').textContent = signup ? 'Ich habe bereits ein Konto' : 'Konto erstellen';
   document.querySelector('#auth-password').autocomplete = signup ? 'new-password' : 'current-password';
+  document.querySelector('#school-level-field').hidden = !signup;
+  document.querySelectorAll('input[name="school-level"]').forEach(input => { input.disabled = !signup; });
 }
 function clearAuthFields() {
   authForm.reset();
@@ -124,28 +134,45 @@ function showAuthStatus(message, isError = false) {
   status.classList.toggle('is-error', isError);
   status.hidden = false;
 }
+function schoolLevel() {
+  return store.profile?.schoolLevel === 'secondary' ? 'secondary' : 'primary';
+}
+function setSchoolLevel(level) {
+  store.profile = { schoolLevel: level === 'secondary' ? 'secondary' : 'primary' };
+  saveStore();
+}
 async function loadCloudStore() {
   if (!supabaseClient || !currentUser) return;
   cloudReady = false;
+  let profileWasMissing = false;
   const { data, error } = await supabaseClient.from('learning_states').select('state').eq('user_id', currentUser.id).maybeSingle();
   if (error) {
     notify('Dein Online-Lernstand konnte nicht geladen werden. Du kannst lokal weiterlernen.');
   } else if (data?.state) {
     store = normalizeStore(data.state);
+    if (!data.state.profile?.schoolLevel && currentUser.user_metadata?.schoolLevel) {
+      store.profile = { schoolLevel: currentUser.user_metadata.schoolLevel === 'secondary' ? 'secondary' : 'primary' };
+      profileWasMissing = true;
+    }
     persistLocalStore();
   } else {
+    setSchoolLevel(currentUser.user_metadata?.schoolLevel);
     cloudReady = true;
     await saveCloudStore();
   }
   cloudReady = true;
+  if (profileWasMissing) await saveCloudStore();
 }
 async function applySession(user, clearOnLogout = false) {
   const hadUser = Boolean(currentUser);
   currentUser = user;
-  if (currentUser) await loadCloudStore();
+  if (currentUser) {
+    await loadCloudStore();
+    await checkShareImport();
+  }
   else if (clearOnLogout && hadUser) {
     clearTimeout(cloudSaveTimer);
-    store = { sets: [], activeSetId: '' };
+    store = { sets: [], activeSetId: '', profile: { schoolLevel: 'primary' } };
     persistLocalStore();
     stage = 'intro';
   }
@@ -168,6 +195,58 @@ function replaceSet(updated) {
   store.sets = store.sets.map(set => set.id === updated.id ? updated : set);
   saveStore();
 }
+async function deleteLearningSet(id) {
+  const set = store.sets.find(item => item.id === id);
+  if (!set || !window.confirm(`«${setLabel(set)}» wirklich löschen? Der Lernfortschritt und alle Teil-Links gehen verloren.`)) return;
+  if (supabaseClient && currentUser) {
+    const { error } = await supabaseClient.from('shared_sets').delete().eq('source_set_id', id);
+    if (error) return notify('Die Teil-Links konnten nicht gelöscht werden. Das Lernset bleibt erhalten.');
+  }
+  store.sets = store.sets.filter(item => item.id !== id);
+  store.activeSetId = store.sets[0]?.id || '';
+  saveStore();
+  stage = 'sets';
+}
+function sharedCopy(set) {
+  return { ...set, cards: { known: [], practice: [] }, quizWrong: [], results: [] };
+}
+async function shareActiveSet() {
+  const set = activeSet();
+  if (!set || !supabaseClient || !currentUser) return notify('Melde dich an, um ein Lernset zu teilen.');
+  const { data, error } = await supabaseClient.rpc('create_shared_set', { source_set_id: set.id, set_data: sharedCopy(set) });
+  const share = data?.[0];
+  if (error || !share?.share_token) return notify('Der Teil-Link konnte gerade nicht erstellt werden.');
+  const url = new URL(window.location.href);
+  url.search = '';
+  url.searchParams.set('share', share.share_token);
+  latestShareLink = url.toString();
+  latestShareSetId = set.id;
+  try { await navigator.clipboard.writeText(latestShareLink); notify('Teil-Link kopiert. Er läuft in 7 Tagen ab.'); }
+  catch { notify('Teil-Link erstellt. Kopiere ihn aus dem Feld.'); }
+}
+async function copyShareLink() {
+  if (!latestShareLink) return;
+  try { await navigator.clipboard.writeText(latestShareLink); notify('Teil-Link kopiert.'); }
+  catch { notify('Kopiere den Teil-Link aus dem Textfeld.'); }
+}
+async function checkShareImport() {
+  if (!pendingShareToken || shareImportChecked || !supabaseClient || !currentUser) return;
+  shareImportChecked = true;
+  const { data, error } = await supabaseClient.rpc('get_shared_set', { share_token: pendingShareToken });
+  if (error || !data) {
+    notify('Dieser Teil-Link ist abgelaufen oder nicht mehr verfügbar.');
+    return;
+  }
+  const shared = normalizeSet(data);
+  if (!window.confirm(`«${setLabel(shared)}» als eigenes Lernset importieren?`)) return;
+  const imported = normalizeSet({ ...sharedCopy(shared), id: uid(), name: `${setLabel(shared)} (geteilt)` });
+  store.sets.push(imported);
+  store.activeSetId = imported.id;
+  saveStore();
+  pendingShareToken = '';
+  history.replaceState({}, '', window.location.pathname);
+  stage = 'dashboard';
+}
 function validateVocabulary(data) {
   if (!Array.isArray(data) || !data.length) throw new Error('Die Vokabelliste ist leer.');
   const ids = new Set();
@@ -180,7 +259,9 @@ function validateVocabulary(data) {
   }
   return data;
 }
-function objectiveKey(group) { return `${group.unit}::${group.objective}`; }
+function courseFor(group) { return globalThis.VociData.getCourse(group); }
+function objectiveKey(group) { return [courseFor(group).name, group.unit, group.objective].join('::'); }
+function legacyObjectiveKey(group) { return [group.unit, group.objective].join('::'); }
 function wordsFor(set = activeSet()) {
   if (!set) return [];
   return vocabulary.filter(group => group.language === set.language && set.objectives.includes(objectiveKey(group))).flatMap(group => group.words);
@@ -231,26 +312,43 @@ function renderSets() {
   return `<div class="page-top"><div><h1>Meine Lernsets</h1><p class="subtle">Jede Prüfung erhält ihr eigenes Lernset und ihren eigenen Fortschritt.</p></div><button class="back-link" data-action="home">← Zur Startseite</button></div>
     <section class="sets-layout">${sets.length ? sets.map(set => {
       const words = wordsFor(set); const last = set.results.at(-1);
-      return `<article class="set-card ${set.id === store.activeSetId ? 'is-active' : ''}"><div><h2>${escapeHTML(setLabel(set))}</h2><p>${set.language === 'en' ? 'Englisch' : 'Französisch'} · ${words.length} Vokabeln · ${escapeHTML(formatDate(set.examDate))}</p><small>${last ? `Letzte Übung: ${last.type} ${last.score}/${last.total}` : 'Noch keine Übung abgeschlossen'}</small></div><div class="set-actions"><button class="button button-small" data-action="open-set" data-id="${set.id}">Öffnen</button><button class="button button-secondary button-small" data-action="edit-set" data-id="${set.id}">Ändern</button></div></article>`;
+      return `<article class="set-card ${set.id === store.activeSetId ? 'is-active' : ''}"><div><h2>${escapeHTML(setLabel(set))}</h2><p>${set.language === 'en' ? 'Englisch' : 'Französisch'} · ${words.length} Vokabeln · ${escapeHTML(formatDate(set.examDate))}</p><small>${last ? `Letzte Übung: ${last.type} ${last.score}/${last.total}` : 'Noch keine Übung abgeschlossen'}</small></div><div class="set-actions"><button class="button button-small" data-action="open-set" data-id="${set.id}">Öffnen</button><button class="button button-secondary button-small" data-action="edit-set" data-id="${set.id}">Ändern</button><button class="text-link danger-link" data-action="delete-set" data-id="${set.id}">Löschen</button></div></article>`;
     }).join('') : '<div class="empty-state"><h2>Noch kein Lernset</h2><p>Erstelle ein Lernset für deine nächste Prüfung.</p></div>'}</section>
     <div class="answer-actions"><button class="button" data-action="new-set">+ Neues Lernset</button></div>`;
 }
+function renderCurriculum(groups, selected) {
+  const byCourse = Object.values(groups.reduce((all, group) => {
+    const course = courseFor(group).name;
+    (all[course] ||= []).push(group);
+    return all;
+  }, {}));
+  return byCourse.map(groupsForCourse => {
+    const course = courseFor(groupsForCourse[0]);
+    const byUnit = Object.values(groupsForCourse.reduce((all, group) => { (all[group.unit] ||= []).push(group); return all; }, {}));
+    return `<details class="course-folder" open><summary><span>${escapeHTML(course.name)}</span><small>${VociData.schoolLevelLabel(course.schoolLevel)}</small></summary>${byUnit.map(groupsForUnit => `<details class="unit-folder"><summary>${escapeHTML(groupsForUnit[0].unit)}<small>${groupsForUnit.reduce((total, group) => total + group.words.length, 0)} Wörter</small></summary><div class="folder-objectives">${groupsForUnit.map(group => `<label class="objective-choice"><input type="checkbox" name="objective" value="${escapeHTML(objectiveKey(group))}" ${selected.has(objectiveKey(group)) ? 'checked' : ''}><span>${escapeHTML(group.objective)}</span><small>${group.words.length} Wörter</small></label>`).join('')}</div></details>`).join('')}</details>`;
+  }).join('');
+}
 function renderSetup() {
   const current = draft || blankSet();
-  const groups = vocabulary.filter(group => group.language === current.language);
-  const byUnit = Object.values(groups.reduce((all, group) => { (all[group.unit] ||= []).push(group); return all; }, {}));
+  const allGroups = vocabulary.filter(group => group.language === current.language);
+  const groups = VociData.visibleCourses(allGroups, schoolLevel(), showOtherSchoolLevel);
   const selected = new Set(current.objectives);
   const words = wordsFor(current);
-  return `<div class="page-top"><div><h1>${editingSetId ? 'Lernset ändern' : 'Neues Lernset'}</h1><p class="subtle">Eine Unit kann mehrere Lernziele enthalten. Wähle genau die Lernziele für diese Prüfung.</p></div><button class="back-link" data-action="sets">← Zu meinen Lernsets</button></div>
+  const levelLabel = VociData.schoolLevelLabel(schoolLevel());
+  return `<div class="page-top"><div><h1>${editingSetId ? 'Lernset ändern' : 'Neues Lernset'}</h1><p class="subtle">Wähle Lehrmittel, Unit und Lernziele für deine Prüfung.</p></div><button class="back-link" data-action="sets">← Zu meinen Lernsets</button></div>
     <div class="setup-layout"><section class="panel" aria-label="Lernset zusammenstellen">
       <div class="form-section"><label class="date-field"><span class="section-label">Name des Lernsets</span><input id="set-name" maxlength="60" value="${escapeHTML(current.name)}" placeholder="z. B. Englischprüfung Unit 1"></label></div>
       <fieldset class="form-section form-fieldset"><legend class="section-label">Welche Sprache lernst du?</legend><div class="language-options">${languageOption('en', '🇬🇧', 'Englisch', current.language)}${languageOption('fr', '🇫🇷', 'Französisch', current.language)}</div></fieldset>
-      <fieldset class="form-section form-fieldset"><legend class="section-label">Welche Lernziele gehören zur Prüfung?</legend><p class="subtle small">Die Anzahl Wörter steht bei jedem Lernziel.</p>${byUnit.map(groupsForUnit => `<div class="unit-group"><p class="unit-title">${escapeHTML(groupsForUnit[0].unit)}</p>${groupsForUnit.map(group => `<label class="objective-choice"><input type="checkbox" name="objective" value="${escapeHTML(objectiveKey(group))}" ${selected.has(objectiveKey(group)) ? 'checked' : ''}><span>${escapeHTML(group.objective)}</span><small>${group.words.length} Wörter</small></label>`).join('')}</div>`).join('')}</fieldset>
+      <fieldset class="form-section form-fieldset"><legend class="section-label">Welche Lernziele gehören zur Prüfung?</legend><p class="subtle small">Deine Stufe: ${levelLabel}. Öffne ein Lehrmittel, danach eine Unit und wähle die Lernziele.</p><div class="folder-actions"><button class="text-link" type="button" data-action="toggle-other-level">${showOtherSchoolLevel ? 'Nur meine Stufe zeigen' : 'Andere Stufe anzeigen'}</button></div>${renderCurriculum(groups, selected)}</fieldset>
       <div class="form-section"><label class="date-field"><span class="section-label">Wann ist deine Prüfung?</span><input id="exam-date" type="date" min="${todayISO()}" value="${escapeHTML(current.examDate)}"></label></div>
       <div class="setup-footer"><span class="subtle small">${words.length ? `${words.length} Vokabeln ausgewählt` : 'Wähle mindestens ein Lernziel.'}</span><button class="button" data-action="save-set">Lernset speichern →</button></div>
     </section><aside class="selection-side"><div class="summary-card"><div><h3>Deine Auswahl</h3><div class="count-box"><span class="count-number">${words.length}</span><span class="subtle">Vokabeln</span></div><p class="subtle small">${current.language === 'en' ? 'Englisch' : 'Französisch'} · ${current.objectives.length} Lernziel${current.objectives.length === 1 ? '' : 'e'}</p></div><ul class="word-preview">${words.slice(0, 4).map(word => `<li><strong>${escapeHTML(word.term)}</strong><span>${escapeHTML(word.translation)}</span></li>`).join('')}</ul><p class="sample-note">Die angezeigten Vokabeln sind Beispieldaten. Deine Lehrmittel-Listen werden später hier eingepflegt.</p></div></aside></div>`;
 }
 function languageOption(code, flag, label, selected) { return `<label class="language-option"><input type="radio" name="language" value="${code}" ${selected === code ? 'checked' : ''}><span><span class="flag" aria-hidden="true">${flag}</span>${label}</span></label>`; }
+function renderSharePanel() {
+  if (!currentUser || !supabaseClient) return '<section class="share-panel"><div><h2>Lernset teilen</h2><p class="subtle">Melde dich an, um dieses Lernset als Link zu teilen.</p></div></section>';
+  return `<section class="share-panel"><div><h2>Lernset teilen</h2><p class="subtle">Der Link importiert eine eigene Kopie und läuft nach 7 Tagen ab.</p></div><div class="share-actions"><button class="button button-small" data-action="share-set">Teil-Link erstellen</button>${latestShareLink && latestShareSetId === activeSet()?.id ? `<label class="share-link"><span class="sr-only">Teil-Link</span><input value="${escapeHTML(latestShareLink)}" readonly><button class="button button-secondary button-small" data-action="copy-share-link">Kopieren</button></label>` : ''}</div></section>`;
+}
 function renderDashboard() {
   const set = activeSet(); if (!set) { stage = 'sets'; return renderSets(); }
   const words = wordsFor(); const days = daysUntil(set.examDate); const deadline = days === 0 ? 'Heute ist Prüfung!' : days === 1 ? 'Noch 1 Tag bis zur Prüfung' : days > 1 ? `Noch ${days} Tage bis zur Prüfung` : 'Prüfungstermin vorbei';
@@ -260,7 +358,7 @@ function renderDashboard() {
   const history = [...set.results].reverse().slice(0, 4);
   return `<div class="page-top"><div><h1>${escapeHTML(setLabel(set))}</h1><p class="subtle">${words.length} Vokabeln in ${set.objectives.length} Lernziel${set.objectives.length === 1 ? '' : 'en'}</p></div><button class="back-link" data-action="sets">← Meine Lernsets</button></div>
     <section class="dashboard-hero"><div><h2>${escapeHTML(deadline)}</h2><p>Prüfung: ${escapeHTML(formatDate(set.examDate))}</p></div><div class="exam-badge"><strong>${known}/${words.length}</strong><span>Karteikarten: Kann ich</span></div></section>
-    <section aria-labelledby="modes-title"><h2 id="modes-title">Wie möchtest du lernen?</h2><div class="mode-grid">
+    ${renderSharePanel()}<section aria-labelledby="modes-title"><h2 id="modes-title">Wie möchtest du lernen?</h2><div class="mode-grid">
       <article class="mode-card mode-card-match"><div class="mode-card-head"><span class="mode-count">${Math.min(words.length, 12)} von ${words.length} Wörtern</span></div><h3>Zuordnen auf Zeit</h3><p>Finde alle Paare. Bei einem Fehler kommt eine Strafsekunde dazu.</p><button class="button button-small" data-action="start-match">Spiel starten →</button></article>
       <article class="mode-card"><div class="mode-card-head"><span class="mode-count">${known} kann ich · ${practice} noch üben</span></div><h3>Karteikarten</h3><p>Sortiere jede Karte in «Kann ich» oder «Noch üben».</p><div class="mode-actions"><button class="button button-small" data-action="start-flash">Alle wiederholen</button><button class="button button-secondary button-small" data-action="start-flash-practice" ${practice ? '' : 'disabled'}>Noch üben</button></div></article>
       <article class="mode-card"><div class="mode-card-head"><span class="mode-count">${wrong} nochmals abfragen</span></div><h3>Multiple Choice</h3><p>Wähle die richtige Übersetzung aus.</p><div class="mode-actions"><button class="button button-small" data-action="start-quiz" data-kind="choice" data-scope="all">Alle abfragen</button>${wrong ? '<button class="text-link" data-action="start-quiz" data-kind="choice" data-scope="wrong">Nur falsche</button>' : ''}</div></article>
@@ -347,13 +445,17 @@ function nextQuiz() {
   render();
 }
 
-app.addEventListener('click', event => {
+app.addEventListener('click', async event => {
   const button = event.target.closest('[data-action]'); if (!button) return; const action = button.dataset.action;
   if (action === 'home') { stopMatchTimer(); stage = 'intro'; }
   else if (action === 'sets') { stopMatchTimer(); stage = 'sets'; }
   else if (action === 'new-set') { editingSetId = null; draft = blankSet(); stage = 'setup'; }
+  else if (action === 'toggle-other-level') { showOtherSchoolLevel = !showOtherSchoolLevel; }
   else if (action === 'open-set') { store.activeSetId = button.dataset.id; saveStore(); stage = 'dashboard'; }
   else if (action === 'edit-set') { const set = store.sets.find(item => item.id === button.dataset.id); editingSetId = set.id; draft = normalizeSet(structuredClone(set)); stage = 'setup'; }
+  else if (action === 'delete-set') await deleteLearningSet(button.dataset.id);
+  else if (action === 'share-set') await shareActiveSet();
+  else if (action === 'copy-share-link') await copyShareLink();
   else if (action === 'save-set') {
     if (!draft.name.trim()) return notify('Gib deinem Lernset einen Namen.');
     if (!wordsFor(draft).length) return notify('Wähle mindestens ein Lernziel aus.');
@@ -408,11 +510,22 @@ document.addEventListener('click', async event => {
     authMode = authMode === 'login' ? 'signup' : 'login';
     updateAuthDialog();
     document.querySelector('#auth-email').focus();
+  } else if (action === 'open-settings') {
+    accountForm.elements['account-school-level'].value = schoolLevel();
+    accountDialog.showModal();
+  } else if (action === 'close-settings') {
+    accountDialog.close();
   } else if (action === 'logout' && supabaseClient) {
     const { error } = await supabaseClient.auth.signOut();
     if (error) notify('Du konntest gerade nicht abgemeldet werden.');
     else clearAuthFields();
   }
+});
+accountForm.addEventListener('submit', event => {
+  event.preventDefault();
+  setSchoolLevel(accountForm.elements['account-school-level'].value);
+  accountDialog.close();
+  render();
 });
 app.addEventListener('submit', event => {
   const form = event.target.closest('form[data-form]'); if (!form) return; event.preventDefault();
@@ -431,10 +544,11 @@ authForm.addEventListener('submit', async event => {
   const submit = document.querySelector('#auth-submit');
   const email = String(new FormData(authForm).get('email') || '').trim();
   const password = String(new FormData(authForm).get('password') || '');
+  const schoolLevel = String(new FormData(authForm).get('school-level') || 'primary');
   if (!email || password.length < 8) return showAuthStatus('Gib eine gültige E-Mail-Adresse und ein Passwort mit mindestens 8 Zeichen ein.', true);
   submit.disabled = true;
   const response = authMode === 'signup'
-    ? await supabaseClient.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin + window.location.pathname } })
+    ? await supabaseClient.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin + window.location.pathname, data: { schoolLevel } } })
     : await supabaseClient.auth.signInWithPassword({ email, password });
   submit.disabled = false;
   if (response.error) return showAuthStatus(response.error.message, true);
@@ -448,5 +562,9 @@ authForm.addEventListener('submit', async event => {
 
 fetch('data/vocabulary.json')
   .then(response => { if (!response.ok) throw new Error('Die Vokabeldaten konnten nicht geladen werden.'); return response.json(); })
-  .then(async data => { vocabulary = validateVocabulary(data); const keys = new Set(vocabulary.map(objectiveKey)); const wordIds = new Set(vocabulary.flatMap(group => group.words.map(word => word.id))); const migrateObjective = key => keys.has(key) ? key : vocabulary.find(group => key.startsWith(`${group.unit}::`) && group.objective.endsWith(key.slice(group.unit.length + 2))) ? objectiveKey(vocabulary.find(group => key.startsWith(`${group.unit}::`) && group.objective.endsWith(key.slice(group.unit.length + 2)))) : key; store.sets = store.sets.map(set => normalizeSet({ ...set, objectives: unique(set.objectives.map(migrateObjective).filter(key => keys.has(key))), cards: { known: set.cards.known.filter(id => wordIds.has(id)), practice: set.cards.practice.filter(id => wordIds.has(id)) }, quizWrong: set.quizWrong.filter(id => wordIds.has(id)) })); saveStore(); render(); await initializeCloud(); })
+  .then(async data => { vocabulary = validateVocabulary(data); const keys = new Set(vocabulary.map(objectiveKey)); const wordIds = new Set(vocabulary.flatMap(group => group.words.map(word => word.id))); const migrateObjective = key => {
+    if (keys.has(key)) return key;
+    const group = vocabulary.find(item => legacyObjectiveKey(item) === key);
+    return group ? objectiveKey(group) : key;
+  }; store.sets = store.sets.map(set => normalizeSet({ ...set, objectives: unique(set.objectives.map(migrateObjective).filter(key => keys.has(key))), cards: { known: set.cards.known.filter(id => wordIds.has(id)), practice: set.cards.practice.filter(id => wordIds.has(id)) }, quizWrong: set.quizWrong.filter(id => wordIds.has(id)) })); saveStore(); render(); await initializeCloud(); })
   .catch(error => { app.innerHTML = `<section class="empty-state"><h1>Das Lernset lädt gerade nicht.</h1><p>${escapeHTML(error.message)}</p></section>`; });

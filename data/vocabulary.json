@@ -1,20 +1,7669 @@
 [
-  { "language": "en", "unit": "Unit 1 · At school", "objective": "LZ 1 · Im Klassenzimmer", "words": [
+  { "language": "en", "course": "Young World 1", "schoolLevel": "primary", "unit": "Unit 1 · At school", "objective": "LZ 1 · Im Klassenzimmer", "words": [
     { "id": "en-school-book", "term": "book", "translation": "das Buch" }, { "id": "en-school-chair", "term": "chair", "translation": "der Stuhl" }, { "id": "en-school-notebook", "term": "notebook", "translation": "das Heft" }, { "id": "en-school-pencil", "term": "pencil", "translation": "der Bleistift" }, { "id": "en-school-ruler", "term": "ruler", "translation": "das Lineal" }, { "id": "en-school-teacher", "term": "teacher", "translation": "die Lehrperson" }
   ] },
-  { "language": "en", "unit": "Unit 1 · At school", "objective": "LZ 2 · Schulfächer", "words": [
+  { "language": "en", "course": "Young World 1", "schoolLevel": "primary", "unit": "Unit 1 · At school", "objective": "LZ 2 · Schulfächer", "words": [
     { "id": "en-school-maths", "term": "maths", "translation": "Mathematik" }, { "id": "en-school-science", "term": "science", "translation": "Naturwissenschaften" }, { "id": "en-school-history", "term": "history", "translation": "Geschichte" }, { "id": "en-school-art", "term": "art", "translation": "Kunst" }, { "id": "en-school-music", "term": "music", "translation": "Musik" }, { "id": "en-school-geography", "term": "geography", "translation": "Geografie" }
   ] },
-  { "language": "en", "unit": "Unit 2 · Daily life", "objective": "LZ 1 · Tagesablauf", "words": [
+  { "language": "en", "course": "Young World 1", "schoolLevel": "primary", "unit": "Unit 2 · Daily life", "objective": "LZ 1 · Tagesablauf", "words": [
     { "id": "en-day-wake", "term": "wake up", "translation": "aufwachen" }, { "id": "en-day-breakfast", "term": "breakfast", "translation": "das Frühstück" }, { "id": "en-day-early", "term": "early", "translation": "früh" }, { "id": "en-day-leave", "term": "leave", "translation": "weggehen" }, { "id": "en-day-often", "term": "often", "translation": "oft" }, { "id": "en-day-tired", "term": "tired", "translation": "müde" }
   ] },
-  { "language": "fr", "unit": "Unité 1 · À l’école", "objective": "LZ 1 · Im Schulzimmer", "words": [
+  { "language": "fr", "course": "Dis Donc 5", "schoolLevel": "primary", "unit": "Unité 1 · À l’école", "objective": "LZ 1 · Im Schulzimmer", "words": [
     { "id": "fr-school-livre", "term": "le livre", "translation": "das Buch" }, { "id": "fr-school-chaise", "term": "la chaise", "translation": "der Stuhl" }, { "id": "fr-school-cahier", "term": "le cahier", "translation": "das Heft" }, { "id": "fr-school-crayon", "term": "le crayon", "translation": "der Bleistift" }, { "id": "fr-school-regle", "term": "la règle", "translation": "das Lineal" }, { "id": "fr-school-prof", "term": "le professeur", "translation": "die Lehrperson" }
   ] },
-  { "language": "fr", "unit": "Unité 1 · À l’école", "objective": "LZ 2 · Schulfächer", "words": [
+  { "language": "fr", "course": "Dis Donc 5", "schoolLevel": "primary", "unit": "Unité 1 · À l’école", "objective": "LZ 2 · Schulfächer", "words": [
     { "id": "fr-school-francais", "term": "le français", "translation": "Französisch" }, { "id": "fr-school-maths", "term": "les maths", "translation": "Mathematik" }, { "id": "fr-school-histoire", "term": "l’histoire", "translation": "Geschichte" }, { "id": "fr-school-geo", "term": "la géographie", "translation": "Geografie" }, { "id": "fr-school-musique", "term": "la musique", "translation": "Musik" }, { "id": "fr-school-arts", "term": "les arts", "translation": "Kunst" }
   ] },
-  { "language": "fr", "unit": "Unité 2 · La famille", "objective": "LZ 1 · Familie und Freunde", "words": [
+  { "language": "fr", "course": "Dis Donc 5", "schoolLevel": "primary", "unit": "Unité 2 · La famille", "objective": "LZ 1 · Familie und Freunde", "words": [
     { "id": "fr-family-mere", "term": "la mère", "translation": "die Mutter" }, { "id": "fr-family-pere", "term": "le père", "translation": "der Vater" }, { "id": "fr-family-frere", "term": "le frère", "translation": "der Bruder" }, { "id": "fr-family-soeur", "term": "la sœur", "translation": "die Schwester" }, { "id": "fr-family-ami", "term": "l’ami", "translation": "der Freund" }, { "id": "fr-family-enfant", "term": "l’enfant", "translation": "das Kind" }
-  ] }
+  ] },
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 1 – Going places",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u01_001",
+      "term": "diary",
+      "translation": "das Tagebuch"
+    },
+    {
+      "id": "u01_002",
+      "term": "hostel",
+      "translation": "die Herberge, (billiges) Hotel"
+    },
+    {
+      "id": "u01_003",
+      "term": "kilt",
+      "translation": "der Schottenrock, Kilt"
+    },
+    {
+      "id": "u01_004",
+      "term": "railway",
+      "translation": "die Eisenbahn"
+    },
+    {
+      "id": "u01_005",
+      "term": "reception",
+      "translation": "der Empfang, die Rezeption"
+    },
+    {
+      "id": "u01_006",
+      "term": "Scotland",
+      "translation": "Schottland"
+    },
+    {
+      "id": "u01_007",
+      "term": "tartan",
+      "translation": "der Tartan, das Schottenmuster"
+    },
+    {
+      "id": "u01_008",
+      "term": "thief",
+      "translation": "der Dieb, die Diebin"
+    },
+    {
+      "id": "u01_009",
+      "term": "ticket",
+      "translation": "die Karte, das Billet"
+    },
+    {
+      "id": "u01_010",
+      "term": "tour",
+      "translation": "die Führung, der Rundgang"
+    },
+    {
+      "id": "u01_011",
+      "term": "each other",
+      "translation": "einander"
+    },
+    {
+      "id": "u01_012",
+      "term": "go places",
+      "translation": "es weit bringen"
+    },
+    {
+      "id": "u01_013",
+      "term": "journey",
+      "translation": "die Reise"
+    },
+    {
+      "id": "u01_014",
+      "term": "none",
+      "translation": "kein(e, er, es)"
+    },
+    {
+      "id": "u01_015",
+      "term": "not at all",
+      "translation": "überhaupt nicht"
+    },
+    {
+      "id": "u01_016",
+      "term": "action scene",
+      "translation": "die Actionszene"
+    },
+    {
+      "id": "u01_017",
+      "term": "besides",
+      "translation": "neben"
+    },
+    {
+      "id": "u01_018",
+      "term": "expression",
+      "translation": "der Ausdruck, die Äusserung"
+    },
+    {
+      "id": "u01_019",
+      "term": "over there",
+      "translation": "dort drüben"
+    },
+    {
+      "id": "u01_020",
+      "term": "Scottish",
+      "translation": "schottisch"
+    },
+    {
+      "id": "u01_021",
+      "term": "beauty",
+      "translation": "die Schönheit"
+    },
+    {
+      "id": "u01_022",
+      "term": "bike",
+      "translation": "das Fahrrad"
+    },
+    {
+      "id": "u01_023",
+      "term": "book ahead",
+      "translation": "im Voraus buchen"
+    },
+    {
+      "id": "u01_024",
+      "term": "castle",
+      "translation": "das Schloss, die Burg"
+    },
+    {
+      "id": "u01_025",
+      "term": "cinema",
+      "translation": "das Kino"
+    },
+    {
+      "id": "u01_026",
+      "term": "dear",
+      "translation": "Liebe/r/s, Sehr geehrte/r/s (Briefanrede)"
+    },
+    {
+      "id": "u01_027",
+      "term": "discover",
+      "translation": "entdecken"
+    },
+    {
+      "id": "u01_028",
+      "term": "entry",
+      "translation": "der Eintrag (in einem Wörterbuch)"
+    },
+    {
+      "id": "u01_029",
+      "term": "exchange",
+      "translation": "austauschen, umtauschen"
+    },
+    {
+      "id": "u01_030",
+      "term": "excuse",
+      "translation": "entschuldigen"
+    },
+    {
+      "id": "u01_031",
+      "term": "expensive",
+      "translation": "teuer"
+    },
+    {
+      "id": "u01_032",
+      "term": "famous",
+      "translation": "berühmt"
+    },
+    {
+      "id": "u01_033",
+      "term": "flight",
+      "translation": "der Flug"
+    },
+    {
+      "id": "u01_034",
+      "term": "go on a trip to",
+      "translation": "eine Reise machen, einen Ausflug machen"
+    },
+    {
+      "id": "u01_035",
+      "term": "guide",
+      "translation": "der (Fremden-)Führer, die Führerin"
+    },
+    {
+      "id": "u01_036",
+      "term": "have a picnic",
+      "translation": "ein Picknick machen"
+    },
+    {
+      "id": "u01_037",
+      "term": "left",
+      "translation": "links"
+    },
+    {
+      "id": "u01_038",
+      "term": "pleasure",
+      "translation": "die Freude, das Vergnügen"
+    },
+    {
+      "id": "u01_039",
+      "term": "pub",
+      "translation": "das Lokal, die Kneipe"
+    },
+    {
+      "id": "u01_040",
+      "term": "spot",
+      "translation": "entdecken"
+    },
+    {
+      "id": "u01_041",
+      "term": "straight",
+      "translation": "gerade(aus)"
+    },
+    {
+      "id": "u01_042",
+      "term": "tourist",
+      "translation": "der Tourist, die Touristin"
+    },
+    {
+      "id": "u01_043",
+      "term": "youth hostel",
+      "translation": "die Jugendherberge"
+    },
+    {
+      "id": "u01_044",
+      "term": "atmosphere",
+      "translation": "die Atmosphäre, die Stimmung"
+    },
+    {
+      "id": "u01_045",
+      "term": "be lucky / in luck",
+      "translation": "Glück haben"
+    },
+    {
+      "id": "u01_046",
+      "term": "boat",
+      "translation": "das Boot, das Schiff"
+    },
+    {
+      "id": "u01_047",
+      "term": "breakfast hours",
+      "translation": "die Frühstückszeiten (in einem Hotel)"
+    },
+    {
+      "id": "u01_048",
+      "term": "bye",
+      "translation": "tschüss"
+    },
+    {
+      "id": "u01_049",
+      "term": "in cash",
+      "translation": "bar, cash"
+    },
+    {
+      "id": "u01_050",
+      "term": "cheap",
+      "translation": "billig"
+    },
+    {
+      "id": "u01_051",
+      "term": "check-in form",
+      "translation": "das Check-in-Formular"
+    },
+    {
+      "id": "u01_052",
+      "term": "connection",
+      "translation": "der Anschluss"
+    },
+    {
+      "id": "u01_053",
+      "term": "email",
+      "translation": "die E-Mail"
+    },
+    {
+      "id": "u01_054",
+      "term": "first name",
+      "translation": "der Vorname"
+    },
+    {
+      "id": "u01_055",
+      "term": "friendly",
+      "translation": "freundlich"
+    },
+    {
+      "id": "u01_056",
+      "term": "get around",
+      "translation": "herumkommen, vorankommen"
+    },
+    {
+      "id": "u01_057",
+      "term": "guest",
+      "translation": "der Gast"
+    },
+    {
+      "id": "u01_058",
+      "term": "handbag",
+      "translation": "die Handtasche"
+    },
+    {
+      "id": "u01_059",
+      "term": "hang around",
+      "translation": "rumhängen"
+    },
+    {
+      "id": "u01_060",
+      "term": "have a wonderful time",
+      "translation": "eine wundervolle Zeit verbringen"
+    },
+    {
+      "id": "u01_061",
+      "term": "island",
+      "translation": "die Insel"
+    },
+    {
+      "id": "u01_062",
+      "term": "lady",
+      "translation": "die Frau, die Dame"
+    },
+    {
+      "id": "u01_063",
+      "term": "Madam",
+      "translation": "gnädige Frau, Dame"
+    },
+    {
+      "id": "u01_064",
+      "term": "make a difference",
+      "translation": "einen Unterschied machen"
+    },
+    {
+      "id": "u01_065",
+      "term": "master",
+      "translation": "das Herrchen"
+    },
+    {
+      "id": "u01_066",
+      "term": "meal",
+      "translation": "die Mahlzeit, das Essen"
+    },
+    {
+      "id": "u01_067",
+      "term": "nearby",
+      "translation": "in der Nähe"
+    },
+    {
+      "id": "u01_068",
+      "term": "passenger",
+      "translation": "der Passagier, die Passagierin"
+    },
+    {
+      "id": "u01_069",
+      "term": "per night",
+      "translation": "pro Nacht"
+    },
+    {
+      "id": "u01_070",
+      "term": "perfect fit",
+      "translation": "perfekter Sitz (bei Kleidern), optimale Passform"
+    },
+    {
+      "id": "u01_071",
+      "term": "police officer",
+      "translation": "der/die Polizeibeamte/-r"
+    },
+    {
+      "id": "u01_072",
+      "term": "railway station",
+      "translation": "der Bahnhof"
+    },
+    {
+      "id": "u01_073",
+      "term": "receptionist",
+      "translation": "der Empfangschef, die Empfangsdame"
+    },
+    {
+      "id": "u01_074",
+      "term": "return ticket",
+      "translation": "die Hin- und Rückfahrkarte, das Retourbillet"
+    },
+    {
+      "id": "u01_075",
+      "term": "rush hour",
+      "translation": "die Hauptverkehrszeit, die Stosszeit"
+    },
+    {
+      "id": "u01_076",
+      "term": "safe",
+      "translation": "sicher, ungefährlich"
+    },
+    {
+      "id": "u01_077",
+      "term": "single ticket",
+      "translation": "die Einzelfahrkarte"
+    },
+    {
+      "id": "u01_078",
+      "term": "steal",
+      "translation": "stehlen"
+    },
+    {
+      "id": "u01_079",
+      "term": "surname",
+      "translation": "der Nachname, der Familienname"
+    },
+    {
+      "id": "u01_080",
+      "term": "suspect",
+      "translation": "der/die Verdächtige/-r"
+    },
+    {
+      "id": "u01_081",
+      "term": "thin",
+      "translation": "dünn"
+    },
+    {
+      "id": "u01_082",
+      "term": "tradition",
+      "translation": "die Tradition, der Brauch"
+    },
+    {
+      "id": "u01_083",
+      "term": "traditional",
+      "translation": "traditionell"
+    },
+    {
+      "id": "u01_084",
+      "term": "English-speaking",
+      "translation": "englischsprachig"
+    },
+    {
+      "id": "u01_085",
+      "term": "relax",
+      "translation": "sich entspannen"
+    },
+    {
+      "id": "u01_086",
+      "term": "square",
+      "translation": "das Feld (auf einem Spielbrett)"
+    },
+    {
+      "id": "u01_087",
+      "term": "take action",
+      "translation": "handeln, etwas tun"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 2 – Without words",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u02_001",
+      "term": "aggressive",
+      "translation": "aggressiv, energisch"
+    },
+    {
+      "id": "u02_002",
+      "term": "animal",
+      "translation": "das Tier"
+    },
+    {
+      "id": "u02_003",
+      "term": "chemical",
+      "translation": "chemisch"
+    },
+    {
+      "id": "u02_004",
+      "term": "chimpanzee",
+      "translation": "der Schimpanse"
+    },
+    {
+      "id": "u02_005",
+      "term": "communicate",
+      "translation": "kommunizieren"
+    },
+    {
+      "id": "u02_006",
+      "term": "dance",
+      "translation": "der Tanz"
+    },
+    {
+      "id": "u02_007",
+      "term": "pheromone",
+      "translation": "das Pheromon"
+    },
+    {
+      "id": "u02_008",
+      "term": "signal",
+      "translation": "das Zeichen, das Signal"
+    },
+    {
+      "id": "u02_009",
+      "term": "symbol",
+      "translation": "das Symbol"
+    },
+    {
+      "id": "u02_010",
+      "term": "whale",
+      "translation": "der Wal"
+    },
+    {
+      "id": "u02_011",
+      "term": "afraid",
+      "translation": "Angst haben, sich fürchten"
+    },
+    {
+      "id": "u02_012",
+      "term": "angry",
+      "translation": "zornig"
+    },
+    {
+      "id": "u02_013",
+      "term": "animal communication",
+      "translation": "die Tierkommunikation"
+    },
+    {
+      "id": "u02_014",
+      "term": "calm",
+      "translation": "ruhig"
+    },
+    {
+      "id": "u02_015",
+      "term": "cat",
+      "translation": "die Katze"
+    },
+    {
+      "id": "u02_016",
+      "term": "ear",
+      "translation": "das Ohr"
+    },
+    {
+      "id": "u02_017",
+      "term": "excited",
+      "translation": "aufgeregt, begeistert"
+    },
+    {
+      "id": "u02_018",
+      "term": "jump",
+      "translation": "springen"
+    },
+    {
+      "id": "u02_019",
+      "term": "lift",
+      "translation": "heben"
+    },
+    {
+      "id": "u02_020",
+      "term": "mouth",
+      "translation": "der Mund, das Maul"
+    },
+    {
+      "id": "u02_021",
+      "term": "relaxed",
+      "translation": "entspannt, locker"
+    },
+    {
+      "id": "u02_022",
+      "term": "slightly",
+      "translation": "etwas, ein wenig"
+    },
+    {
+      "id": "u02_023",
+      "term": "bee",
+      "translation": "die Biene"
+    },
+    {
+      "id": "u02_024",
+      "term": "find out",
+      "translation": "herausfinden"
+    },
+    {
+      "id": "u02_025",
+      "term": "scientist",
+      "translation": "der Wissenschaftler, die Wissenschaftlerin"
+    },
+    {
+      "id": "u02_026",
+      "term": "slowly",
+      "translation": "langsam"
+    },
+    {
+      "id": "u02_027",
+      "term": "smell",
+      "translation": "riechen"
+    },
+    {
+      "id": "u02_028",
+      "term": "beat",
+      "translation": "schlagen"
+    },
+    {
+      "id": "u02_029",
+      "term": "blocked",
+      "translation": "verstopft, blockiert"
+    },
+    {
+      "id": "u02_030",
+      "term": "busy",
+      "translation": "beschäftigt, belebt"
+    },
+    {
+      "id": "u02_031",
+      "term": "flower",
+      "translation": "die Blume"
+    },
+    {
+      "id": "u02_032",
+      "term": "opposite",
+      "translation": "gegenüberliegend, entgegengesetzt"
+    },
+    {
+      "id": "u02_033",
+      "term": "sun",
+      "translation": "die Sonne"
+    },
+    {
+      "id": "u02_034",
+      "term": "apart from",
+      "translation": "abgesehen von"
+    },
+    {
+      "id": "u02_035",
+      "term": "enemy",
+      "translation": "der Feind, die Feindin"
+    },
+    {
+      "id": "u02_036",
+      "term": "normally",
+      "translation": "normalerweise"
+    },
+    {
+      "id": "u02_037",
+      "term": "preserve",
+      "translation": "bewahren, erhalten"
+    },
+    {
+      "id": "u02_038",
+      "term": "reaction",
+      "translation": "die Reaktion"
+    },
+    {
+      "id": "u02_039",
+      "term": "remove",
+      "translation": "entfernen"
+    },
+    {
+      "id": "u02_040",
+      "term": "skin",
+      "translation": "die Haut"
+    },
+    {
+      "id": "u02_041",
+      "term": "board game",
+      "translation": "das Brettspiel"
+    },
+    {
+      "id": "u02_042",
+      "term": "decade",
+      "translation": "das Jahrzehnt"
+    },
+    {
+      "id": "u02_043",
+      "term": "emotion",
+      "translation": "das Gefühl, die Emotion"
+    },
+    {
+      "id": "u02_044",
+      "term": "equally",
+      "translation": "gleichermassen, ebenso"
+    },
+    {
+      "id": "u02_045",
+      "term": "forest",
+      "translation": "der Wald"
+    },
+    {
+      "id": "u02_046",
+      "term": "go for a walk",
+      "translation": "einen Spaziergang machen"
+    },
+    {
+      "id": "u02_047",
+      "term": "quick",
+      "translation": "schnell"
+    },
+    {
+      "id": "u02_048",
+      "term": "quiet",
+      "translation": "ruhig"
+    },
+    {
+      "id": "u02_049",
+      "term": "sign language",
+      "translation": "die Zeichensprache"
+    },
+    {
+      "id": "u02_050",
+      "term": "suitable",
+      "translation": "geeignet, passend"
+    },
+    {
+      "id": "u02_051",
+      "term": "the way children do",
+      "translation": "so wie es Kinder machen"
+    },
+    {
+      "id": "u02_052",
+      "term": "well-known",
+      "translation": "bekannt, berühmt"
+    },
+    {
+      "id": "u02_053",
+      "term": "bright",
+      "translation": "hell, grell, leuchtend"
+    },
+    {
+      "id": "u02_054",
+      "term": "danger",
+      "translation": "die Gefahr"
+    },
+    {
+      "id": "u02_055",
+      "term": "facial expression",
+      "translation": "der Gesichtsausdruck"
+    },
+    {
+      "id": "u02_056",
+      "term": "front leg",
+      "translation": "das Vorderbein"
+    },
+    {
+      "id": "u02_057",
+      "term": "horse",
+      "translation": "das Pferd"
+    },
+    {
+      "id": "u02_058",
+      "term": "in an interesting way",
+      "translation": "auf eine interessante Art"
+    },
+    {
+      "id": "u02_059",
+      "term": "kick",
+      "translation": "treten, ausschlagen"
+    },
+    {
+      "id": "u02_060",
+      "term": "look after",
+      "translation": "sich kümmern um"
+    },
+    {
+      "id": "u02_061",
+      "term": "noise",
+      "translation": "das Geräusch"
+    },
+    {
+      "id": "u02_062",
+      "term": "warn",
+      "translation": "warnen"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 3 – Healthy living",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u03_001",
+      "term": "canteen",
+      "translation": "die Kantine, die Mensa"
+    },
+    {
+      "id": "u03_002",
+      "term": "diet",
+      "translation": "die Ernährung, die Nahrung, die Diät"
+    },
+    {
+      "id": "u03_003",
+      "term": "exercise",
+      "translation": "die Bewegung, die sportliche Betätigung"
+    },
+    {
+      "id": "u03_004",
+      "term": "fruit",
+      "translation": "die Frucht, die Früchte"
+    },
+    {
+      "id": "u03_005",
+      "term": "health",
+      "translation": "die Gesundheit"
+    },
+    {
+      "id": "u03_006",
+      "term": "ingredient",
+      "translation": "die Zutat, der Bestandteil"
+    },
+    {
+      "id": "u03_007",
+      "term": "junk food",
+      "translation": "das ungesunde Essen"
+    },
+    {
+      "id": "u03_008",
+      "term": "nutrition",
+      "translation": "die Ernährung"
+    },
+    {
+      "id": "u03_009",
+      "term": "recipe",
+      "translation": "das Rezept"
+    },
+    {
+      "id": "u03_010",
+      "term": "vegetable",
+      "translation": "das Gemüse"
+    },
+    {
+      "id": "u03_011",
+      "term": "absolutely",
+      "translation": "absolut, völlig"
+    },
+    {
+      "id": "u03_012",
+      "term": "active",
+      "translation": "aktiv"
+    },
+    {
+      "id": "u03_013",
+      "term": "all day",
+      "translation": "den ganzen Tag"
+    },
+    {
+      "id": "u03_014",
+      "term": "anybody",
+      "translation": "irgendjemand"
+    },
+    {
+      "id": "u03_015",
+      "term": "ask for advice",
+      "translation": "um Rat fragen"
+    },
+    {
+      "id": "u03_016",
+      "term": "be happy with",
+      "translation": "zufrieden sein mit"
+    },
+    {
+      "id": "u03_017",
+      "term": "brain",
+      "translation": "das Gehirn"
+    },
+    {
+      "id": "u03_018",
+      "term": "by bike",
+      "translation": "mit dem Fahrrad"
+    },
+    {
+      "id": "u03_019",
+      "term": "chips",
+      "translation": "die Pommes frites"
+    },
+    {
+      "id": "u03_020",
+      "term": "combine",
+      "translation": "verbinden"
+    },
+    {
+      "id": "u03_021",
+      "term": "comfortable",
+      "translation": "komfortabel, bequem"
+    },
+    {
+      "id": "u03_022",
+      "term": "cycle",
+      "translation": "velo fahren"
+    },
+    {
+      "id": "u03_023",
+      "term": "deal with",
+      "translation": "sich befassen mit"
+    },
+    {
+      "id": "u03_024",
+      "term": "disagree",
+      "translation": "nicht einverstanden sein, anderer Meinung sein"
+    },
+    {
+      "id": "u03_025",
+      "term": "fast food",
+      "translation": "das Fastfood"
+    },
+    {
+      "id": "u03_026",
+      "term": "football",
+      "translation": "der Fussball"
+    },
+    {
+      "id": "u03_027",
+      "term": "get angry",
+      "translation": "wütend werden"
+    },
+    {
+      "id": "u03_028",
+      "term": "healthy",
+      "translation": "gesund"
+    },
+    {
+      "id": "u03_029",
+      "term": "importance",
+      "translation": "die Bedeutung"
+    },
+    {
+      "id": "u03_030",
+      "term": "index finger",
+      "translation": "der Zeigefinger"
+    },
+    {
+      "id": "u03_031",
+      "term": "on foot",
+      "translation": "zu Fuss"
+    },
+    {
+      "id": "u03_032",
+      "term": "pool",
+      "translation": "das Schwimmbad, der Swimmingpool"
+    },
+    {
+      "id": "u03_033",
+      "term": "rank",
+      "translation": "anordnen"
+    },
+    {
+      "id": "u03_034",
+      "term": "self-confidence",
+      "translation": "das Selbstvertrauen"
+    },
+    {
+      "id": "u03_035",
+      "term": "swim",
+      "translation": "schwimmen"
+    },
+    {
+      "id": "u03_036",
+      "term": "take 10 minutes",
+      "translation": "10 Minuten brauchen, dauern"
+    },
+    {
+      "id": "u03_037",
+      "term": "That's rubbish!",
+      "translation": "Das ist Blödsinn!"
+    },
+    {
+      "id": "u03_038",
+      "term": "totally",
+      "translation": "völlig"
+    },
+    {
+      "id": "u03_039",
+      "term": "twice",
+      "translation": "zweimal"
+    },
+    {
+      "id": "u03_040",
+      "term": "wait for",
+      "translation": "warten auf"
+    },
+    {
+      "id": "u03_041",
+      "term": "well-being",
+      "translation": "das Wohl"
+    },
+    {
+      "id": "u03_042",
+      "term": "a day",
+      "translation": "pro Tag"
+    },
+    {
+      "id": "u03_043",
+      "term": "advice",
+      "translation": "der Rat"
+    },
+    {
+      "id": "u03_044",
+      "term": "complicated",
+      "translation": "kompliziert"
+    },
+    {
+      "id": "u03_045",
+      "term": "fresh",
+      "translation": "frisch"
+    },
+    {
+      "id": "u03_046",
+      "term": "plenty of",
+      "translation": "viel"
+    },
+    {
+      "id": "u03_047",
+      "term": "smoke",
+      "translation": "rauchen"
+    },
+    {
+      "id": "u03_048",
+      "term": "tip",
+      "translation": "der Tipp"
+    },
+    {
+      "id": "u03_049",
+      "term": "truth",
+      "translation": "die Wahrheit"
+    },
+    {
+      "id": "u03_050",
+      "term": "can't stand",
+      "translation": "nicht ertragen können"
+    },
+    {
+      "id": "u03_051",
+      "term": "everywhere",
+      "translation": "überall"
+    },
+    {
+      "id": "u03_052",
+      "term": "extremely",
+      "translation": "äusserst"
+    },
+    {
+      "id": "u03_053",
+      "term": "familiar",
+      "translation": "vertraut"
+    },
+    {
+      "id": "u03_054",
+      "term": "fat",
+      "translation": "das Fett"
+    },
+    {
+      "id": "u03_055",
+      "term": "hate",
+      "translation": "hassen"
+    },
+    {
+      "id": "u03_056",
+      "term": "hide",
+      "translation": "verstecken"
+    },
+    {
+      "id": "u03_057",
+      "term": "taste",
+      "translation": "der Geschmack"
+    },
+    {
+      "id": "u03_058",
+      "term": "unfortunately",
+      "translation": "unglücklicherweise"
+    },
+    {
+      "id": "u03_059",
+      "term": "broccoli",
+      "translation": "der Broccoli"
+    },
+    {
+      "id": "u03_060",
+      "term": "concentrate",
+      "translation": "sich konzentrieren"
+    },
+    {
+      "id": "u03_061",
+      "term": "concentration",
+      "translation": "die Konzentration"
+    },
+    {
+      "id": "u03_062",
+      "term": "cook",
+      "translation": "der Koch, die Köchin"
+    },
+    {
+      "id": "u03_063",
+      "term": "crisps",
+      "translation": "die Pommes-Chips"
+    },
+    {
+      "id": "u03_064",
+      "term": "lettuce",
+      "translation": "der Blattsalat"
+    },
+    {
+      "id": "u03_065",
+      "term": "menu",
+      "translation": "die Speisekarte, das Menü"
+    },
+    {
+      "id": "u03_066",
+      "term": "peach",
+      "translation": "der Pfirsich"
+    },
+    {
+      "id": "u03_067",
+      "term": "potato",
+      "translation": "die Kartoffel"
+    },
+    {
+      "id": "u03_068",
+      "term": "quality meat",
+      "translation": "hochwertiges Fleisch"
+    },
+    {
+      "id": "u03_069",
+      "term": "strawberry",
+      "translation": "die Erdbeere"
+    },
+    {
+      "id": "u03_070",
+      "term": "anywhere",
+      "translation": "irgendwo"
+    },
+    {
+      "id": "u03_071",
+      "term": "combination",
+      "translation": "die Kombination"
+    },
+    {
+      "id": "u03_072",
+      "term": "cream",
+      "translation": "der Rahm"
+    },
+    {
+      "id": "u03_073",
+      "term": "dish",
+      "translation": "die Schale, die Schüssel"
+    },
+    {
+      "id": "u03_074",
+      "term": "except (for)",
+      "translation": "ausser, bis auf"
+    },
+    {
+      "id": "u03_075",
+      "term": "habit",
+      "translation": "die Gewohnheit"
+    },
+    {
+      "id": "u03_076",
+      "term": "herbs",
+      "translation": "die Kräuter"
+    },
+    {
+      "id": "u03_077",
+      "term": "long-distance race",
+      "translation": "das Langstreckenrennen"
+    },
+    {
+      "id": "u03_078",
+      "term": "meanwhile",
+      "translation": "unterdessen"
+    },
+    {
+      "id": "u03_079",
+      "term": "mix",
+      "translation": "mischen"
+    },
+    {
+      "id": "u03_080",
+      "term": "onion",
+      "translation": "die Zwiebel"
+    },
+    {
+      "id": "u03_081",
+      "term": "pepper",
+      "translation": "der Pfeffer"
+    },
+    {
+      "id": "u03_082",
+      "term": "rich",
+      "translation": "reich"
+    },
+    {
+      "id": "u03_083",
+      "term": "salt",
+      "translation": "das Salz"
+    },
+    {
+      "id": "u03_084",
+      "term": "flour",
+      "translation": "das Mehl"
+    },
+    {
+      "id": "u03_085",
+      "term": "lemon",
+      "translation": "die Zitrone"
+    },
+    {
+      "id": "u03_086",
+      "term": "Swiss German",
+      "translation": "Schweizerdeutsch"
+    },
+    {
+      "id": "u03_087",
+      "term": "translation",
+      "translation": "die Übersetzung"
+    },
+    {
+      "id": "u03_088",
+      "term": "vanilla",
+      "translation": "die Vanille"
+    },
+    {
+      "id": "u03_089",
+      "term": "a drop of milk",
+      "translation": "ein wenig Milch"
+    },
+    {
+      "id": "u03_090",
+      "term": "a week",
+      "translation": "pro Woche"
+    },
+    {
+      "id": "u03_091",
+      "term": "countable",
+      "translation": "zählbar"
+    },
+    {
+      "id": "u03_092",
+      "term": "for breakfast",
+      "translation": "zum Frühstück"
+    },
+    {
+      "id": "u03_093",
+      "term": "for dinner",
+      "translation": "zum Abendessen"
+    },
+    {
+      "id": "u03_094",
+      "term": "for lunch",
+      "translation": "zum Mittagessen"
+    },
+    {
+      "id": "u03_095",
+      "term": "how many",
+      "translation": "wie viele"
+    },
+    {
+      "id": "u03_096",
+      "term": "how much",
+      "translation": "wie viel"
+    },
+    {
+      "id": "u03_097",
+      "term": "litre",
+      "translation": "der Liter"
+    },
+    {
+      "id": "u03_098",
+      "term": "uncountable",
+      "translation": "unzählbar"
+    },
+    {
+      "id": "u03_099",
+      "term": "instruction",
+      "translation": "die Anweisung"
+    },
+    {
+      "id": "u03_100",
+      "term": "pleased",
+      "translation": "froh, erfreut, zufrieden"
+    },
+    {
+      "id": "u03_101",
+      "term": "shocking",
+      "translation": "schockierend"
+    },
+    {
+      "id": "u03_102",
+      "term": "stretch",
+      "translation": "strecken"
+    },
+    {
+      "id": "u03_103",
+      "term": "terrible",
+      "translation": "schrecklich"
+    },
+    {
+      "id": "u03_104",
+      "term": "toe",
+      "translation": "der Zeh"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 4 – Exploring",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u04_001",
+      "term": "Antarctic Circle",
+      "translation": "der südliche Polarkreis"
+    },
+    {
+      "id": "u04_002",
+      "term": "Antarctica",
+      "translation": "die Antarktis"
+    },
+    {
+      "id": "u04_003",
+      "term": "captain",
+      "translation": "der Kapitän, die Kapitänin"
+    },
+    {
+      "id": "u04_004",
+      "term": "climate",
+      "translation": "das Klima"
+    },
+    {
+      "id": "u04_005",
+      "term": "continent",
+      "translation": "der Kontinent"
+    },
+    {
+      "id": "u04_006",
+      "term": "exotic",
+      "translation": "exotisch, fremdländisch"
+    },
+    {
+      "id": "u04_007",
+      "term": "expedition",
+      "translation": "die Expedition, die Forschungsreise"
+    },
+    {
+      "id": "u04_008",
+      "term": "native",
+      "translation": "der/die Einheimische/-r"
+    },
+    {
+      "id": "u04_009",
+      "term": "ozone layer",
+      "translation": "die Ozonschicht"
+    },
+    {
+      "id": "u04_010",
+      "term": "sailor",
+      "translation": "der Matrose, die Matrosin"
+    },
+    {
+      "id": "u04_011",
+      "term": "amazing",
+      "translation": "erstaunlich, toll"
+    },
+    {
+      "id": "u04_012",
+      "term": "artist",
+      "translation": "der Künstler, die Künstlerin"
+    },
+    {
+      "id": "u04_013",
+      "term": "background",
+      "translation": "der Hintergrund"
+    },
+    {
+      "id": "u04_014",
+      "term": "bird",
+      "translation": "der Vogel"
+    },
+    {
+      "id": "u04_015",
+      "term": "carefully",
+      "translation": "sorgfältig, aufmerksam"
+    },
+    {
+      "id": "u04_016",
+      "term": "consonant",
+      "translation": "der Konsonant"
+    },
+    {
+      "id": "u04_017",
+      "term": "distance",
+      "translation": "die Entfernung, die Distanz"
+    },
+    {
+      "id": "u04_018",
+      "term": "empty",
+      "translation": "leer"
+    },
+    {
+      "id": "u04_019",
+      "term": "explore",
+      "translation": "erforschen, untersuchen"
+    },
+    {
+      "id": "u04_020",
+      "term": "explorer",
+      "translation": "der Forscher, die Forscherin, Entdecker/-in"
+    },
+    {
+      "id": "u04_021",
+      "term": "farm worker",
+      "translation": "der/die Landarbeiter/-in"
+    },
+    {
+      "id": "u04_022",
+      "term": "fishing net",
+      "translation": "das Fischernetz"
+    },
+    {
+      "id": "u04_023",
+      "term": "funny",
+      "translation": "komisch, merkwürdig"
+    },
+    {
+      "id": "u04_024",
+      "term": "glass",
+      "translation": "das Glas"
+    },
+    {
+      "id": "u04_025",
+      "term": "He is a native Swiss.",
+      "translation": "Er stammt aus der Schweiz."
+    },
+    {
+      "id": "u04_026",
+      "term": "map maker",
+      "translation": "der Kartenzeichner, die Kartenzeichnerin"
+    },
+    {
+      "id": "u04_027",
+      "term": "mathematics",
+      "translation": "die Mathematik"
+    },
+    {
+      "id": "u04_028",
+      "term": "pronounce",
+      "translation": "aussprechen"
+    },
+    {
+      "id": "u04_029",
+      "term": "pronunciation",
+      "translation": "die Aussprache"
+    },
+    {
+      "id": "u04_030",
+      "term": "route",
+      "translation": "die Route, die Strecke"
+    },
+    {
+      "id": "u04_031",
+      "term": "sea captain",
+      "translation": "der (Schiffs-)Kapitän, die Kapitänin"
+    },
+    {
+      "id": "u04_032",
+      "term": "She is a native of Austria.",
+      "translation": "Sie stammt aus Österreich."
+    },
+    {
+      "id": "u04_033",
+      "term": "ship",
+      "translation": "das Schiff"
+    },
+    {
+      "id": "u04_034",
+      "term": "shout",
+      "translation": "schreien, rufen"
+    },
+    {
+      "id": "u04_035",
+      "term": "stressed",
+      "translation": "gestresst"
+    },
+    {
+      "id": "u04_036",
+      "term": "talented",
+      "translation": "talentiert, begabt"
+    },
+    {
+      "id": "u04_037",
+      "term": "the South Seas",
+      "translation": "die Südsee"
+    },
+    {
+      "id": "u04_038",
+      "term": "tool",
+      "translation": "das Werkzeug"
+    },
+    {
+      "id": "u04_039",
+      "term": "translate",
+      "translation": "übersetzen"
+    },
+    {
+      "id": "u04_040",
+      "term": "vowel",
+      "translation": "der Vokal"
+    },
+    {
+      "id": "u04_041",
+      "term": "wave",
+      "translation": "winken"
+    },
+    {
+      "id": "u04_042",
+      "term": "We are native speakers of Italian.",
+      "translation": "Wir sind italienische Muttersprachler."
+    },
+    {
+      "id": "u04_043",
+      "term": "weapon",
+      "translation": "die Waffe"
+    },
+    {
+      "id": "u04_044",
+      "term": "writer",
+      "translation": "der Schriftsteller, die Schriftstellerin"
+    },
+    {
+      "id": "u04_045",
+      "term": "adventure",
+      "translation": "das Abenteuer, das Erlebnis"
+    },
+    {
+      "id": "u04_046",
+      "term": "be part of",
+      "translation": "Teil sein von, gehören zu"
+    },
+    {
+      "id": "u04_047",
+      "term": "camera",
+      "translation": "die Kamera, der Fotoapparat"
+    },
+    {
+      "id": "u04_048",
+      "term": "careful",
+      "translation": "vorsichtig, sorgfältig"
+    },
+    {
+      "id": "u04_049",
+      "term": "climate change",
+      "translation": "die Klimaveränderung"
+    },
+    {
+      "id": "u04_050",
+      "term": "differ",
+      "translation": "sich unterscheiden"
+    },
+    {
+      "id": "u04_051",
+      "term": "freeze",
+      "translation": "gefrieren"
+    },
+    {
+      "id": "u04_052",
+      "term": "get stuck",
+      "translation": "stecken bleiben"
+    },
+    {
+      "id": "u04_053",
+      "term": "global",
+      "translation": "global, weltweit"
+    },
+    {
+      "id": "u04_054",
+      "term": "hole",
+      "translation": "das Loch"
+    },
+    {
+      "id": "u04_055",
+      "term": "ice",
+      "translation": "das Eis"
+    },
+    {
+      "id": "u04_056",
+      "term": "in the middle of nowhere",
+      "translation": "am Ende der Welt"
+    },
+    {
+      "id": "u04_057",
+      "term": "launch",
+      "translation": "hier: steigen lassen"
+    },
+    {
+      "id": "u04_058",
+      "term": "map",
+      "translation": "die (Land-)Karte"
+    },
+    {
+      "id": "u04_059",
+      "term": "observe",
+      "translation": "beobachten"
+    },
+    {
+      "id": "u04_060",
+      "term": "proud",
+      "translation": "stolz"
+    },
+    {
+      "id": "u04_061",
+      "term": "research station",
+      "translation": "die Forschungsstation"
+    },
+    {
+      "id": "u04_062",
+      "term": "sample",
+      "translation": "die Probe, das Muster"
+    },
+    {
+      "id": "u04_063",
+      "term": "since 8 o'clock",
+      "translation": "seit 8 Uhr"
+    },
+    {
+      "id": "u04_064",
+      "term": "snow",
+      "translation": "der Schnee"
+    },
+    {
+      "id": "u04_065",
+      "term": "South Pole",
+      "translation": "der Südpol"
+    },
+    {
+      "id": "u04_066",
+      "term": "spend holidays",
+      "translation": "Ferien verbringen"
+    },
+    {
+      "id": "u04_067",
+      "term": "trend",
+      "translation": "der Trend"
+    },
+    {
+      "id": "u04_068",
+      "term": "weather forecasting",
+      "translation": "die Erstellung von Wetterprognosen"
+    },
+    {
+      "id": "u04_069",
+      "term": "weather",
+      "translation": "das Wetter"
+    },
+    {
+      "id": "u04_070",
+      "term": "wind",
+      "translation": "der Wind"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 5 – Weather dynamics",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u05_001",
+      "term": "blizzard",
+      "translation": "der Schneesturm, der Blizzard"
+    },
+    {
+      "id": "u05_002",
+      "term": "blow",
+      "translation": "blasen"
+    },
+    {
+      "id": "u05_003",
+      "term": "calm",
+      "translation": "ruhig"
+    },
+    {
+      "id": "u05_004",
+      "term": "cloud",
+      "translation": "die Wolke"
+    },
+    {
+      "id": "u05_005",
+      "term": "hurricane",
+      "translation": "der Hurrikan"
+    },
+    {
+      "id": "u05_006",
+      "term": "rain",
+      "translation": "der Regen"
+    },
+    {
+      "id": "u05_007",
+      "term": "snow",
+      "translation": "der Schnee"
+    },
+    {
+      "id": "u05_008",
+      "term": "storm",
+      "translation": "der Sturm"
+    },
+    {
+      "id": "u05_009",
+      "term": "umbrella",
+      "translation": "der Regenschirm"
+    },
+    {
+      "id": "u05_010",
+      "term": "weather",
+      "translation": "das Wetter"
+    },
+    {
+      "id": "u05_011",
+      "term": "a bit",
+      "translation": "ein bisschen"
+    },
+    {
+      "id": "u05_012",
+      "term": "actually",
+      "translation": "eigentlich"
+    },
+    {
+      "id": "u05_013",
+      "term": "cloudy",
+      "translation": "bewölkt"
+    },
+    {
+      "id": "u05_014",
+      "term": "cool",
+      "translation": "kühl"
+    },
+    {
+      "id": "u05_015",
+      "term": "dry",
+      "translation": "trocken"
+    },
+    {
+      "id": "u05_016",
+      "term": "fair",
+      "translation": "schön"
+    },
+    {
+      "id": "u05_017",
+      "term": "helpful",
+      "translation": "hilfreich"
+    },
+    {
+      "id": "u05_018",
+      "term": "I don't mind",
+      "translation": "es macht mir nichts aus"
+    },
+    {
+      "id": "u05_019",
+      "term": "icy",
+      "translation": "eisig"
+    },
+    {
+      "id": "u05_020",
+      "term": "kind of",
+      "translation": "irgendwie, ziemlich"
+    },
+    {
+      "id": "u05_021",
+      "term": "lucky",
+      "translation": "glücklich, Glück habend"
+    },
+    {
+      "id": "u05_022",
+      "term": "make sure",
+      "translation": "sich vergewissern"
+    },
+    {
+      "id": "u05_023",
+      "term": "mild",
+      "translation": "mild"
+    },
+    {
+      "id": "u05_024",
+      "term": "of course",
+      "translation": "natürlich, selbstverständlich"
+    },
+    {
+      "id": "u05_025",
+      "term": "radio",
+      "translation": "das Radio"
+    },
+    {
+      "id": "u05_026",
+      "term": "rainy",
+      "translation": "regnerisch"
+    },
+    {
+      "id": "u05_027",
+      "term": "stormy",
+      "translation": "stürmisch"
+    },
+    {
+      "id": "u05_028",
+      "term": "sunny",
+      "translation": "sonnig"
+    },
+    {
+      "id": "u05_029",
+      "term": "warm",
+      "translation": "warm"
+    },
+    {
+      "id": "u05_030",
+      "term": "wet",
+      "translation": "nass"
+    },
+    {
+      "id": "u05_031",
+      "term": "windy",
+      "translation": "windig"
+    },
+    {
+      "id": "u05_032",
+      "term": "winter",
+      "translation": "der Winter"
+    },
+    {
+      "id": "u05_033",
+      "term": "air pressure",
+      "translation": "der Luftdruck"
+    },
+    {
+      "id": "u05_034",
+      "term": "arrange",
+      "translation": "arrangieren"
+    },
+    {
+      "id": "u05_035",
+      "term": "earth",
+      "translation": "die Erde"
+    },
+    {
+      "id": "u05_036",
+      "term": "force",
+      "translation": "die Kraft, die Stärke, die Wucht"
+    },
+    {
+      "id": "u05_037",
+      "term": "heat",
+      "translation": "erhitzen, erwärmen"
+    },
+    {
+      "id": "u05_038",
+      "term": "originally",
+      "translation": "ursprünglich"
+    },
+    {
+      "id": "u05_039",
+      "term": "scale",
+      "translation": "die Skala"
+    },
+    {
+      "id": "u05_040",
+      "term": "speed",
+      "translation": "die Geschwindigkeit, das Tempo"
+    },
+    {
+      "id": "u05_041",
+      "term": "surface",
+      "translation": "die Oberfläche"
+    },
+    {
+      "id": "u05_042",
+      "term": "based on evidence",
+      "translation": "auf Beweise gestützt, aufgrund von Hinweisen"
+    },
+    {
+      "id": "u05_043",
+      "term": "camp",
+      "translation": "zelten, campieren"
+    },
+    {
+      "id": "u05_044",
+      "term": "category",
+      "translation": "die Kategorie"
+    },
+    {
+      "id": "u05_045",
+      "term": "cause damage",
+      "translation": "Schaden verursachen, anrichten"
+    },
+    {
+      "id": "u05_046",
+      "term": "coast",
+      "translation": "die Küste"
+    },
+    {
+      "id": "u05_047",
+      "term": "cry",
+      "translation": "weinen"
+    },
+    {
+      "id": "u05_048",
+      "term": "dangerous",
+      "translation": "gefährlich"
+    },
+    {
+      "id": "u05_049",
+      "term": "declare",
+      "translation": "hier: erklären für"
+    },
+    {
+      "id": "u05_050",
+      "term": "definition",
+      "translation": "die Definition"
+    },
+    {
+      "id": "u05_051",
+      "term": "extreme",
+      "translation": "extrem, äusserste(r, s)"
+    },
+    {
+      "id": "u05_052",
+      "term": "first-aid",
+      "translation": "Erste-Hilfe-"
+    },
+    {
+      "id": "u05_053",
+      "term": "hat",
+      "translation": "der Hut, die Mütze"
+    },
+    {
+      "id": "u05_054",
+      "term": "heavy snowfall",
+      "translation": "starker Schneefall"
+    },
+    {
+      "id": "u05_055",
+      "term": "I was born on",
+      "translation": "ich wurde geboren am"
+    },
+    {
+      "id": "u05_056",
+      "term": "low visibility",
+      "translation": "schlechte Sicht"
+    },
+    {
+      "id": "u05_057",
+      "term": "plane",
+      "translation": "das Flugzeug"
+    },
+    {
+      "id": "u05_058",
+      "term": "powerful",
+      "translation": "mächtig, kräftig"
+    },
+    {
+      "id": "u05_059",
+      "term": "predict / make a prediction",
+      "translation": "vorhersagen"
+    },
+    {
+      "id": "u05_060",
+      "term": "shake up",
+      "translation": "(drastisch) verändern, aufwühlen"
+    },
+    {
+      "id": "u05_061",
+      "term": "sky",
+      "translation": "der Himmel"
+    },
+    {
+      "id": "u05_062",
+      "term": "take off",
+      "translation": "abheben, starten"
+    },
+    {
+      "id": "u05_063",
+      "term": "take pictures",
+      "translation": "Fotos machen, fotografieren"
+    },
+    {
+      "id": "u05_064",
+      "term": "tonight",
+      "translation": "heute Abend"
+    },
+    {
+      "id": "u05_065",
+      "term": "valuable",
+      "translation": "wertvoll"
+    },
+    {
+      "id": "u05_066",
+      "term": "weak",
+      "translation": "schwach"
+    },
+    {
+      "id": "u05_067",
+      "term": "wood",
+      "translation": "das Holz"
+    },
+    {
+      "id": "u05_068",
+      "term": "at a later date",
+      "translation": "zu einem späteren Zeitpunkt, später einmal"
+    },
+    {
+      "id": "u05_069",
+      "term": "be out of touch with",
+      "translation": "den Sinn für ... verloren haben"
+    },
+    {
+      "id": "u05_070",
+      "term": "boss",
+      "translation": "der Chef, die Chefin"
+    },
+    {
+      "id": "u05_071",
+      "term": "colleague",
+      "translation": "der Kollege, die Kollegin"
+    },
+    {
+      "id": "u05_072",
+      "term": "go on about",
+      "translation": "dauernd reden über"
+    },
+    {
+      "id": "u05_073",
+      "term": "ill",
+      "translation": "krank"
+    },
+    {
+      "id": "u05_074",
+      "term": "in a fixed order",
+      "translation": "in einer festen Reihenfolge"
+    },
+    {
+      "id": "u05_075",
+      "term": "joke",
+      "translation": "der Witz"
+    },
+    {
+      "id": "u05_076",
+      "term": "reality",
+      "translation": "die Realität, die Wirklichkeit"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 6 – The deep blue",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u06_001",
+      "term": "environment",
+      "translation": "die Umgebung, die Umwelt"
+    },
+    {
+      "id": "u06_002",
+      "term": "forum",
+      "translation": "das Forum"
+    },
+    {
+      "id": "u06_003",
+      "term": "fragment",
+      "translation": "das Stück, der Teil"
+    },
+    {
+      "id": "u06_004",
+      "term": "garbage patch",
+      "translation": "der Müllfleck (Ansammlung von Plastik im Pazifik)"
+    },
+    {
+      "id": "u06_005",
+      "term": "online",
+      "translation": "online, Online-"
+    },
+    {
+      "id": "u06_006",
+      "term": "Pacific Ocean",
+      "translation": "der Pazifische Ozean, der Pazifik"
+    },
+    {
+      "id": "u06_007",
+      "term": "plastic",
+      "translation": "das Plastik"
+    },
+    {
+      "id": "u06_008",
+      "term": "quiz",
+      "translation": "das Quiz, das Ratespiel"
+    },
+    {
+      "id": "u06_009",
+      "term": "surface",
+      "translation": "die Oberfläche"
+    },
+    {
+      "id": "u06_010",
+      "term": "waste",
+      "translation": "der Abfall"
+    },
+    {
+      "id": "u06_011",
+      "term": "as ... as",
+      "translation": "so ... wie"
+    },
+    {
+      "id": "u06_012",
+      "term": "collect",
+      "translation": "sammeln"
+    },
+    {
+      "id": "u06_013",
+      "term": "collection",
+      "translation": "die Sammlung"
+    },
+    {
+      "id": "u06_014",
+      "term": "context",
+      "translation": "der Kontext, der Zusammenhang"
+    },
+    {
+      "id": "u06_015",
+      "term": "deep blue",
+      "translation": "das Blaue Meer"
+    },
+    {
+      "id": "u06_016",
+      "term": "definitely",
+      "translation": "eindeutig, definitiv"
+    },
+    {
+      "id": "u06_017",
+      "term": "disappear",
+      "translation": "verschwinden"
+    },
+    {
+      "id": "u06_018",
+      "term": "end up",
+      "translation": "gelangen, landen"
+    },
+    {
+      "id": "u06_019",
+      "term": "impossible",
+      "translation": "unmöglich"
+    },
+    {
+      "id": "u06_020",
+      "term": "north",
+      "translation": "nördlich, Nord-"
+    },
+    {
+      "id": "u06_021",
+      "term": "overall",
+      "translation": "insgesamt, im Grossen und Ganzen"
+    },
+    {
+      "id": "u06_022",
+      "term": "PET bottle",
+      "translation": "die PET-Flasche"
+    },
+    {
+      "id": "u06_023",
+      "term": "pick up",
+      "translation": "aufheben"
+    },
+    {
+      "id": "u06_024",
+      "term": "piece",
+      "translation": "das Stück"
+    },
+    {
+      "id": "u06_025",
+      "term": "river",
+      "translation": "der Fluss"
+    },
+    {
+      "id": "u06_026",
+      "term": "somewhere",
+      "translation": "irgendwo"
+    },
+    {
+      "id": "u06_027",
+      "term": "throw away",
+      "translation": "wegwerfen"
+    },
+    {
+      "id": "u06_028",
+      "term": "tiny",
+      "translation": "winzig"
+    },
+    {
+      "id": "u06_029",
+      "term": "transport",
+      "translation": "transportieren"
+    },
+    {
+      "id": "u06_030",
+      "term": "appearance",
+      "translation": "das Aussehen"
+    },
+    {
+      "id": "u06_031",
+      "term": "breathe",
+      "translation": "atmen"
+    },
+    {
+      "id": "u06_032",
+      "term": "creature",
+      "translation": "die Kreatur, das Geschöpf"
+    },
+    {
+      "id": "u06_033",
+      "term": "disc",
+      "translation": "die Scheibe"
+    },
+    {
+      "id": "u06_034",
+      "term": "fascinating",
+      "translation": "faszinierend"
+    },
+    {
+      "id": "u06_035",
+      "term": "give birth",
+      "translation": "gebären"
+    },
+    {
+      "id": "u06_036",
+      "term": "hardly",
+      "translation": "kaum"
+    },
+    {
+      "id": "u06_037",
+      "term": "lay",
+      "translation": "legen"
+    },
+    {
+      "id": "u06_038",
+      "term": "length",
+      "translation": "die Länge"
+    },
+    {
+      "id": "u06_039",
+      "term": "mostly",
+      "translation": "hauptsächlich, grösstenteils"
+    },
+    {
+      "id": "u06_040",
+      "term": "size",
+      "translation": "die Grösse"
+    },
+    {
+      "id": "u06_041",
+      "term": "slow-moving",
+      "translation": "sich langsam bewegend"
+    },
+    {
+      "id": "u06_042",
+      "term": "special fact",
+      "translation": "die besondere Tatsache"
+    },
+    {
+      "id": "u06_043",
+      "term": "spot",
+      "translation": "der Punkt, die Stelle"
+    },
+    {
+      "id": "u06_044",
+      "term": "thick",
+      "translation": "dick, zähflüssig"
+    },
+    {
+      "id": "u06_045",
+      "term": "victim",
+      "translation": "das Opfer"
+    },
+    {
+      "id": "u06_046",
+      "term": "weight",
+      "translation": "das Gewicht"
+    },
+    {
+      "id": "u06_047",
+      "term": "beach",
+      "translation": "der Strand"
+    },
+    {
+      "id": "u06_048",
+      "term": "belong to",
+      "translation": "gehören"
+    },
+    {
+      "id": "u06_049",
+      "term": "environmental",
+      "translation": "Umwelt-"
+    },
+    {
+      "id": "u06_050",
+      "term": "feed",
+      "translation": "füttern"
+    },
+    {
+      "id": "u06_051",
+      "term": "fish farm",
+      "translation": "die Fischzuchtanlage"
+    },
+    {
+      "id": "u06_052",
+      "term": "in order to",
+      "translation": "um zu"
+    },
+    {
+      "id": "u06_053",
+      "term": "label",
+      "translation": "das Etikett, der Aufkleber"
+    },
+    {
+      "id": "u06_054",
+      "term": "partly",
+      "translation": "teilweise"
+    },
+    {
+      "id": "u06_055",
+      "term": "reply",
+      "translation": "die Antwort, die Erwiderung"
+    },
+    {
+      "id": "u06_056",
+      "term": "so that",
+      "translation": "damit, sodass"
+    },
+    {
+      "id": "u06_057",
+      "term": "survive",
+      "translation": "überleben"
+    },
+    {
+      "id": "u06_058",
+      "term": "get active",
+      "translation": "aktiv werden"
+    },
+    {
+      "id": "u06_059",
+      "term": "protect",
+      "translation": "schützen"
+    },
+    {
+      "id": "u06_060",
+      "term": "sad",
+      "translation": "traurig"
+    },
+    {
+      "id": "u06_061",
+      "term": "social media channel",
+      "translation": "der Social-Media-Kanal"
+    },
+    {
+      "id": "u06_062",
+      "term": "switch off",
+      "translation": "ausschalten"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 1",
+  "schoolLevel": "secondary",
+  "unit": "Unit 7 – Patchwork city",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u07_001",
+      "term": "Asia",
+      "translation": "Asien"
+    },
+    {
+      "id": "u07_002",
+      "term": "charity",
+      "translation": "die Wohltätigkeit, die Wohltätigkeitsorganisation"
+    },
+    {
+      "id": "u07_003",
+      "term": "dialect",
+      "translation": "der Dialekt"
+    },
+    {
+      "id": "u07_004",
+      "term": "festival",
+      "translation": "das Festival"
+    },
+    {
+      "id": "u07_005",
+      "term": "immigrant",
+      "translation": "der Einwanderer, die Einwanderin"
+    },
+    {
+      "id": "u07_006",
+      "term": "mother tongue",
+      "translation": "die Muttersprache"
+    },
+    {
+      "id": "u07_007",
+      "term": "neighbourhood",
+      "translation": "das Viertel, das Quartier"
+    },
+    {
+      "id": "u07_008",
+      "term": "patch",
+      "translation": "der Flicken"
+    },
+    {
+      "id": "u07_009",
+      "term": "patchwork",
+      "translation": "das Patchwork"
+    },
+    {
+      "id": "u07_010",
+      "term": "quilt",
+      "translation": "die Steppdecke, der Quilt"
+    },
+    {
+      "id": "u07_011",
+      "term": "Canada",
+      "translation": "Kanada"
+    },
+    {
+      "id": "u07_012",
+      "term": "Canadian",
+      "translation": "der Kanadier, die Kanadierin"
+    },
+    {
+      "id": "u07_013",
+      "term": "Chinese",
+      "translation": "Chinesisch"
+    },
+    {
+      "id": "u07_014",
+      "term": "citizen",
+      "translation": "der Bürger, die Bürgerin"
+    },
+    {
+      "id": "u07_015",
+      "term": "exciting",
+      "translation": "aufregend, spannend"
+    },
+    {
+      "id": "u07_016",
+      "term": "farm",
+      "translation": "der Bauernhof"
+    },
+    {
+      "id": "u07_017",
+      "term": "France",
+      "translation": "Frankreich"
+    },
+    {
+      "id": "u07_018",
+      "term": "frequently",
+      "translation": "häufig"
+    },
+    {
+      "id": "u07_019",
+      "term": "Italian",
+      "translation": "Italienisch"
+    },
+    {
+      "id": "u07_020",
+      "term": "Italy",
+      "translation": "Italien"
+    },
+    {
+      "id": "u07_021",
+      "term": "lake",
+      "translation": "der See"
+    },
+    {
+      "id": "u07_022",
+      "term": "mistake",
+      "translation": "der Fehler, der Irrtum"
+    },
+    {
+      "id": "u07_023",
+      "term": "North America",
+      "translation": "Nordamerika"
+    },
+    {
+      "id": "u07_024",
+      "term": "percentage",
+      "translation": "der Prozentsatz"
+    },
+    {
+      "id": "u07_025",
+      "term": "perfectly",
+      "translation": "fehlerlos, perfekt"
+    },
+    {
+      "id": "u07_026",
+      "term": "Polish",
+      "translation": "Polnisch"
+    },
+    {
+      "id": "u07_027",
+      "term": "Russian",
+      "translation": "Russisch"
+    },
+    {
+      "id": "u07_028",
+      "term": "Spain",
+      "translation": "Spanien"
+    },
+    {
+      "id": "u07_029",
+      "term": "Spanish",
+      "translation": "Spanisch"
+    },
+    {
+      "id": "u07_030",
+      "term": "speaker",
+      "translation": "der Sprecher, die Sprecherin"
+    },
+    {
+      "id": "u07_031",
+      "term": "sunshine",
+      "translation": "der Sonnenschein"
+    },
+    {
+      "id": "u07_032",
+      "term": "traffic",
+      "translation": "der Verkehr"
+    },
+    {
+      "id": "u07_033",
+      "term": "unique",
+      "translation": "einzigartig"
+    },
+    {
+      "id": "u07_034",
+      "term": "Asian",
+      "translation": "asiatisch"
+    },
+    {
+      "id": "u07_035",
+      "term": "bus stop",
+      "translation": "die Bushaltestelle"
+    },
+    {
+      "id": "u07_036",
+      "term": "Chinatown",
+      "translation": "Chinatown, das Chinesenviertel"
+    },
+    {
+      "id": "u07_037",
+      "term": "disadvantage",
+      "translation": "der Nachteil"
+    },
+    {
+      "id": "u07_038",
+      "term": "Native American",
+      "translation": "Amerikanische Ureinwohner-"
+    },
+    {
+      "id": "u07_039",
+      "term": "swimming pool",
+      "translation": "das Schwimmbecken"
+    },
+    {
+      "id": "u07_040",
+      "term": "advertise",
+      "translation": "Werbung machen für, inserieren"
+    },
+    {
+      "id": "u07_041",
+      "term": "advertisement",
+      "translation": "die Werbung, das Inserat"
+    },
+    {
+      "id": "u07_042",
+      "term": "celebrate",
+      "translation": "feiern"
+    },
+    {
+      "id": "u07_043",
+      "term": "celebration",
+      "translation": "die Feier"
+    },
+    {
+      "id": "u07_044",
+      "term": "crowd",
+      "translation": "die Menschenmenge"
+    },
+    {
+      "id": "u07_045",
+      "term": "taxi",
+      "translation": "das Taxi"
+    },
+    {
+      "id": "u07_046",
+      "term": "toilet",
+      "translation": "die Toilette, das WC"
+    },
+    {
+      "id": "u07_047",
+      "term": "visitor",
+      "translation": "der Besucher, die Besucherin"
+    },
+    {
+      "id": "u07_048",
+      "term": "beginner",
+      "translation": "der Anfänger, die Anfängerin"
+    },
+    {
+      "id": "u07_049",
+      "term": "coach",
+      "translation": "trainieren"
+    },
+    {
+      "id": "u07_050",
+      "term": "diversity",
+      "translation": "die Vielfalt"
+    },
+    {
+      "id": "u07_051",
+      "term": "identity",
+      "translation": "die Identität"
+    },
+    {
+      "id": "u07_052",
+      "term": "integrate",
+      "translation": "sich integrieren"
+    },
+    {
+      "id": "u07_053",
+      "term": "intention",
+      "translation": "die Absicht, das Vorhaben"
+    },
+    {
+      "id": "u07_054",
+      "term": "native country",
+      "translation": "das Heimatland"
+    },
+    {
+      "id": "u07_055",
+      "term": "origins",
+      "translation": "die Herkunft"
+    },
+    {
+      "id": "u07_056",
+      "term": "photo",
+      "translation": "das Foto"
+    },
+    {
+      "id": "u07_057",
+      "term": "strength",
+      "translation": "die Stärke"
+    },
+    {
+      "id": "u07_058",
+      "term": "contribution",
+      "translation": "der Beitrag"
+    },
+    {
+      "id": "u07_059",
+      "term": "divide",
+      "translation": "teilen, unterteilen"
+    },
+    {
+      "id": "u07_060",
+      "term": "equal",
+      "translation": "gleich"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 8 – Dreams of flying",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u08_001",
+      "term": "aeroplane",
+      "translation": "das Flugzeug"
+    },
+    {
+      "id": "u08_002",
+      "term": "airport",
+      "translation": "der Flughafen"
+    },
+    {
+      "id": "u08_003",
+      "term": "announcement",
+      "translation": "die Mitteilung, die Durchsage"
+    },
+    {
+      "id": "u08_004",
+      "term": "challenge",
+      "translation": "die Herausforderung"
+    },
+    {
+      "id": "u08_005",
+      "term": "flight",
+      "translation": "der Flug"
+    },
+    {
+      "id": "u08_006",
+      "term": "passenger",
+      "translation": "der Passagier, die Passagierin"
+    },
+    {
+      "id": "u08_007",
+      "term": "pioneer",
+      "translation": "der Pionier, die Pionierin"
+    },
+    {
+      "id": "u08_008",
+      "term": "prediction",
+      "translation": "die Vorhersage, die Prognose"
+    },
+    {
+      "id": "u08_009",
+      "term": "spontaneous",
+      "translation": "spontan"
+    },
+    {
+      "id": "u08_010",
+      "term": "wing",
+      "translation": "der Flügel, der Gebäudeflügel"
+    },
+    {
+      "id": "u08_011",
+      "term": "aircraft",
+      "translation": "das Luftfahrzeug, das Flugzeug"
+    },
+    {
+      "id": "u08_012",
+      "term": "airplane",
+      "translation": "das Flugzeug"
+    },
+    {
+      "id": "u08_013",
+      "term": "all-rounder",
+      "translation": "das vielseitige Talent, der Alleskönner"
+    },
+    {
+      "id": "u08_014",
+      "term": "competition",
+      "translation": "der Wettbewerb, der Wettkampf"
+    },
+    {
+      "id": "u08_015",
+      "term": "crash",
+      "translation": "verunglücken, abstürzen"
+    },
+    {
+      "id": "u08_016",
+      "term": "engine",
+      "translation": "der Motor"
+    },
+    {
+      "id": "u08_017",
+      "term": "engineer",
+      "translation": "der Ingenieur, die Ingenieurin"
+    },
+    {
+      "id": "u08_018",
+      "term": "feather",
+      "translation": "die Feder"
+    },
+    {
+      "id": "u08_019",
+      "term": "get excited",
+      "translation": "ganz aufgeregt werden, sich begeistern"
+    },
+    {
+      "id": "u08_020",
+      "term": "melt",
+      "translation": "schmelzen"
+    },
+    {
+      "id": "u08_021",
+      "term": "passion",
+      "translation": "die Leidenschaft"
+    },
+    {
+      "id": "u08_022",
+      "term": "passionate",
+      "translation": "leidenschaftlich"
+    },
+    {
+      "id": "u08_023",
+      "term": "pilot",
+      "translation": "der Pilot, die Pilotin"
+    },
+    {
+      "id": "u08_024",
+      "term": "so-called",
+      "translation": "sogenannt"
+    },
+    {
+      "id": "u08_025",
+      "term": "soft",
+      "translation": "weich"
+    },
+    {
+      "id": "u08_026",
+      "term": "successful",
+      "translation": "erfolgreich"
+    },
+    {
+      "id": "u08_027",
+      "term": "wax",
+      "translation": "das Wachs"
+    },
+    {
+      "id": "u08_028",
+      "term": "airline",
+      "translation": "die Fluggesellschaft"
+    },
+    {
+      "id": "u08_029",
+      "term": "baggage",
+      "translation": "das Gepäck"
+    },
+    {
+      "id": "u08_030",
+      "term": "be late",
+      "translation": "zu spät kommen, Verspätung haben"
+    },
+    {
+      "id": "u08_031",
+      "term": "boarding pass",
+      "translation": "die Bordkarte"
+    },
+    {
+      "id": "u08_032",
+      "term": "boarding time",
+      "translation": "die Einsteigezeit"
+    },
+    {
+      "id": "u08_033",
+      "term": "business class",
+      "translation": "die Businessclass"
+    },
+    {
+      "id": "u08_034",
+      "term": "cancel",
+      "translation": "absagen"
+    },
+    {
+      "id": "u08_035",
+      "term": "check-in desk",
+      "translation": "der Check-in, der Abflugschalter"
+    },
+    {
+      "id": "u08_036",
+      "term": "departure",
+      "translation": "der Abflug, die Abfahrt"
+    },
+    {
+      "id": "u08_037",
+      "term": "during",
+      "translation": "während"
+    },
+    {
+      "id": "u08_038",
+      "term": "economy class",
+      "translation": "die Touristenklasse"
+    },
+    {
+      "id": "u08_039",
+      "term": "gate",
+      "translation": "das Abfluggate"
+    },
+    {
+      "id": "u08_040",
+      "term": "latest",
+      "translation": "neueste(r, s)"
+    },
+    {
+      "id": "u08_041",
+      "term": "miss",
+      "translation": "hier: verpassen"
+    },
+    {
+      "id": "u08_042",
+      "term": "on behalf of",
+      "translation": "im Namen von"
+    },
+    {
+      "id": "u08_043",
+      "term": "pleasant",
+      "translation": "angenehm"
+    },
+    {
+      "id": "u08_044",
+      "term": "proceed",
+      "translation": "hier: (weiter)gehen"
+    },
+    {
+      "id": "u08_045",
+      "term": "take-off",
+      "translation": "der Abflug, das Abheben des Flugzeugs"
+    },
+    {
+      "id": "u08_046",
+      "term": "update",
+      "translation": "die Aktualisierung, die neue Information"
+    },
+    {
+      "id": "u08_047",
+      "term": "calculate",
+      "translation": "(be)rechnen"
+    },
+    {
+      "id": "u08_048",
+      "term": "measure",
+      "translation": "(ab)messen"
+    },
+    {
+      "id": "u08_049",
+      "term": "referee",
+      "translation": "der Schiedsrichter, die Schiedsrichterin"
+    },
+    {
+      "id": "u08_050",
+      "term": "result",
+      "translation": "das Resultat"
+    },
+    {
+      "id": "u08_051",
+      "term": "score",
+      "translation": "der Punktestand"
+    },
+    {
+      "id": "u08_052",
+      "term": "search engine",
+      "translation": "die Suchmaschine"
+    },
+    {
+      "id": "u08_053",
+      "term": "search term",
+      "translation": "der Suchbegriff"
+    },
+    {
+      "id": "u08_054",
+      "term": "throw",
+      "translation": "werfen"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 9 – Weird and wonderful games",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u09_001",
+      "term": "bagpipes",
+      "translation": "der Dudelsack"
+    },
+    {
+      "id": "u09_002",
+      "term": "brilliant",
+      "translation": "hervorragend, fantastisch"
+    },
+    {
+      "id": "u09_003",
+      "term": "competition",
+      "translation": "der Wettbewerb, der Wettkampf"
+    },
+    {
+      "id": "u09_004",
+      "term": "event",
+      "translation": "die Veranstaltung, das Ereignis"
+    },
+    {
+      "id": "u09_005",
+      "term": "Highland Games",
+      "translation": "die Hochlandspiele"
+    },
+    {
+      "id": "u09_006",
+      "term": "invent",
+      "translation": "erfinden"
+    },
+    {
+      "id": "u09_007",
+      "term": "prize",
+      "translation": "der Preis"
+    },
+    {
+      "id": "u09_008",
+      "term": "throw",
+      "translation": "werfen"
+    },
+    {
+      "id": "u09_009",
+      "term": "toss",
+      "translation": "werfen"
+    },
+    {
+      "id": "u09_010",
+      "term": "village fête",
+      "translation": "das Dorffest"
+    },
+    {
+      "id": "u09_011",
+      "term": "amazing",
+      "translation": "erstaunlich, toll"
+    },
+    {
+      "id": "u09_012",
+      "term": "arrangement",
+      "translation": "die Abmachung, die Verabredung"
+    },
+    {
+      "id": "u09_013",
+      "term": "attend",
+      "translation": "anwesend sein bei, besuchen"
+    },
+    {
+      "id": "u09_014",
+      "term": "be game",
+      "translation": "bereit sein, dabei sein"
+    },
+    {
+      "id": "u09_015",
+      "term": "brilliantly",
+      "translation": "brillant, hervorragend"
+    },
+    {
+      "id": "u09_016",
+      "term": "complicated",
+      "translation": "kompliziert"
+    },
+    {
+      "id": "u09_017",
+      "term": "concert",
+      "translation": "das Konzert"
+    },
+    {
+      "id": "u09_018",
+      "term": "fantastic",
+      "translation": "fantastisch"
+    },
+    {
+      "id": "u09_019",
+      "term": "have fun",
+      "translation": "Spass haben"
+    },
+    {
+      "id": "u09_020",
+      "term": "heavy",
+      "translation": "schwer"
+    },
+    {
+      "id": "u09_021",
+      "term": "hill",
+      "translation": "der Hügel"
+    },
+    {
+      "id": "u09_022",
+      "term": "metal",
+      "translation": "das Metall"
+    },
+    {
+      "id": "u09_023",
+      "term": "noon",
+      "translation": "der Mittag"
+    },
+    {
+      "id": "u09_024",
+      "term": "strange",
+      "translation": "merkwürdig"
+    },
+    {
+      "id": "u09_025",
+      "term": "weird",
+      "translation": "seltsam, komisch"
+    },
+    {
+      "id": "u09_026",
+      "term": "wonderful",
+      "translation": "wunderbar"
+    },
+    {
+      "id": "u09_027",
+      "term": "at the bottom",
+      "translation": "unten"
+    },
+    {
+      "id": "u09_028",
+      "term": "at the top",
+      "translation": "oben"
+    },
+    {
+      "id": "u09_029",
+      "term": "be allowed to",
+      "translation": "dürfen"
+    },
+    {
+      "id": "u09_030",
+      "term": "corner",
+      "translation": "die Ecke"
+    },
+    {
+      "id": "u09_031",
+      "term": "entertaining",
+      "translation": "unterhaltsam"
+    },
+    {
+      "id": "u09_032",
+      "term": "entertainment",
+      "translation": "die Unterhaltung"
+    },
+    {
+      "id": "u09_033",
+      "term": "equipment",
+      "translation": "die Ausrüstung, die Ausstattung"
+    },
+    {
+      "id": "u09_034",
+      "term": "find one's way (to)",
+      "translation": "den Weg finden (zu)"
+    },
+    {
+      "id": "u09_035",
+      "term": "finishing point",
+      "translation": "der Endpunkt, der Zielort"
+    },
+    {
+      "id": "u09_036",
+      "term": "foreground",
+      "translation": "der Vordergrund"
+    },
+    {
+      "id": "u09_037",
+      "term": "in the top left-hand corner",
+      "translation": "links oben, oben links in der Ecke"
+    },
+    {
+      "id": "u09_038",
+      "term": "knock down / over",
+      "translation": "umwerfen, treffen"
+    },
+    {
+      "id": "u09_039",
+      "term": "nowadays",
+      "translation": "heutzutage"
+    },
+    {
+      "id": "u09_040",
+      "term": "popular",
+      "translation": "beliebt"
+    },
+    {
+      "id": "u09_041",
+      "term": "right-hand",
+      "translation": "rechts"
+    },
+    {
+      "id": "u09_042",
+      "term": "starting point",
+      "translation": "der Ausgangspunkt"
+    },
+    {
+      "id": "u09_043",
+      "term": "take place",
+      "translation": "stattfinden"
+    },
+    {
+      "id": "u09_044",
+      "term": "tell someone the way",
+      "translation": "jemandem den Weg beschreiben"
+    },
+    {
+      "id": "u09_045",
+      "term": "tie",
+      "translation": "binden"
+    },
+    {
+      "id": "u09_046",
+      "term": "unusual",
+      "translation": "ungewöhnlich"
+    },
+    {
+      "id": "u09_047",
+      "term": "volunteer",
+      "translation": "der/die Freiwillige/-r"
+    },
+    {
+      "id": "u09_048",
+      "term": "winner",
+      "translation": "der Gewinner, die Gewinnerin"
+    },
+    {
+      "id": "u09_049",
+      "term": "attitude",
+      "translation": "die Haltung, die Einstellung"
+    },
+    {
+      "id": "u09_050",
+      "term": "hit the target",
+      "translation": "das/ins Ziel treffen"
+    },
+    {
+      "id": "u09_051",
+      "term": "quite",
+      "translation": "ziemlich, ganz, völlig"
+    },
+    {
+      "id": "u09_052",
+      "term": "rather",
+      "translation": "ziemlich, eher"
+    },
+    {
+      "id": "u09_053",
+      "term": "really",
+      "translation": "wirklich"
+    },
+    {
+      "id": "u09_054",
+      "term": "require",
+      "translation": "brauchen, benötigen"
+    },
+    {
+      "id": "u09_055",
+      "term": "sketch",
+      "translation": "die Skizze"
+    },
+    {
+      "id": "u09_056",
+      "term": "space",
+      "translation": "der Raum, der Platz"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 10 – Catchy tunes",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u10_001",
+      "term": "brilliant",
+      "translation": "hervorragend, fantastisch"
+    },
+    {
+      "id": "u10_002",
+      "term": "chorus",
+      "translation": "der Refrain"
+    },
+    {
+      "id": "u10_003",
+      "term": "clap",
+      "translation": "klatschen"
+    },
+    {
+      "id": "u10_004",
+      "term": "lyrics",
+      "translation": "der Liedtext"
+    },
+    {
+      "id": "u10_005",
+      "term": "melody",
+      "translation": "die Melodie"
+    },
+    {
+      "id": "u10_006",
+      "term": "mood",
+      "translation": "die Laune, die Stimmung"
+    },
+    {
+      "id": "u10_007",
+      "term": "rhythm",
+      "translation": "der Rhythmus"
+    },
+    {
+      "id": "u10_008",
+      "term": "stress",
+      "translation": "hier: die Betonung"
+    },
+    {
+      "id": "u10_009",
+      "term": "style",
+      "translation": "der Stil"
+    },
+    {
+      "id": "u10_010",
+      "term": "tune",
+      "translation": "die Melodie"
+    },
+    {
+      "id": "u10_011",
+      "term": "every",
+      "translation": "jede(r, s)"
+    },
+    {
+      "id": "u10_012",
+      "term": "fascinating",
+      "translation": "faszinierend"
+    },
+    {
+      "id": "u10_013",
+      "term": "hear",
+      "translation": "hören (passiv)"
+    },
+    {
+      "id": "u10_014",
+      "term": "listen to",
+      "translation": "hören, anhören, zuhören (aktiv)"
+    },
+    {
+      "id": "u10_015",
+      "term": "loud",
+      "translation": "laut"
+    },
+    {
+      "id": "u10_016",
+      "term": "make someone feel (good/bad)",
+      "translation": "machen, dass sich jemand (gut/schlecht) fühlt"
+    },
+    {
+      "id": "u10_017",
+      "term": "music",
+      "translation": "die Musik"
+    },
+    {
+      "id": "u10_018",
+      "term": "neither",
+      "translation": "auch nicht"
+    },
+    {
+      "id": "u10_019",
+      "term": "play a big part",
+      "translation": "eine grosse Rolle spielen"
+    },
+    {
+      "id": "u10_020",
+      "term": "singer",
+      "translation": "der Sänger, die Sängerin"
+    },
+    {
+      "id": "u10_021",
+      "term": "song",
+      "translation": "das Lied"
+    },
+    {
+      "id": "u10_022",
+      "term": "be interested in",
+      "translation": "sich interessieren für"
+    },
+    {
+      "id": "u10_023",
+      "term": "beat",
+      "translation": "der Takt"
+    },
+    {
+      "id": "u10_024",
+      "term": "chord",
+      "translation": "der Akkord"
+    },
+    {
+      "id": "u10_025",
+      "term": "do fine",
+      "translation": "gut gehen, sich gut fühlen"
+    },
+    {
+      "id": "u10_026",
+      "term": "drums",
+      "translation": "das Schlagzeug"
+    },
+    {
+      "id": "u10_027",
+      "term": "energetic",
+      "translation": "energiegeladen"
+    },
+    {
+      "id": "u10_028",
+      "term": "final",
+      "translation": "letzte(r, s)"
+    },
+    {
+      "id": "u10_029",
+      "term": "fit in",
+      "translation": "dazupassen"
+    },
+    {
+      "id": "u10_030",
+      "term": "flute",
+      "translation": "die Flöte"
+    },
+    {
+      "id": "u10_031",
+      "term": "frustrated",
+      "translation": "frustriert"
+    },
+    {
+      "id": "u10_032",
+      "term": "guitar",
+      "translation": "die Gitarre"
+    },
+    {
+      "id": "u10_033",
+      "term": "helpless",
+      "translation": "hilflos"
+    },
+    {
+      "id": "u10_034",
+      "term": "instrument",
+      "translation": "das Instrument"
+    },
+    {
+      "id": "u10_035",
+      "term": "make a wish come true",
+      "translation": "einen Wunsch in Erfüllung gehen lassen"
+    },
+    {
+      "id": "u10_036",
+      "term": "music to my ears",
+      "translation": "Musik in meinen Ohren"
+    },
+    {
+      "id": "u10_037",
+      "term": "musical",
+      "translation": "musikalisch, Musik-"
+    },
+    {
+      "id": "u10_038",
+      "term": "piano",
+      "translation": "das Klavier"
+    },
+    {
+      "id": "u10_039",
+      "term": "thoughtful",
+      "translation": "nachdenklich"
+    },
+    {
+      "id": "u10_040",
+      "term": "trumpet",
+      "translation": "die Trompete"
+    },
+    {
+      "id": "u10_041",
+      "term": "violin",
+      "translation": "die Violine, die Geige"
+    },
+    {
+      "id": "u10_042",
+      "term": "awesome",
+      "translation": "eindrucksvoll, super"
+    },
+    {
+      "id": "u10_043",
+      "term": "awful",
+      "translation": "furchtbar, schrecklich"
+    },
+    {
+      "id": "u10_044",
+      "term": "boring",
+      "translation": "langweilig"
+    },
+    {
+      "id": "u10_045",
+      "term": "critic",
+      "translation": "der Kritiker, die Kritikerin"
+    },
+    {
+      "id": "u10_046",
+      "term": "eighties",
+      "translation": "die Achtziger(jahre)"
+    },
+    {
+      "id": "u10_047",
+      "term": "enthusiastic",
+      "translation": "enthusiastisch, begeistert"
+    },
+    {
+      "id": "u10_048",
+      "term": "even if",
+      "translation": "selbst wenn, auch wenn"
+    },
+    {
+      "id": "u10_049",
+      "term": "honest",
+      "translation": "ehrlich"
+    },
+    {
+      "id": "u10_050",
+      "term": "it reminds me of",
+      "translation": "es erinnert mich an"
+    },
+    {
+      "id": "u10_051",
+      "term": "lovely",
+      "translation": "wunderbar, reizend"
+    },
+    {
+      "id": "u10_052",
+      "term": "musician",
+      "translation": "der Musiker, die Musikerin"
+    },
+    {
+      "id": "u10_053",
+      "term": "nineties",
+      "translation": "die Neunziger(jahre)"
+    },
+    {
+      "id": "u10_054",
+      "term": "old-fashioned",
+      "translation": "altmodisch"
+    },
+    {
+      "id": "u10_055",
+      "term": "release",
+      "translation": "herausbringen, veröffentlichen"
+    },
+    {
+      "id": "u10_056",
+      "term": "review",
+      "translation": "die Rezension, die Kritik"
+    },
+    {
+      "id": "u10_057",
+      "term": "romantic",
+      "translation": "romantisch"
+    },
+    {
+      "id": "u10_058",
+      "term": "simple",
+      "translation": "einfach, simpel"
+    },
+    {
+      "id": "u10_059",
+      "term": "sleepy",
+      "translation": "schläfrig"
+    },
+    {
+      "id": "u10_060",
+      "term": "soulful",
+      "translation": "gefühlvoll"
+    },
+    {
+      "id": "u10_061",
+      "term": "spectacular",
+      "translation": "atemberaubend, fantastisch"
+    },
+    {
+      "id": "u10_062",
+      "term": "sweet",
+      "translation": "hier: angenehm, lieblich"
+    },
+    {
+      "id": "u10_063",
+      "term": "voice",
+      "translation": "die Stimme"
+    },
+    {
+      "id": "u10_064",
+      "term": "hot",
+      "translation": "hier: heiss, angesagt"
+    },
+    {
+      "id": "u10_065",
+      "term": "piece of music",
+      "translation": "das Musikstück"
+    },
+    {
+      "id": "u10_066",
+      "term": "stuff",
+      "translation": "die Sachen, das Zeug"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 11 – Reaching for the stars",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u11_001",
+      "term": "astronaut",
+      "translation": "der Astronaut, die Astronautin"
+    },
+    {
+      "id": "u11_002",
+      "term": "attach",
+      "translation": "befestigen"
+    },
+    {
+      "id": "u11_003",
+      "term": "camp",
+      "translation": "das Lager, das Camp"
+    },
+    {
+      "id": "u11_004",
+      "term": "crew",
+      "translation": "die Crew, die Besatzung"
+    },
+    {
+      "id": "u11_005",
+      "term": "daily routine",
+      "translation": "das Alltagsleben, die Alltagsroutine"
+    },
+    {
+      "id": "u11_006",
+      "term": "fascinated",
+      "translation": "fasziniert"
+    },
+    {
+      "id": "u11_007",
+      "term": "float off",
+      "translation": "fortschweben"
+    },
+    {
+      "id": "u11_008",
+      "term": "repair",
+      "translation": "reparieren"
+    },
+    {
+      "id": "u11_009",
+      "term": "space",
+      "translation": "hier: der Weltraum"
+    },
+    {
+      "id": "u11_010",
+      "term": "spacecraft",
+      "translation": "das Raumfahrzeug"
+    },
+    {
+      "id": "u11_011",
+      "term": "abbreviation",
+      "translation": "die Abkürzung"
+    },
+    {
+      "id": "u11_012",
+      "term": "be part of the job",
+      "translation": "Teil der Arbeit sein, zur Arbeit gehören"
+    },
+    {
+      "id": "u11_013",
+      "term": "consequence",
+      "translation": "die Folge, die Konsequenz"
+    },
+    {
+      "id": "u11_014",
+      "term": "earphone",
+      "translation": "der Kopfhörer"
+    },
+    {
+      "id": "u11_015",
+      "term": "fix",
+      "translation": "hier: befestigen"
+    },
+    {
+      "id": "u11_016",
+      "term": "get ready",
+      "translation": "sich fertig machen"
+    },
+    {
+      "id": "u11_017",
+      "term": "get washed",
+      "translation": "sich waschen"
+    },
+    {
+      "id": "u11_018",
+      "term": "glove",
+      "translation": "der Handschuh"
+    },
+    {
+      "id": "u11_019",
+      "term": "helmet",
+      "translation": "der Helm"
+    },
+    {
+      "id": "u11_020",
+      "term": "journalist",
+      "translation": "der Journalist, die Journalistin"
+    },
+    {
+      "id": "u11_021",
+      "term": "mean",
+      "translation": "bedeuten"
+    },
+    {
+      "id": "u11_022",
+      "term": "microphone",
+      "translation": "das Mikrofon"
+    },
+    {
+      "id": "u11_023",
+      "term": "outside",
+      "translation": "draussen, ausserhalb von"
+    },
+    {
+      "id": "u11_024",
+      "term": "reach for the stars",
+      "translation": "nach den Sternen greifen"
+    },
+    {
+      "id": "u11_025",
+      "term": "safety",
+      "translation": "die Sicherheit"
+    },
+    {
+      "id": "u11_026",
+      "term": "schedule",
+      "translation": "der Termin-, Zeitplan"
+    },
+    {
+      "id": "u11_027",
+      "term": "session",
+      "translation": "die Sitzung, die Stunde"
+    },
+    {
+      "id": "u11_028",
+      "term": "UFO",
+      "translation": "das Ufo (unbekanntes Flugobjekt)"
+    },
+    {
+      "id": "u11_029",
+      "term": "wake",
+      "translation": "(auf)wecken"
+    },
+    {
+      "id": "u11_030",
+      "term": "a few",
+      "translation": "einige"
+    },
+    {
+      "id": "u11_031",
+      "term": "a lot (of)",
+      "translation": "viel, viele"
+    },
+    {
+      "id": "u11_032",
+      "term": "actor / actress",
+      "translation": "der Schauspieler, die Schauspielerin"
+    },
+    {
+      "id": "u11_033",
+      "term": "ambitious",
+      "translation": "ehrgeizig"
+    },
+    {
+      "id": "u11_034",
+      "term": "athletic",
+      "translation": "athletisch, sportlich"
+    },
+    {
+      "id": "u11_035",
+      "term": "attractive",
+      "translation": "attraktiv"
+    },
+    {
+      "id": "u11_036",
+      "term": "be fascinated by",
+      "translation": "fasziniert sein von"
+    },
+    {
+      "id": "u11_037",
+      "term": "brave",
+      "translation": "mutig, tapfer"
+    },
+    {
+      "id": "u11_038",
+      "term": "bright",
+      "translation": "hier: begabt, klug"
+    },
+    {
+      "id": "u11_039",
+      "term": "career",
+      "translation": "die Karriere, die Laufbahn"
+    },
+    {
+      "id": "u11_040",
+      "term": "carpenter",
+      "translation": "der Zimmermann, der Schreiner"
+    },
+    {
+      "id": "u11_041",
+      "term": "chef",
+      "translation": "der Koch, die Köchin"
+    },
+    {
+      "id": "u11_042",
+      "term": "competent",
+      "translation": "kompetent, sachverständig"
+    },
+    {
+      "id": "u11_043",
+      "term": "computer programmer",
+      "translation": "der Programmierer, die Programmiererin"
+    },
+    {
+      "id": "u11_044",
+      "term": "cooperative",
+      "translation": "kooperativ, entgegenkommend"
+    },
+    {
+      "id": "u11_045",
+      "term": "creative",
+      "translation": "kreativ"
+    },
+    {
+      "id": "u11_046",
+      "term": "experience",
+      "translation": "die Erfahrung"
+    },
+    {
+      "id": "u11_047",
+      "term": "firefighter",
+      "translation": "der Feuerwehrmann, die Feuerwehrfrau"
+    },
+    {
+      "id": "u11_048",
+      "term": "full-time",
+      "translation": "Vollzeit, ganztags"
+    },
+    {
+      "id": "u11_049",
+      "term": "generous",
+      "translation": "grosszügig"
+    },
+    {
+      "id": "u11_050",
+      "term": "hairdresser",
+      "translation": "der Coiffeur, die Coiffeuse"
+    },
+    {
+      "id": "u11_051",
+      "term": "lawyer",
+      "translation": "der Rechtsanwalt, die Rechtsanwältin"
+    },
+    {
+      "id": "u11_052",
+      "term": "lazy",
+      "translation": "faul, träge"
+    },
+    {
+      "id": "u11_053",
+      "term": "mechanic",
+      "translation": "der Mechaniker, die Mechanikerin"
+    },
+    {
+      "id": "u11_054",
+      "term": "nobody",
+      "translation": "niemand, keiner"
+    },
+    {
+      "id": "u11_055",
+      "term": "nurse",
+      "translation": "der Krankenpfleger, die Krankenpflegerin"
+    },
+    {
+      "id": "u11_056",
+      "term": "opportunity",
+      "translation": "die Gelegenheit, die Chance"
+    },
+    {
+      "id": "u11_057",
+      "term": "part-time",
+      "translation": "Teilzeit, halbtags"
+    },
+    {
+      "id": "u11_058",
+      "term": "perfect",
+      "translation": "perfekt, hier: wie geschaffen"
+    },
+    {
+      "id": "u11_059",
+      "term": "policeman / policewoman",
+      "translation": "der Polizist, die Polizistin"
+    },
+    {
+      "id": "u11_060",
+      "term": "practical",
+      "translation": "praktisch"
+    },
+    {
+      "id": "u11_061",
+      "term": "punctual",
+      "translation": "pünktlich"
+    },
+    {
+      "id": "u11_062",
+      "term": "reasonable",
+      "translation": "vernünftig"
+    },
+    {
+      "id": "u11_063",
+      "term": "reliable",
+      "translation": "zuverlässig"
+    },
+    {
+      "id": "u11_064",
+      "term": "requirement",
+      "translation": "die Anforderung"
+    },
+    {
+      "id": "u11_065",
+      "term": "secretary",
+      "translation": "der Sekretär, die Sekretärin"
+    },
+    {
+      "id": "u11_066",
+      "term": "security guard",
+      "translation": "der Sicherheitsbeamte, die Sicherheitsbeamtin"
+    },
+    {
+      "id": "u11_067",
+      "term": "shop assistant",
+      "translation": "der/die Ladenangestellte/-r, Verkäufer/-in"
+    },
+    {
+      "id": "u11_068",
+      "term": "slim",
+      "translation": "schlank"
+    },
+    {
+      "id": "u11_069",
+      "term": "tidy",
+      "translation": "ordentlich"
+    },
+    {
+      "id": "u11_070",
+      "term": "unemployed",
+      "translation": "arbeitslos"
+    },
+    {
+      "id": "u11_071",
+      "term": "application",
+      "translation": "die Bewerbung"
+    },
+    {
+      "id": "u11_072",
+      "term": "citizenship",
+      "translation": "die Staatsbürgerschaft"
+    },
+    {
+      "id": "u11_073",
+      "term": "date of birth",
+      "translation": "das Geburtsdatum"
+    },
+    {
+      "id": "u11_074",
+      "term": "European",
+      "translation": "europäisch"
+    },
+    {
+      "id": "u11_075",
+      "term": "form",
+      "translation": "hier: das Formular"
+    },
+    {
+      "id": "u11_076",
+      "term": "gender",
+      "translation": "das Geschlecht"
+    },
+    {
+      "id": "u11_077",
+      "term": "have in common",
+      "translation": "gemeinsam haben"
+    },
+    {
+      "id": "u11_078",
+      "term": "including",
+      "translation": "einschliesslich"
+    },
+    {
+      "id": "u11_079",
+      "term": "mobile (phone)",
+      "translation": "das Handy, das Mobiltelefon"
+    },
+    {
+      "id": "u11_080",
+      "term": "Norway",
+      "translation": "Norwegen"
+    },
+    {
+      "id": "u11_081",
+      "term": "participant",
+      "translation": "der Teilnehmer, die Teilnehmerin"
+    },
+    {
+      "id": "u11_082",
+      "term": "physics",
+      "translation": "die Physik"
+    },
+    {
+      "id": "u11_083",
+      "term": "postal code",
+      "translation": "die Postleitzahl"
+    },
+    {
+      "id": "u11_084",
+      "term": "project",
+      "translation": "das Projekt, das Vorhaben"
+    },
+    {
+      "id": "u11_085",
+      "term": "rocket science",
+      "translation": "die Raketenphysik"
+    },
+    {
+      "id": "u11_086",
+      "term": "scientific",
+      "translation": "(natur)wissenschaftlich"
+    },
+    {
+      "id": "u11_087",
+      "term": "skill",
+      "translation": "das Geschick, die Fähigkeit, die Fertigkeit"
+    },
+    {
+      "id": "u11_088",
+      "term": "take control of",
+      "translation": "die Leitung übernehmen"
+    },
+    {
+      "id": "u11_089",
+      "term": "candidate",
+      "translation": "der Kandidat, die Kandidatin, Bewerber/-in"
+    },
+    {
+      "id": "u11_090",
+      "term": "convince",
+      "translation": "überzeugen"
+    },
+    {
+      "id": "u11_091",
+      "term": "formal letter",
+      "translation": "der förmliche, offizielle Brief"
+    },
+    {
+      "id": "u11_092",
+      "term": "fully booked",
+      "translation": "ausgebucht"
+    },
+    {
+      "id": "u11_093",
+      "term": "letter of application",
+      "translation": "das Bewerbungsschreiben"
+    },
+    {
+      "id": "u11_094",
+      "term": "sign",
+      "translation": "unterschreiben"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 12 – Hard times",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u12_001",
+      "term": "coal mine",
+      "translation": "das Kohlenbergwerk"
+    },
+    {
+      "id": "u12_002",
+      "term": "factory",
+      "translation": "die Fabrik"
+    },
+    {
+      "id": "u12_003",
+      "term": "master",
+      "translation": "der Herr, der Meister"
+    },
+    {
+      "id": "u12_004",
+      "term": "polite",
+      "translation": "höflich"
+    },
+    {
+      "id": "u12_005",
+      "term": "porridge",
+      "translation": "der Porridge, der Haferbrei"
+    },
+    {
+      "id": "u12_006",
+      "term": "steal",
+      "translation": "stehlen"
+    },
+    {
+      "id": "u12_007",
+      "term": "textile",
+      "translation": "Textil-"
+    },
+    {
+      "id": "u12_008",
+      "term": "Victorian Age",
+      "translation": "das Viktorianische Zeitalter"
+    },
+    {
+      "id": "u12_009",
+      "term": "wallet",
+      "translation": "die Brieftasche, das Portemonnaie"
+    },
+    {
+      "id": "u12_010",
+      "term": "workhouse",
+      "translation": "das Armenhaus (im Viktorianischen England)"
+    },
+    {
+      "id": "u12_011",
+      "term": "afford",
+      "translation": "sich etw. leisten"
+    },
+    {
+      "id": "u12_012",
+      "term": "age",
+      "translation": "das Alter"
+    },
+    {
+      "id": "u12_013",
+      "term": "all work and no play",
+      "translation": "Arbeit allein (macht auch nicht glücklich)"
+    },
+    {
+      "id": "u12_014",
+      "term": "apart from",
+      "translation": "abgesehen von, ausser"
+    },
+    {
+      "id": "u12_015",
+      "term": "basically",
+      "translation": "im Grunde, hauptsächlich"
+    },
+    {
+      "id": "u12_016",
+      "term": "be like",
+      "translation": "sein wie"
+    },
+    {
+      "id": "u12_017",
+      "term": "bible",
+      "translation": "die Bibel"
+    },
+    {
+      "id": "u12_018",
+      "term": "British Empire",
+      "translation": "das Britische Empire (Weltreich)"
+    },
+    {
+      "id": "u12_019",
+      "term": "business",
+      "translation": "das Geschäft, der Handel"
+    },
+    {
+      "id": "u12_020",
+      "term": "chalk",
+      "translation": "die Kreide"
+    },
+    {
+      "id": "u12_021",
+      "term": "child labour",
+      "translation": "die Kinderarbeit"
+    },
+    {
+      "id": "u12_022",
+      "term": "countryside",
+      "translation": "die Landschaft, das ländliche Gebiet"
+    },
+    {
+      "id": "u12_023",
+      "term": "dirty",
+      "translation": "schmutzig"
+    },
+    {
+      "id": "u12_024",
+      "term": "educated",
+      "translation": "gebildet"
+    },
+    {
+      "id": "u12_025",
+      "term": "education",
+      "translation": "die Bildung, die Ausbildung"
+    },
+    {
+      "id": "u12_026",
+      "term": "elementary school",
+      "translation": "die Grundschule, die Primarschule"
+    },
+    {
+      "id": "u12_027",
+      "term": "excellent",
+      "translation": "ausgezeichnet"
+    },
+    {
+      "id": "u12_028",
+      "term": "false",
+      "translation": "falsch"
+    },
+    {
+      "id": "u12_029",
+      "term": "farmer",
+      "translation": "der Bauer, die Bäuerin"
+    },
+    {
+      "id": "u12_030",
+      "term": "free",
+      "translation": "hier: gratis"
+    },
+    {
+      "id": "u12_031",
+      "term": "minister",
+      "translation": "der Minister, die Ministerin"
+    },
+    {
+      "id": "u12_032",
+      "term": "most",
+      "translation": "hier: die meisten"
+    },
+    {
+      "id": "u12_033",
+      "term": "narrow",
+      "translation": "eng, schmal"
+    },
+    {
+      "id": "u12_034",
+      "term": "politics",
+      "translation": "die Politik"
+    },
+    {
+      "id": "u12_035",
+      "term": "princess",
+      "translation": "die Prinzessin"
+    },
+    {
+      "id": "u12_036",
+      "term": "queen",
+      "translation": "die Königin"
+    },
+    {
+      "id": "u12_037",
+      "term": "rent",
+      "translation": "die Miete"
+    },
+    {
+      "id": "u12_038",
+      "term": "support",
+      "translation": "unterstützen"
+    },
+    {
+      "id": "u12_039",
+      "term": "time of change",
+      "translation": "Zeit der Veränderung, Umwälzung"
+    },
+    {
+      "id": "u12_040",
+      "term": "Victorian",
+      "translation": "viktorianisch"
+    },
+    {
+      "id": "u12_041",
+      "term": "worker",
+      "translation": "der Arbeiter, die Arbeiterin"
+    },
+    {
+      "id": "u12_042",
+      "term": "(not) anymore",
+      "translation": "(nicht) mehr"
+    },
+    {
+      "id": "u12_043",
+      "term": "action",
+      "translation": "die Handlung"
+    },
+    {
+      "id": "u12_044",
+      "term": "beard",
+      "translation": "der Bart"
+    },
+    {
+      "id": "u12_045",
+      "term": "bowl",
+      "translation": "die Schale"
+    },
+    {
+      "id": "u12_046",
+      "term": "bread",
+      "translation": "das Brot"
+    },
+    {
+      "id": "u12_047",
+      "term": "candle",
+      "translation": "die Kerze"
+    },
+    {
+      "id": "u12_048",
+      "term": "cellar",
+      "translation": "der Keller"
+    },
+    {
+      "id": "u12_049",
+      "term": "Christmas carol",
+      "translation": "das Weihnachtslied"
+    },
+    {
+      "id": "u12_050",
+      "term": "coat",
+      "translation": "der Mantel"
+    },
+    {
+      "id": "u12_051",
+      "term": "courtroom",
+      "translation": "der Gerichtssaal"
+    },
+    {
+      "id": "u12_052",
+      "term": "criminal",
+      "translation": "der Verbrecher, die Verbrecherin"
+    },
+    {
+      "id": "u12_053",
+      "term": "crossroad",
+      "translation": "die Kreuzung, der Scheideweg"
+    },
+    {
+      "id": "u12_054",
+      "term": "eventually",
+      "translation": "schliesslich, irgendwann"
+    },
+    {
+      "id": "u12_055",
+      "term": "fill in a form",
+      "translation": "ein Formular ausfüllen"
+    },
+    {
+      "id": "u12_056",
+      "term": "frying pan",
+      "translation": "die Bratpfanne"
+    },
+    {
+      "id": "u12_057",
+      "term": "gang",
+      "translation": "die Truppe, die Bande"
+    },
+    {
+      "id": "u12_058",
+      "term": "gentleman",
+      "translation": "der Herr, der Gentleman"
+    },
+    {
+      "id": "u12_059",
+      "term": "hall",
+      "translation": "der Saal"
+    },
+    {
+      "id": "u12_060",
+      "term": "hungry",
+      "translation": "hungrig"
+    },
+    {
+      "id": "u12_061",
+      "term": "iron",
+      "translation": "das Eisen"
+    },
+    {
+      "id": "u12_062",
+      "term": "lend",
+      "translation": "leihen"
+    },
+    {
+      "id": "u12_063",
+      "term": "marry",
+      "translation": "heiraten"
+    },
+    {
+      "id": "u12_064",
+      "term": "merry Christmas",
+      "translation": "frohe Weihnachten"
+    },
+    {
+      "id": "u12_065",
+      "term": "midnight",
+      "translation": "die Mitternacht"
+    },
+    {
+      "id": "u12_066",
+      "term": "mill",
+      "translation": "die Fabrik, die Mühle"
+    },
+    {
+      "id": "u12_067",
+      "term": "novel",
+      "translation": "der Roman"
+    },
+    {
+      "id": "u12_068",
+      "term": "nowhere",
+      "translation": "nirgendwo"
+    },
+    {
+      "id": "u12_069",
+      "term": "of course not",
+      "translation": "natürlich nicht"
+    },
+    {
+      "id": "u12_070",
+      "term": "orphan",
+      "translation": "das Waisenkind"
+    },
+    {
+      "id": "u12_071",
+      "term": "owner",
+      "translation": "der Besitzer, die Besitzerin"
+    },
+    {
+      "id": "u12_072",
+      "term": "pan",
+      "translation": "die Pfanne"
+    },
+    {
+      "id": "u12_073",
+      "term": "pass out",
+      "translation": "ohnmächtig werden"
+    },
+    {
+      "id": "u12_074",
+      "term": "path",
+      "translation": "der Weg, der Pfad"
+    },
+    {
+      "id": "u12_075",
+      "term": "pickpocket",
+      "translation": "der Taschendieb, die Taschendiebin"
+    },
+    {
+      "id": "u12_076",
+      "term": "pollution",
+      "translation": "die Verschmutzung, die Umweltverschmutzung"
+    },
+    {
+      "id": "u12_077",
+      "term": "pot",
+      "translation": "der Topf"
+    },
+    {
+      "id": "u12_078",
+      "term": "prayer",
+      "translation": "das Gebet"
+    },
+    {
+      "id": "u12_079",
+      "term": "prison",
+      "translation": "das Gefängnis"
+    },
+    {
+      "id": "u12_080",
+      "term": "sausage",
+      "translation": "die Wurst"
+    },
+    {
+      "id": "u12_081",
+      "term": "short story",
+      "translation": "die Kurzgeschichte"
+    },
+    {
+      "id": "u12_082",
+      "term": "sir",
+      "translation": "(mein) Herr"
+    },
+    {
+      "id": "u12_083",
+      "term": "situation",
+      "translation": "die Situation, die Lage"
+    },
+    {
+      "id": "u12_084",
+      "term": "stone",
+      "translation": "der Stein"
+    },
+    {
+      "id": "u12_085",
+      "term": "supper",
+      "translation": "das Abendessen"
+    },
+    {
+      "id": "u12_086",
+      "term": "thief",
+      "translation": "der Dieb, die Diebin"
+    },
+    {
+      "id": "u12_087",
+      "term": "trust",
+      "translation": "vertrauen"
+    },
+    {
+      "id": "u12_088",
+      "term": "uniform",
+      "translation": "die Uniform"
+    },
+    {
+      "id": "u12_089",
+      "term": "wash",
+      "translation": "waschen"
+    },
+    {
+      "id": "u12_090",
+      "term": "whisper",
+      "translation": "flüstern"
+    },
+    {
+      "id": "u12_091",
+      "term": "working class",
+      "translation": "die Arbeiterklasse"
+    },
+    {
+      "id": "u12_092",
+      "term": "Would you mind ...ing ...?",
+      "translation": "Haben Sie etwas dagegen, ... zu ...?"
+    },
+    {
+      "id": "u12_093",
+      "term": "yes, of course",
+      "translation": "ja, natürlich"
+    },
+    {
+      "id": "u12_094",
+      "term": "court",
+      "translation": "hier: das Gericht"
+    },
+    {
+      "id": "u12_095",
+      "term": "decide",
+      "translation": "entscheiden"
+    },
+    {
+      "id": "u12_096",
+      "term": "defend",
+      "translation": "verteidigen"
+    },
+    {
+      "id": "u12_097",
+      "term": "extra",
+      "translation": "zusätzlich"
+    },
+    {
+      "id": "u12_098",
+      "term": "happen",
+      "translation": "geschehen"
+    },
+    {
+      "id": "u12_099",
+      "term": "judge",
+      "translation": "der Richter, die Richterin"
+    },
+    {
+      "id": "u12_100",
+      "term": "robbery",
+      "translation": "der Raub, der Raubüberfall"
+    },
+    {
+      "id": "u12_101",
+      "term": "save",
+      "translation": "retten"
+    },
+    {
+      "id": "u12_102",
+      "term": "statement of defence",
+      "translation": "das Verteidigungsschreiben"
+    },
+    {
+      "id": "u12_103",
+      "term": "trial",
+      "translation": "der Prozess"
+    },
+    {
+      "id": "u12_104",
+      "term": "unfair",
+      "translation": "unfair"
+    },
+    {
+      "id": "u12_105",
+      "term": "witness",
+      "translation": "der Zeuge, die Zeugin"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 13 – Intriguing devices",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u13_001",
+      "term": "camera",
+      "translation": "die Kamera, der Fotoapparat"
+    },
+    {
+      "id": "u13_002",
+      "term": "computer",
+      "translation": "der Computer"
+    },
+    {
+      "id": "u13_003",
+      "term": "device",
+      "translation": "das Gerät, der Apparat"
+    },
+    {
+      "id": "u13_004",
+      "term": "electronic",
+      "translation": "elektronisch"
+    },
+    {
+      "id": "u13_005",
+      "term": "funny",
+      "translation": "lustig, witzig"
+    },
+    {
+      "id": "u13_006",
+      "term": "mysterious",
+      "translation": "geheimnisvoll, mysteriös"
+    },
+    {
+      "id": "u13_007",
+      "term": "photographer",
+      "translation": "der Fotograf, die Fotografin"
+    },
+    {
+      "id": "u13_008",
+      "term": "robot",
+      "translation": "der Roboter"
+    },
+    {
+      "id": "u13_009",
+      "term": "romantic",
+      "translation": "romantisch"
+    },
+    {
+      "id": "u13_010",
+      "term": "screen",
+      "translation": "der Bildschirm"
+    },
+    {
+      "id": "u13_011",
+      "term": "advantage",
+      "translation": "der Vorteil"
+    },
+    {
+      "id": "u13_012",
+      "term": "clever",
+      "translation": "klug, gescheit"
+    },
+    {
+      "id": "u13_013",
+      "term": "complicated",
+      "translation": "kompliziert"
+    },
+    {
+      "id": "u13_014",
+      "term": "flat",
+      "translation": "flach"
+    },
+    {
+      "id": "u13_015",
+      "term": "fun fact",
+      "translation": "die witzige Tatsache"
+    },
+    {
+      "id": "u13_016",
+      "term": "history",
+      "translation": "die Geschichte"
+    },
+    {
+      "id": "u13_017",
+      "term": "intriguing",
+      "translation": "faszinierend, interessant"
+    },
+    {
+      "id": "u13_018",
+      "term": "leather",
+      "translation": "das Leder"
+    },
+    {
+      "id": "u13_019",
+      "term": "light",
+      "translation": "hier: leicht"
+    },
+    {
+      "id": "u13_020",
+      "term": "made of wood",
+      "translation": "aus Holz gemacht"
+    },
+    {
+      "id": "u13_021",
+      "term": "mirror",
+      "translation": "der Spiegel"
+    },
+    {
+      "id": "u13_022",
+      "term": "model",
+      "translation": "das Modell"
+    },
+    {
+      "id": "u13_023",
+      "term": "photograph",
+      "translation": "die Fotografie"
+    },
+    {
+      "id": "u13_024",
+      "term": "round",
+      "translation": "rund, rundlich"
+    },
+    {
+      "id": "u13_025",
+      "term": "science fiction",
+      "translation": "die Science-Fiction"
+    },
+    {
+      "id": "u13_026",
+      "term": "selfie",
+      "translation": "das Selfie"
+    },
+    {
+      "id": "u13_027",
+      "term": "self-portrait",
+      "translation": "das Selbstporträt"
+    },
+    {
+      "id": "u13_028",
+      "term": "shape",
+      "translation": "die Form, die Gestalt"
+    },
+    {
+      "id": "u13_029",
+      "term": "slow",
+      "translation": "langsam"
+    },
+    {
+      "id": "u13_030",
+      "term": "social media",
+      "translation": "Social Media, soziale Medien"
+    },
+    {
+      "id": "u13_031",
+      "term": "store",
+      "translation": "speichern, lagern"
+    },
+    {
+      "id": "u13_032",
+      "term": "take photos / pictures",
+      "translation": "Fotos/Bilder machen"
+    },
+    {
+      "id": "u13_033",
+      "term": "technology",
+      "translation": "die Technologie, die Technik"
+    },
+    {
+      "id": "u13_034",
+      "term": "assume",
+      "translation": "annehmen, vermuten"
+    },
+    {
+      "id": "u13_035",
+      "term": "ball",
+      "translation": "der Ball, die Kugel"
+    },
+    {
+      "id": "u13_036",
+      "term": "broken",
+      "translation": "hier: kaputt"
+    },
+    {
+      "id": "u13_037",
+      "term": "ceiling",
+      "translation": "die (Zimmer)decke"
+    },
+    {
+      "id": "u13_038",
+      "term": "coffee",
+      "translation": "der Kaffee"
+    },
+    {
+      "id": "u13_039",
+      "term": "confused",
+      "translation": "verwirrt"
+    },
+    {
+      "id": "u13_040",
+      "term": "desk",
+      "translation": "der Schreibtisch"
+    },
+    {
+      "id": "u13_041",
+      "term": "ending",
+      "translation": "das Ende, der Schluss"
+    },
+    {
+      "id": "u13_042",
+      "term": "enter",
+      "translation": "betreten, eintippen"
+    },
+    {
+      "id": "u13_043",
+      "term": "have luck",
+      "translation": "Glück haben"
+    },
+    {
+      "id": "u13_044",
+      "term": "human",
+      "translation": "der Mensch, das menschliche Wesen"
+    },
+    {
+      "id": "u13_045",
+      "term": "immediately",
+      "translation": "sofort, gleich"
+    },
+    {
+      "id": "u13_046",
+      "term": "knob",
+      "translation": "der Knopf, der Drehknopf"
+    },
+    {
+      "id": "u13_047",
+      "term": "mess up",
+      "translation": "durcheinanderbringen, vermasseln"
+    },
+    {
+      "id": "u13_048",
+      "term": "power",
+      "translation": "hier: die Macht, die Kraft"
+    },
+    {
+      "id": "u13_049",
+      "term": "prototype",
+      "translation": "der Prototyp"
+    },
+    {
+      "id": "u13_050",
+      "term": "return",
+      "translation": "hier: zurückkehren"
+    },
+    {
+      "id": "u13_051",
+      "term": "reusable",
+      "translation": "wiederverwendbar"
+    },
+    {
+      "id": "u13_052",
+      "term": "scary",
+      "translation": "unheimlich, furchterregend"
+    },
+    {
+      "id": "u13_053",
+      "term": "serious",
+      "translation": "ernst, ernsthaft"
+    },
+    {
+      "id": "u13_054",
+      "term": "smile",
+      "translation": "lächeln"
+    },
+    {
+      "id": "u13_055",
+      "term": "solution",
+      "translation": "die Lösung"
+    },
+    {
+      "id": "u13_056",
+      "term": "suddenly",
+      "translation": "plötzlich"
+    },
+    {
+      "id": "u13_057",
+      "term": "touch screen",
+      "translation": "der Touchscreen"
+    },
+    {
+      "id": "u13_058",
+      "term": "unfinished",
+      "translation": "unvollendet"
+    },
+    {
+      "id": "u13_059",
+      "term": "usual",
+      "translation": "üblich, gewöhnlich"
+    },
+    {
+      "id": "u13_060",
+      "term": "wireless",
+      "translation": "drahtlos"
+    },
+    {
+      "id": "u13_061",
+      "term": "work",
+      "translation": "hier: funktionieren"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 2",
+  "schoolLevel": "secondary",
+  "unit": "Unit 14 – Incredible India",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u14_001",
+      "term": "chai",
+      "translation": "der Chai (Tee)"
+    },
+    {
+      "id": "u14_002",
+      "term": "clothes",
+      "translation": "die Kleider"
+    },
+    {
+      "id": "u14_003",
+      "term": "conversation",
+      "translation": "das Gespräch, die Unterhaltung"
+    },
+    {
+      "id": "u14_004",
+      "term": "custom",
+      "translation": "der Brauch, die Sitte"
+    },
+    {
+      "id": "u14_005",
+      "term": "dish",
+      "translation": "das Gericht (Speise)"
+    },
+    {
+      "id": "u14_006",
+      "term": "greet",
+      "translation": "grüssen, begrüssen"
+    },
+    {
+      "id": "u14_007",
+      "term": "Indian",
+      "translation": "indisch"
+    },
+    {
+      "id": "u14_008",
+      "term": "polite",
+      "translation": "höflich"
+    },
+    {
+      "id": "u14_009",
+      "term": "sari",
+      "translation": "der Sari"
+    },
+    {
+      "id": "u14_010",
+      "term": "shall",
+      "translation": "sollen"
+    },
+    {
+      "id": "u14_011",
+      "term": "accent",
+      "translation": "der Akzent"
+    },
+    {
+      "id": "u14_012",
+      "term": "curry",
+      "translation": "das Curry"
+    },
+    {
+      "id": "u14_013",
+      "term": "elephant",
+      "translation": "der Elefant"
+    },
+    {
+      "id": "u14_014",
+      "term": "guru",
+      "translation": "der Guru, der spirituelle Lehrer"
+    },
+    {
+      "id": "u14_015",
+      "term": "herself",
+      "translation": "selbst, sich selbst (weiblich)"
+    },
+    {
+      "id": "u14_016",
+      "term": "himself",
+      "translation": "selbst, sich selbst (männlich)"
+    },
+    {
+      "id": "u14_017",
+      "term": "incredible",
+      "translation": "unglaublich"
+    },
+    {
+      "id": "u14_018",
+      "term": "India",
+      "translation": "Indien"
+    },
+    {
+      "id": "u14_019",
+      "term": "itself",
+      "translation": "selbst, sich selbst (sächlich)"
+    },
+    {
+      "id": "u14_020",
+      "term": "mountain",
+      "translation": "der Berg, das Gebirge"
+    },
+    {
+      "id": "u14_021",
+      "term": "ourselves",
+      "translation": "selbst, uns selbst"
+    },
+    {
+      "id": "u14_022",
+      "term": "pyjamas",
+      "translation": "der Schlafanzug"
+    },
+    {
+      "id": "u14_023",
+      "term": "reflexive pronoun",
+      "translation": "das Reflexivpronomen"
+    },
+    {
+      "id": "u14_024",
+      "term": "shampoo",
+      "translation": "das Shampoo"
+    },
+    {
+      "id": "u14_025",
+      "term": "south",
+      "translation": "der Süden"
+    },
+    {
+      "id": "u14_026",
+      "term": "themselves",
+      "translation": "selbst, sich selbst (Plural)"
+    },
+    {
+      "id": "u14_027",
+      "term": "typical",
+      "translation": "typisch"
+    },
+    {
+      "id": "u14_028",
+      "term": "yourself",
+      "translation": "selbst, dich selbst"
+    },
+    {
+      "id": "u14_029",
+      "term": "appropriately",
+      "translation": "angemessen"
+    },
+    {
+      "id": "u14_030",
+      "term": "avoid",
+      "translation": "vermeiden"
+    },
+    {
+      "id": "u14_031",
+      "term": "backpacker",
+      "translation": "der Rucksacktourist, die Rucksacktouristin"
+    },
+    {
+      "id": "u14_032",
+      "term": "behave",
+      "translation": "sich verhalten, sich benehmen"
+    },
+    {
+      "id": "u14_033",
+      "term": "bottle",
+      "translation": "die Flasche"
+    },
+    {
+      "id": "u14_034",
+      "term": "colourful",
+      "translation": "farbenfroh, bunt"
+    },
+    {
+      "id": "u14_035",
+      "term": "common",
+      "translation": "üblich, weit verbreitet"
+    },
+    {
+      "id": "u14_036",
+      "term": "dress",
+      "translation": "das Kleid"
+    },
+    {
+      "id": "u14_037",
+      "term": "everyday",
+      "translation": "alltäglich, Alltags-"
+    },
+    {
+      "id": "u14_038",
+      "term": "figure of eight",
+      "translation": "die Acht, die Zahl/Form Acht"
+    },
+    {
+      "id": "u14_039",
+      "term": "huge",
+      "translation": "riesig"
+    },
+    {
+      "id": "u14_040",
+      "term": "impolite",
+      "translation": "unhöflich"
+    },
+    {
+      "id": "u14_041",
+      "term": "interaction",
+      "translation": "die Interaktion, die Gesprächssituation"
+    },
+    {
+      "id": "u14_042",
+      "term": "internet access",
+      "translation": "der Internetzugang"
+    },
+    {
+      "id": "u14_043",
+      "term": "noisy",
+      "translation": "lärmig, laut"
+    },
+    {
+      "id": "u14_044",
+      "term": "passport",
+      "translation": "der Reisepass"
+    },
+    {
+      "id": "u14_045",
+      "term": "respect",
+      "translation": "der Respekt, die Achtung"
+    },
+    {
+      "id": "u14_046",
+      "term": "shake hands",
+      "translation": "die Hände schütteln"
+    },
+    {
+      "id": "u14_047",
+      "term": "shirt",
+      "translation": "das Hemd"
+    },
+    {
+      "id": "u14_048",
+      "term": "sight",
+      "translation": "der Anblick, die Sehenswürdigkeit"
+    },
+    {
+      "id": "u14_049",
+      "term": "social",
+      "translation": "gesellschaftlich"
+    },
+    {
+      "id": "u14_050",
+      "term": "spice",
+      "translation": "das Gewürz"
+    },
+    {
+      "id": "u14_051",
+      "term": "tea",
+      "translation": "der Tee"
+    },
+    {
+      "id": "u14_052",
+      "term": "thumb",
+      "translation": "der Daumen"
+    },
+    {
+      "id": "u14_053",
+      "term": "visit",
+      "translation": "besuchen"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 15 – Further, faster, higher",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u15_001",
+      "term": "biking",
+      "translation": "das Velofahren"
+    },
+    {
+      "id": "u15_002",
+      "term": "climbing",
+      "translation": "das Bergsteigen, das Klettern"
+    },
+    {
+      "id": "u15_003",
+      "term": "dangerous",
+      "translation": "gefährlich"
+    },
+    {
+      "id": "u15_004",
+      "term": "diving",
+      "translation": "das Tauchen"
+    },
+    {
+      "id": "u15_005",
+      "term": "downhill",
+      "translation": "hier: Abfahrts-"
+    },
+    {
+      "id": "u15_006",
+      "term": "equipment",
+      "translation": "die Ausrüstung, die Ausstattung"
+    },
+    {
+      "id": "u15_007",
+      "term": "exciting",
+      "translation": "aufregend, spannend"
+    },
+    {
+      "id": "u15_008",
+      "term": "hiking",
+      "translation": "das Wandern"
+    },
+    {
+      "id": "u15_009",
+      "term": "mountain",
+      "translation": "der Berg, das Gebirge"
+    },
+    {
+      "id": "u15_010",
+      "term": "rugby",
+      "translation": "Rugby"
+    },
+    {
+      "id": "u15_011",
+      "term": "at least",
+      "translation": "wenigstens"
+    },
+    {
+      "id": "u15_012",
+      "term": "be in control of",
+      "translation": "unter Kontrolle haben"
+    },
+    {
+      "id": "u15_013",
+      "term": "be keen on ...ing",
+      "translation": "leidenschaftlich gern ..."
+    },
+    {
+      "id": "u15_014",
+      "term": "be likely to",
+      "translation": "wahrscheinlich"
+    },
+    {
+      "id": "u15_015",
+      "term": "be pushed to one's limits",
+      "translation": "bis zum Äussersten getrieben werden"
+    },
+    {
+      "id": "u15_016",
+      "term": "border",
+      "translation": "die Grenze"
+    },
+    {
+      "id": "u15_017",
+      "term": "carry on",
+      "translation": "weiterfahren, weitermachen"
+    },
+    {
+      "id": "u15_018",
+      "term": "choose",
+      "translation": "wählen"
+    },
+    {
+      "id": "u15_019",
+      "term": "excitement",
+      "translation": "die Aufregung"
+    },
+    {
+      "id": "u15_020",
+      "term": "hike",
+      "translation": "wandern"
+    },
+    {
+      "id": "u15_021",
+      "term": "joy",
+      "translation": "die Freude"
+    },
+    {
+      "id": "u15_022",
+      "term": "limit",
+      "translation": "die (Höchst)grenze, das Limit"
+    },
+    {
+      "id": "u15_023",
+      "term": "pay attention",
+      "translation": "Acht geben, aufpassen"
+    },
+    {
+      "id": "u15_024",
+      "term": "personal best",
+      "translation": "die persönliche Bestleistung"
+    },
+    {
+      "id": "u15_025",
+      "term": "push oneself",
+      "translation": "sich antreiben"
+    },
+    {
+      "id": "u15_026",
+      "term": "risk",
+      "translation": "das Risiko"
+    },
+    {
+      "id": "u15_027",
+      "term": "road trip",
+      "translation": "die Rundfahrt, die Autoreise"
+    },
+    {
+      "id": "u15_028",
+      "term": "rock",
+      "translation": "der Felsen, der Stein"
+    },
+    {
+      "id": "u15_029",
+      "term": "shoulder",
+      "translation": "die Schulter"
+    },
+    {
+      "id": "u15_030",
+      "term": "South America",
+      "translation": "Südamerika"
+    },
+    {
+      "id": "u15_031",
+      "term": "team sport",
+      "translation": "die Mannschaftssportart"
+    },
+    {
+      "id": "u15_032",
+      "term": "adore",
+      "translation": "bewundern, lieben"
+    },
+    {
+      "id": "u15_033",
+      "term": "basketball",
+      "translation": "Basketball"
+    },
+    {
+      "id": "u15_034",
+      "term": "ice hockey",
+      "translation": "Eishockey"
+    },
+    {
+      "id": "u15_035",
+      "term": "lip",
+      "translation": "die Lippe"
+    },
+    {
+      "id": "u15_036",
+      "term": "match day",
+      "translation": "der Spieltag"
+    },
+    {
+      "id": "u15_037",
+      "term": "mind",
+      "translation": "etwas ausmachen"
+    },
+    {
+      "id": "u15_038",
+      "term": "personally",
+      "translation": "persönlich"
+    },
+    {
+      "id": "u15_039",
+      "term": "player",
+      "translation": "der Spieler, die Spielerin"
+    },
+    {
+      "id": "u15_040",
+      "term": "skating",
+      "translation": "der Eiskunstlauf"
+    },
+    {
+      "id": "u15_041",
+      "term": "spectator sports",
+      "translation": "der Publikumssport"
+    },
+    {
+      "id": "u15_042",
+      "term": "table tennis",
+      "translation": "Tischtennis"
+    },
+    {
+      "id": "u15_043",
+      "term": "tennis",
+      "translation": "Tennis"
+    },
+    {
+      "id": "u15_044",
+      "term": "tongue twister",
+      "translation": "der Zungenbrecher"
+    },
+    {
+      "id": "u15_045",
+      "term": "vet",
+      "translation": "der Tierarzt, die Tierärztin"
+    },
+    {
+      "id": "u15_046",
+      "term": "volleyball",
+      "translation": "Volleyball"
+    },
+    {
+      "id": "u15_047",
+      "term": "wicked",
+      "translation": "böse, schlimm"
+    },
+    {
+      "id": "u15_048",
+      "term": "witch",
+      "translation": "die Hexe"
+    },
+    {
+      "id": "u15_049",
+      "term": "appeal",
+      "translation": "ansprechen"
+    },
+    {
+      "id": "u15_050",
+      "term": "choice",
+      "translation": "die Wahl"
+    },
+    {
+      "id": "u15_051",
+      "term": "competitive",
+      "translation": "wettbewerbsorientiert, kompetitiv"
+    },
+    {
+      "id": "u15_052",
+      "term": "dive",
+      "translation": "tauchen"
+    },
+    {
+      "id": "u15_053",
+      "term": "floorball",
+      "translation": "Unihockey"
+    },
+    {
+      "id": "u15_054",
+      "term": "go for",
+      "translation": "sich entscheiden für"
+    },
+    {
+      "id": "u15_055",
+      "term": "head teacher",
+      "translation": "der Schulleiter, die Schulleiterin, Rektor/-in"
+    },
+    {
+      "id": "u15_056",
+      "term": "intense",
+      "translation": "intensiv"
+    },
+    {
+      "id": "u15_057",
+      "term": "motivate",
+      "translation": "motivieren, anregen"
+    },
+    {
+      "id": "u15_058",
+      "term": "peace",
+      "translation": "der Frieden, die Ruhe"
+    },
+    {
+      "id": "u15_059",
+      "term": "silence",
+      "translation": "das Schweigen, die Stille"
+    },
+    {
+      "id": "u15_060",
+      "term": "submit",
+      "translation": "einreichen, zustellen"
+    },
+    {
+      "id": "u15_061",
+      "term": "Dear Sir or Madam",
+      "translation": "Sehr geehrte Damen und Herren"
+    },
+    {
+      "id": "u15_062",
+      "term": "look forward to",
+      "translation": "sich freuen auf"
+    },
+    {
+      "id": "u15_063",
+      "term": "Mr",
+      "translation": "Herr"
+    },
+    {
+      "id": "u15_064",
+      "term": "Mrs",
+      "translation": "Frau"
+    },
+    {
+      "id": "u15_065",
+      "term": "Ms",
+      "translation": "Frau (neutrale weibliche Briefanrede)"
+    },
+    {
+      "id": "u15_066",
+      "term": "signature",
+      "translation": "die Unterschrift"
+    },
+    {
+      "id": "u15_067",
+      "term": "Yours faithfully",
+      "translation": "Mit freundlichen Grüssen"
+    },
+    {
+      "id": "u15_068",
+      "term": "Yours sincerely",
+      "translation": "Mit freundlichen Grüssen"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 16 – Down Fifth Avenue",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u16_001",
+      "term": "avenue",
+      "translation": "die Avenue, der Boulevard"
+    },
+    {
+      "id": "u16_002",
+      "term": "comment",
+      "translation": "die Bemerkung"
+    },
+    {
+      "id": "u16_003",
+      "term": "deli",
+      "translation": "das Delikatessengeschäft"
+    },
+    {
+      "id": "u16_004",
+      "term": "downside",
+      "translation": "die Kehrseite"
+    },
+    {
+      "id": "u16_005",
+      "term": "famous",
+      "translation": "berühmt"
+    },
+    {
+      "id": "u16_006",
+      "term": "follow-up question",
+      "translation": "die Anschlussfrage, die Folgefrage"
+    },
+    {
+      "id": "u16_007",
+      "term": "intersection (AmE)",
+      "translation": "die Kreuzung (AmE)"
+    },
+    {
+      "id": "u16_008",
+      "term": "sight",
+      "translation": "der Anblick, die Sehenswürdigkeit"
+    },
+    {
+      "id": "u16_009",
+      "term": "Statue of Liberty",
+      "translation": "die Freiheitsstatue"
+    },
+    {
+      "id": "u16_010",
+      "term": "subway (AmE)",
+      "translation": "die U-Bahn (AmE)"
+    },
+    {
+      "id": "u16_011",
+      "term": "bench",
+      "translation": "die Bank"
+    },
+    {
+      "id": "u16_012",
+      "term": "cab",
+      "translation": "das Taxi"
+    },
+    {
+      "id": "u16_013",
+      "term": "circular",
+      "translation": "(kreis)rund"
+    },
+    {
+      "id": "u16_014",
+      "term": "down",
+      "translation": "hier: hinunter"
+    },
+    {
+      "id": "u16_015",
+      "term": "dozen",
+      "translation": "das Dutzend"
+    },
+    {
+      "id": "u16_016",
+      "term": "feature",
+      "translation": "das Merkmal"
+    },
+    {
+      "id": "u16_017",
+      "term": "first impression",
+      "translation": "der erste Eindruck"
+    },
+    {
+      "id": "u16_018",
+      "term": "freedom",
+      "translation": "die Freiheit"
+    },
+    {
+      "id": "u16_019",
+      "term": "get off",
+      "translation": "aussteigen"
+    },
+    {
+      "id": "u16_020",
+      "term": "government",
+      "translation": "die Regierung"
+    },
+    {
+      "id": "u16_021",
+      "term": "impressed",
+      "translation": "beeindruckt"
+    },
+    {
+      "id": "u16_022",
+      "term": "impressive",
+      "translation": "beeindruckend"
+    },
+    {
+      "id": "u16_023",
+      "term": "literally",
+      "translation": "buchstäblich"
+    },
+    {
+      "id": "u16_024",
+      "term": "lose track of time",
+      "translation": "die Zeit aus den Augen verlieren"
+    },
+    {
+      "id": "u16_025",
+      "term": "matter",
+      "translation": "von Bedeutung sein"
+    },
+    {
+      "id": "u16_026",
+      "term": "open to the public",
+      "translation": "für die Öffentlichkeit zugänglich"
+    },
+    {
+      "id": "u16_027",
+      "term": "place",
+      "translation": "der Ort"
+    },
+    {
+      "id": "u16_028",
+      "term": "post",
+      "translation": "hier: Eintrag (auf einem Internet-Forum)"
+    },
+    {
+      "id": "u16_029",
+      "term": "present",
+      "translation": "das Geschenk"
+    },
+    {
+      "id": "u16_030",
+      "term": "probably",
+      "translation": "wahrscheinlich"
+    },
+    {
+      "id": "u16_031",
+      "term": "shoot",
+      "translation": "hier: filmen, drehen"
+    },
+    {
+      "id": "u16_032",
+      "term": "speechless",
+      "translation": "sprachlos"
+    },
+    {
+      "id": "u16_033",
+      "term": "station",
+      "translation": "der Bahnhof, die U-Bahnstation"
+    },
+    {
+      "id": "u16_034",
+      "term": "straight",
+      "translation": "gerade"
+    },
+    {
+      "id": "u16_035",
+      "term": "tall",
+      "translation": "gross, hoch"
+    },
+    {
+      "id": "u16_036",
+      "term": "theatre",
+      "translation": "das Theater"
+    },
+    {
+      "id": "u16_037",
+      "term": "USA",
+      "translation": "USA (Vereinigte Staaten von Amerika)"
+    },
+    {
+      "id": "u16_038",
+      "term": "while",
+      "translation": "während"
+    },
+    {
+      "id": "u16_039",
+      "term": "you name it",
+      "translation": "was auch immer"
+    },
+    {
+      "id": "u16_040",
+      "term": "address",
+      "translation": "die Adresse"
+    },
+    {
+      "id": "u16_041",
+      "term": "apartment (AmE)",
+      "translation": "die Wohnung (AmE)"
+    },
+    {
+      "id": "u16_042",
+      "term": "attraction",
+      "translation": "hier: die Attraktion"
+    },
+    {
+      "id": "u16_043",
+      "term": "bank",
+      "translation": "die Bank"
+    },
+    {
+      "id": "u16_044",
+      "term": "bank clerk",
+      "translation": "der/die Bankangestellte/-r"
+    },
+    {
+      "id": "u16_045",
+      "term": "check (AmE)",
+      "translation": "die Rechnung (AmE)"
+    },
+    {
+      "id": "u16_046",
+      "term": "city living",
+      "translation": "das Stadtleben, Wohnen in der Stadt"
+    },
+    {
+      "id": "u16_047",
+      "term": "colourful (BrE) / colorful (AmE)",
+      "translation": "farbenfroh, farbig"
+    },
+    {
+      "id": "u16_048",
+      "term": "downtown (AmE)",
+      "translation": "in der Innenstadt, im Stadtzentrum (AmE)"
+    },
+    {
+      "id": "u16_049",
+      "term": "drive someone crazy",
+      "translation": "jemanden zum Wahnsinn treiben"
+    },
+    {
+      "id": "u16_050",
+      "term": "exchange visit",
+      "translation": "der Austauschbesuch"
+    },
+    {
+      "id": "u16_051",
+      "term": "fake",
+      "translation": "die Fälschung"
+    },
+    {
+      "id": "u16_052",
+      "term": "goods",
+      "translation": "die Güter"
+    },
+    {
+      "id": "u16_053",
+      "term": "honestly",
+      "translation": "ehrlich"
+    },
+    {
+      "id": "u16_054",
+      "term": "in my opinion",
+      "translation": "meiner Meinung nach"
+    },
+    {
+      "id": "u16_055",
+      "term": "interviewer",
+      "translation": "der Interviewer, die Interviewerin"
+    },
+    {
+      "id": "u16_056",
+      "term": "jogging",
+      "translation": "das Joggen"
+    },
+    {
+      "id": "u16_057",
+      "term": "keep going",
+      "translation": "am Laufen halten"
+    },
+    {
+      "id": "u16_058",
+      "term": "love",
+      "translation": "lieben"
+    },
+    {
+      "id": "u16_059",
+      "term": "on time",
+      "translation": "pünktlich"
+    },
+    {
+      "id": "u16_060",
+      "term": "opera",
+      "translation": "die Oper"
+    },
+    {
+      "id": "u16_061",
+      "term": "resident",
+      "translation": "der Bewohner, die Bewohnerin"
+    },
+    {
+      "id": "u16_062",
+      "term": "sidewalk (AmE)",
+      "translation": "das Trottoir, der Gehweg (AmE)"
+    },
+    {
+      "id": "u16_063",
+      "term": "syllable",
+      "translation": "die Silbe"
+    },
+    {
+      "id": "u16_064",
+      "term": "trendy",
+      "translation": "trendy, modisch"
+    },
+    {
+      "id": "u16_065",
+      "term": "worry about",
+      "translation": "sich Sorgen machen um"
+    },
+    {
+      "id": "u16_066",
+      "term": "car park (BrE)",
+      "translation": "der Parkplatz (BrE)"
+    },
+    {
+      "id": "u16_067",
+      "term": "dustbin (BrE)",
+      "translation": "der Abfalleimer (BrE)"
+    },
+    {
+      "id": "u16_068",
+      "term": "first floor (AmE)",
+      "translation": "das Erdgeschoss (AmE)"
+    },
+    {
+      "id": "u16_069",
+      "term": "garbage can (AmE)",
+      "translation": "der Abfalleimer (AmE)"
+    },
+    {
+      "id": "u16_070",
+      "term": "garden",
+      "translation": "der Garten"
+    },
+    {
+      "id": "u16_071",
+      "term": "gas (AmE)",
+      "translation": "das Benzin (AmE)"
+    },
+    {
+      "id": "u16_072",
+      "term": "ground floor (BrE)",
+      "translation": "das Erdgeschoss (BrE)"
+    },
+    {
+      "id": "u16_073",
+      "term": "highway (AmE)",
+      "translation": "die Autobahn (AmE)"
+    },
+    {
+      "id": "u16_074",
+      "term": "lorry (BrE)",
+      "translation": "der Lastwagen (BrE)"
+    },
+    {
+      "id": "u16_075",
+      "term": "motorway (BrE)",
+      "translation": "die Autobahn (BrE)"
+    },
+    {
+      "id": "u16_076",
+      "term": "parking lot (AmE)",
+      "translation": "der Parkplatz (AmE)"
+    },
+    {
+      "id": "u16_077",
+      "term": "petrol (BrE)",
+      "translation": "das Benzin (BrE)"
+    },
+    {
+      "id": "u16_078",
+      "term": "railroad (AmE)",
+      "translation": "die Eisenbahn (AmE)"
+    },
+    {
+      "id": "u16_079",
+      "term": "silent",
+      "translation": "hier: stumm"
+    },
+    {
+      "id": "u16_080",
+      "term": "truck (AmE)",
+      "translation": "der Lastwagen (AmE)"
+    },
+    {
+      "id": "u16_081",
+      "term": "yard (AmE)",
+      "translation": "der Hof, der Garten (AmE)"
+    },
+    {
+      "id": "u16_082",
+      "term": "crazy",
+      "translation": "verrückt"
+    },
+    {
+      "id": "u16_083",
+      "term": "emergency",
+      "translation": "der Notfall"
+    },
+    {
+      "id": "u16_084",
+      "term": "illegal",
+      "translation": "ungesetzlich, illegal"
+    },
+    {
+      "id": "u16_085",
+      "term": "surprising",
+      "translation": "überraschend, erstaunlich"
+    },
+    {
+      "id": "u16_086",
+      "term": "underground",
+      "translation": "unterirdisch, unter der Erde"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 17 – Haunted houses",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u17_001",
+      "term": "atmosphere",
+      "translation": "die Atmosphäre"
+    },
+    {
+      "id": "u17_002",
+      "term": "castle",
+      "translation": "das Schloss, die Burg"
+    },
+    {
+      "id": "u17_003",
+      "term": "ghost",
+      "translation": "der Geist"
+    },
+    {
+      "id": "u17_004",
+      "term": "haunted",
+      "translation": "Spuk-"
+    },
+    {
+      "id": "u17_005",
+      "term": "noise",
+      "translation": "das Geräusch"
+    },
+    {
+      "id": "u17_006",
+      "term": "scream",
+      "translation": "schreien, kreischen"
+    },
+    {
+      "id": "u17_007",
+      "term": "sigh",
+      "translation": "seufzen"
+    },
+    {
+      "id": "u17_008",
+      "term": "spooky",
+      "translation": "schaurig, unheimlich, gespenstisch"
+    },
+    {
+      "id": "u17_009",
+      "term": "whisper",
+      "translation": "flüstern"
+    },
+    {
+      "id": "u17_010",
+      "term": "whistle",
+      "translation": "pfeifen"
+    },
+    {
+      "id": "u17_011",
+      "term": "bat",
+      "translation": "die Fledermaus"
+    },
+    {
+      "id": "u17_012",
+      "term": "country house",
+      "translation": "das Landhaus"
+    },
+    {
+      "id": "u17_013",
+      "term": "cry",
+      "translation": "weinen"
+    },
+    {
+      "id": "u17_014",
+      "term": "darkness",
+      "translation": "die Dunkelheit"
+    },
+    {
+      "id": "u17_015",
+      "term": "flee",
+      "translation": "fliehen, flüchten"
+    },
+    {
+      "id": "u17_016",
+      "term": "get married",
+      "translation": "heiraten"
+    },
+    {
+      "id": "u17_017",
+      "term": "guided tour",
+      "translation": "die Führung, der geführte Rundgang"
+    },
+    {
+      "id": "u17_018",
+      "term": "hiss",
+      "translation": "zischen, fauchen"
+    },
+    {
+      "id": "u17_019",
+      "term": "howl",
+      "translation": "heulen"
+    },
+    {
+      "id": "u17_020",
+      "term": "king",
+      "translation": "der König"
+    },
+    {
+      "id": "u17_021",
+      "term": "moan",
+      "translation": "stöhnen, klagen"
+    },
+    {
+      "id": "u17_022",
+      "term": "rustle",
+      "translation": "rascheln"
+    },
+    {
+      "id": "u17_023",
+      "term": "shadow",
+      "translation": "der Schatten"
+    },
+    {
+      "id": "u17_024",
+      "term": "sound",
+      "translation": "das Geräusch, der Ton"
+    },
+    {
+      "id": "u17_025",
+      "term": "sound (v)",
+      "translation": "klingen"
+    },
+    {
+      "id": "u17_026",
+      "term": "spider",
+      "translation": "die Spinne"
+    },
+    {
+      "id": "u17_027",
+      "term": "surrounded by",
+      "translation": "umgeben von"
+    },
+    {
+      "id": "u17_028",
+      "term": "surrounding",
+      "translation": "umgebend, umliegend"
+    },
+    {
+      "id": "u17_029",
+      "term": "the Middle Ages",
+      "translation": "das Mittelalter"
+    },
+    {
+      "id": "u17_030",
+      "term": "tragic",
+      "translation": "tragisch"
+    },
+    {
+      "id": "u17_031",
+      "term": "warrior",
+      "translation": "der Krieger, die Kriegerin"
+    },
+    {
+      "id": "u17_032",
+      "term": "appear",
+      "translation": "erscheinen, auftauchen"
+    },
+    {
+      "id": "u17_033",
+      "term": "believe",
+      "translation": "glauben"
+    },
+    {
+      "id": "u17_034",
+      "term": "blood",
+      "translation": "das Blut"
+    },
+    {
+      "id": "u17_035",
+      "term": "chain",
+      "translation": "die Kette"
+    },
+    {
+      "id": "u17_036",
+      "term": "character",
+      "translation": "hier: die Person (in einer Geschichte)"
+    },
+    {
+      "id": "u17_037",
+      "term": "corridor",
+      "translation": "der Flur, der Korridor"
+    },
+    {
+      "id": "u17_038",
+      "term": "death",
+      "translation": "der Tod"
+    },
+    {
+      "id": "u17_039",
+      "term": "effect",
+      "translation": "hier: der Effekt"
+    },
+    {
+      "id": "u17_040",
+      "term": "housekeeper",
+      "translation": "der Haushälter, die Haushälterin"
+    },
+    {
+      "id": "u17_041",
+      "term": "price",
+      "translation": "der Preis"
+    },
+    {
+      "id": "u17_042",
+      "term": "reported speech",
+      "translation": "die indirekte Rede"
+    },
+    {
+      "id": "u17_043",
+      "term": "sell",
+      "translation": "verkaufen"
+    },
+    {
+      "id": "u17_044",
+      "term": "stain",
+      "translation": "der Fleck"
+    },
+    {
+      "id": "u17_045",
+      "term": "throat",
+      "translation": "der Rachen, der Hals, die Kehle"
+    },
+    {
+      "id": "u17_046",
+      "term": "thunder",
+      "translation": "der Donner"
+    },
+    {
+      "id": "u17_047",
+      "term": "voiced",
+      "translation": "stimmhaft"
+    },
+    {
+      "id": "u17_048",
+      "term": "voiceless",
+      "translation": "stimmlos"
+    },
+    {
+      "id": "u17_049",
+      "term": "volume",
+      "translation": "die Lautstärke"
+    },
+    {
+      "id": "u17_050",
+      "term": "believe in",
+      "translation": "glauben an"
+    },
+    {
+      "id": "u17_051",
+      "term": "frighten",
+      "translation": "erschrecken, Angst machen"
+    },
+    {
+      "id": "u17_052",
+      "term": "ghost walk",
+      "translation": "der Geisterspaziergang"
+    },
+    {
+      "id": "u17_053",
+      "term": "perspective",
+      "translation": "die Perspektive, der Blickwinkel"
+    },
+    {
+      "id": "u17_054",
+      "term": "try hard",
+      "translation": "sich anstrengen"
+    },
+    {
+      "id": "u17_055",
+      "term": "costume",
+      "translation": "das Kostüm, die Verkleidung"
+    },
+    {
+      "id": "u17_056",
+      "term": "pace",
+      "translation": "das Tempo"
+    },
+    {
+      "id": "u17_057",
+      "term": "slow down",
+      "translation": "langsamer werden"
+    },
+    {
+      "id": "u17_058",
+      "term": "speed up",
+      "translation": "schneller werden, sich beeilen"
+    },
+    {
+      "id": "u17_059",
+      "term": "that's the spirit",
+      "translation": "das ist die richtige Einstellung"
+    },
+    {
+      "id": "u17_060",
+      "term": "tone",
+      "translation": "der Ton, der Farbton"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 18 – It's showtime",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u18_001",
+      "term": "audience",
+      "translation": "das Publikum"
+    },
+    {
+      "id": "u18_002",
+      "term": "celebrity",
+      "translation": "die berühmte Person"
+    },
+    {
+      "id": "u18_003",
+      "term": "drawback",
+      "translation": "der Nachteil"
+    },
+    {
+      "id": "u18_004",
+      "term": "entertainment",
+      "translation": "die Unterhaltung"
+    },
+    {
+      "id": "u18_005",
+      "term": "famous",
+      "translation": "berühmt"
+    },
+    {
+      "id": "u18_006",
+      "term": "interview",
+      "translation": "das Interview"
+    },
+    {
+      "id": "u18_007",
+      "term": "journalist",
+      "translation": "der Journalist, die Journalistin"
+    },
+    {
+      "id": "u18_008",
+      "term": "limelight",
+      "translation": "das Rampenlicht"
+    },
+    {
+      "id": "u18_009",
+      "term": "star",
+      "translation": "der Stern, der Star"
+    },
+    {
+      "id": "u18_010",
+      "term": "teenager",
+      "translation": "der Teenager"
+    },
+    {
+      "id": "u18_011",
+      "term": "amusing",
+      "translation": "amüsant, unterhaltsam"
+    },
+    {
+      "id": "u18_012",
+      "term": "be fond of",
+      "translation": "etwas gerne haben/machen"
+    },
+    {
+      "id": "u18_013",
+      "term": "be into",
+      "translation": "mögen, stehen auf"
+    },
+    {
+      "id": "u18_014",
+      "term": "be keen on",
+      "translation": "scharf sein auf"
+    },
+    {
+      "id": "u18_015",
+      "term": "beautiful",
+      "translation": "schön"
+    },
+    {
+      "id": "u18_016",
+      "term": "circus",
+      "translation": "der Zirkus"
+    },
+    {
+      "id": "u18_017",
+      "term": "day out",
+      "translation": "der Tagesausflug"
+    },
+    {
+      "id": "u18_018",
+      "term": "director",
+      "translation": "der Regisseur, die Regisseurin"
+    },
+    {
+      "id": "u18_019",
+      "term": "emotional",
+      "translation": "emotional, gefühlvoll"
+    },
+    {
+      "id": "u18_020",
+      "term": "enjoy",
+      "translation": "geniessen"
+    },
+    {
+      "id": "u18_021",
+      "term": "fantasy",
+      "translation": "die Fantasie"
+    },
+    {
+      "id": "u18_022",
+      "term": "hero",
+      "translation": "der Held"
+    },
+    {
+      "id": "u18_023",
+      "term": "invite",
+      "translation": "einladen"
+    },
+    {
+      "id": "u18_024",
+      "term": "lead singer",
+      "translation": "der Leadsänger, die Leadsängerin"
+    },
+    {
+      "id": "u18_025",
+      "term": "night out",
+      "translation": "der abendliche Ausgang"
+    },
+    {
+      "id": "u18_026",
+      "term": "now showing",
+      "translation": "jetzt zu sehen"
+    },
+    {
+      "id": "u18_027",
+      "term": "secret",
+      "translation": "das Geheimnis"
+    },
+    {
+      "id": "u18_028",
+      "term": "show",
+      "translation": "die Show, die Vorstellung"
+    },
+    {
+      "id": "u18_029",
+      "term": "showtime",
+      "translation": "Showtime, die Vorstellung"
+    },
+    {
+      "id": "u18_030",
+      "term": "thriller",
+      "translation": "der Thriller"
+    },
+    {
+      "id": "u18_031",
+      "term": "adored",
+      "translation": "über alles geliebt"
+    },
+    {
+      "id": "u18_032",
+      "term": "age",
+      "translation": "altern, älter werden"
+    },
+    {
+      "id": "u18_033",
+      "term": "child star",
+      "translation": "der Kinderstar"
+    },
+    {
+      "id": "u18_034",
+      "term": "gorgeous",
+      "translation": "herrlich, grossartig"
+    },
+    {
+      "id": "u18_035",
+      "term": "intoxicating",
+      "translation": "berauschend"
+    },
+    {
+      "id": "u18_036",
+      "term": "jealous",
+      "translation": "eifersüchtig, neidisch"
+    },
+    {
+      "id": "u18_037",
+      "term": "mature",
+      "translation": "reif, erwachsen"
+    },
+    {
+      "id": "u18_038",
+      "term": "misjudge",
+      "translation": "verkennen, falsch einschätzen"
+    },
+    {
+      "id": "u18_039",
+      "term": "nervous",
+      "translation": "nervös"
+    },
+    {
+      "id": "u18_040",
+      "term": "ordinary",
+      "translation": "gewöhnlich, normal"
+    },
+    {
+      "id": "u18_041",
+      "term": "private",
+      "translation": "privat, Privat-"
+    },
+    {
+      "id": "u18_042",
+      "term": "put up with",
+      "translation": "sich abfinden mit"
+    },
+    {
+      "id": "u18_043",
+      "term": "show business",
+      "translation": "das Showbusiness, die Unterhaltungsbranche"
+    },
+    {
+      "id": "u18_044",
+      "term": "way",
+      "translation": "total, weit"
+    },
+    {
+      "id": "u18_045",
+      "term": "wise",
+      "translation": "weise, klug"
+    },
+    {
+      "id": "u18_046",
+      "term": "accompany",
+      "translation": "begleiten"
+    },
+    {
+      "id": "u18_047",
+      "term": "argument",
+      "translation": "hier: das Argument"
+    },
+    {
+      "id": "u18_048",
+      "term": "persuade",
+      "translation": "überzeugen, überreden"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 19 – Green ideas",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u19_001",
+      "term": "electricity",
+      "translation": "die Elektrizität, der Strom"
+    },
+    {
+      "id": "u19_002",
+      "term": "energy",
+      "translation": "die Energie"
+    },
+    {
+      "id": "u19_003",
+      "term": "fuel",
+      "translation": "der Treibstoff"
+    },
+    {
+      "id": "u19_004",
+      "term": "global warming",
+      "translation": "die Erderwärmung"
+    },
+    {
+      "id": "u19_005",
+      "term": "lifestyle",
+      "translation": "der Lebensstil"
+    },
+    {
+      "id": "u19_006",
+      "term": "nuclear",
+      "translation": "Atom-, Kern-"
+    },
+    {
+      "id": "u19_007",
+      "term": "petrol",
+      "translation": "das Benzin"
+    },
+    {
+      "id": "u19_008",
+      "term": "produce",
+      "translation": "herstellen, produzieren"
+    },
+    {
+      "id": "u19_009",
+      "term": "recycle",
+      "translation": "recyceln, wiederaufbereiten"
+    },
+    {
+      "id": "u19_010",
+      "term": "solar",
+      "translation": "Sonnen-, Solar-"
+    },
+    {
+      "id": "u19_011",
+      "term": "achieve",
+      "translation": "erreichen"
+    },
+    {
+      "id": "u19_012",
+      "term": "activist",
+      "translation": "der Aktivist, die Aktivistin"
+    },
+    {
+      "id": "u19_013",
+      "term": "arrival",
+      "translation": "die Ankunft"
+    },
+    {
+      "id": "u19_014",
+      "term": "carbon dioxide",
+      "translation": "Kohlendioxid, Kohlenstoffdioxid"
+    },
+    {
+      "id": "u19_015",
+      "term": "conference",
+      "translation": "die Konferenz, die Tagung"
+    },
+    {
+      "id": "u19_016",
+      "term": "crisis",
+      "translation": "die Krise"
+    },
+    {
+      "id": "u19_017",
+      "term": "forever",
+      "translation": "für immer"
+    },
+    {
+      "id": "u19_018",
+      "term": "fossil fuels",
+      "translation": "die fossilen Brennstoffe"
+    },
+    {
+      "id": "u19_019",
+      "term": "gas",
+      "translation": "das Gas"
+    },
+    {
+      "id": "u19_020",
+      "term": "impact",
+      "translation": "die Auswirkung, der Einfluss"
+    },
+    {
+      "id": "u19_021",
+      "term": "loads (of)",
+      "translation": "jede Menge"
+    },
+    {
+      "id": "u19_022",
+      "term": "Lucerne",
+      "translation": "Luzern"
+    },
+    {
+      "id": "u19_023",
+      "term": "natural",
+      "translation": "natürliche(r, s)"
+    },
+    {
+      "id": "u19_024",
+      "term": "renewable",
+      "translation": "erneuerbar"
+    },
+    {
+      "id": "u19_025",
+      "term": "responsible",
+      "translation": "verantwortlich"
+    },
+    {
+      "id": "u19_026",
+      "term": "solar panel",
+      "translation": "der Sonnenkollektor"
+    },
+    {
+      "id": "u19_027",
+      "term": "solar-powered",
+      "translation": "solarbetrieben"
+    },
+    {
+      "id": "u19_028",
+      "term": "solve",
+      "translation": "lösen"
+    },
+    {
+      "id": "u19_029",
+      "term": "source",
+      "translation": "die Quelle"
+    },
+    {
+      "id": "u19_030",
+      "term": "switch",
+      "translation": "wechseln"
+    },
+    {
+      "id": "u19_031",
+      "term": "the Far East",
+      "translation": "der Ferne Osten"
+    },
+    {
+      "id": "u19_032",
+      "term": "the Middle East",
+      "translation": "der Mittlere Osten"
+    },
+    {
+      "id": "u19_033",
+      "term": "traffic jam",
+      "translation": "der Stau"
+    },
+    {
+      "id": "u19_034",
+      "term": "vehicle",
+      "translation": "das Fahrzeug"
+    },
+    {
+      "id": "u19_035",
+      "term": "appliance",
+      "translation": "das Gerät, das Haushaltsgerät"
+    },
+    {
+      "id": "u19_036",
+      "term": "bath",
+      "translation": "das Bad"
+    },
+    {
+      "id": "u19_037",
+      "term": "bulb",
+      "translation": "die Glühbirne"
+    },
+    {
+      "id": "u19_038",
+      "term": "low-energy",
+      "translation": "energiearm"
+    },
+    {
+      "id": "u19_039",
+      "term": "mobile phone",
+      "translation": "das Mobiltelefon, das Handy"
+    },
+    {
+      "id": "u19_040",
+      "term": "on standby",
+      "translation": "im Standby-Betrieb"
+    },
+    {
+      "id": "u19_041",
+      "term": "roof",
+      "translation": "das Dach"
+    },
+    {
+      "id": "u19_042",
+      "term": "rubbish",
+      "translation": "der Abfall, der Kehricht"
+    },
+    {
+      "id": "u19_043",
+      "term": "shower",
+      "translation": "die Dusche"
+    },
+    {
+      "id": "u19_044",
+      "term": "switch off",
+      "translation": "ausschalten"
+    },
+    {
+      "id": "u19_045",
+      "term": "tap",
+      "translation": "der Wasserhahn"
+    },
+    {
+      "id": "u19_046",
+      "term": "turn off",
+      "translation": "abschalten, ausschalten"
+    },
+    {
+      "id": "u19_047",
+      "term": "washing machine",
+      "translation": "die Waschmaschine"
+    },
+    {
+      "id": "u19_048",
+      "term": "wind turbine",
+      "translation": "die Windturbine"
+    },
+    {
+      "id": "u19_049",
+      "term": "alternative",
+      "translation": "die Alternative"
+    },
+    {
+      "id": "u19_050",
+      "term": "climate change",
+      "translation": "die Klimaveränderung"
+    },
+    {
+      "id": "u19_051",
+      "term": "efficient",
+      "translation": "leistungsstark, effizient"
+    },
+    {
+      "id": "u19_052",
+      "term": "non-renewable",
+      "translation": "nicht erneuerbar"
+    },
+    {
+      "id": "u19_053",
+      "term": "nuclear power plant",
+      "translation": "das Kernkraftwerk"
+    },
+    {
+      "id": "u19_054",
+      "term": "petroleum",
+      "translation": "das Erdöl"
+    },
+    {
+      "id": "u19_055",
+      "term": "radioactivity",
+      "translation": "die Radioaktivität"
+    },
+    {
+      "id": "u19_056",
+      "term": "reduce",
+      "translation": "verringern, reduzieren"
+    },
+    {
+      "id": "u19_057",
+      "term": "company",
+      "translation": "die Firma, das Unternehmen"
+    },
+    {
+      "id": "u19_058",
+      "term": "entire",
+      "translation": "gesamt, ganz"
+    },
+    {
+      "id": "u19_059",
+      "term": "head",
+      "translation": "hier: der Chef, die Chefin"
+    },
+    {
+      "id": "u19_060",
+      "term": "supporter",
+      "translation": "der Anhänger, die Anhängerin"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 20 – Sell, sell, sell",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u20_001",
+      "term": "advertise",
+      "translation": "Werbung machen für, inserieren"
+    },
+    {
+      "id": "u20_002",
+      "term": "advertisement",
+      "translation": "die Werbung, das Inserat"
+    },
+    {
+      "id": "u20_003",
+      "term": "advertising",
+      "translation": "die Werbung, die Werbebranche"
+    },
+    {
+      "id": "u20_004",
+      "term": "brand",
+      "translation": "die Marke"
+    },
+    {
+      "id": "u20_005",
+      "term": "campaign",
+      "translation": "die Kampagne"
+    },
+    {
+      "id": "u20_006",
+      "term": "message",
+      "translation": "hier: die Botschaft"
+    },
+    {
+      "id": "u20_007",
+      "term": "product",
+      "translation": "das Produkt"
+    },
+    {
+      "id": "u20_008",
+      "term": "service",
+      "translation": "der Dienst, die Dienstleistung"
+    },
+    {
+      "id": "u20_009",
+      "term": "slogan",
+      "translation": "der Slogan"
+    },
+    {
+      "id": "u20_010",
+      "term": "target group",
+      "translation": "die Zielgruppe"
+    },
+    {
+      "id": "u20_011",
+      "term": "ad",
+      "translation": "die Anzeige, das Inserat"
+    },
+    {
+      "id": "u20_012",
+      "term": "advertising agency",
+      "translation": "die Werbeagentur"
+    },
+    {
+      "id": "u20_013",
+      "term": "app",
+      "translation": "die App"
+    },
+    {
+      "id": "u20_014",
+      "term": "be aimed at",
+      "translation": "zielen auf"
+    },
+    {
+      "id": "u20_015",
+      "term": "behaviour",
+      "translation": "das Benehmen, das Verhalten"
+    },
+    {
+      "id": "u20_016",
+      "term": "chocolate",
+      "translation": "die Schokolade"
+    },
+    {
+      "id": "u20_017",
+      "term": "commercial",
+      "translation": "der Werbespot"
+    },
+    {
+      "id": "u20_018",
+      "term": "convenient",
+      "translation": "praktisch, bequem"
+    },
+    {
+      "id": "u20_019",
+      "term": "influence",
+      "translation": "beeinflussen"
+    },
+    {
+      "id": "u20_020",
+      "term": "influencer",
+      "translation": "der Influencer, die Influencerin"
+    },
+    {
+      "id": "u20_021",
+      "term": "obvious",
+      "translation": "offensichtlich"
+    },
+    {
+      "id": "u20_022",
+      "term": "promote",
+      "translation": "werben für"
+    },
+    {
+      "id": "u20_023",
+      "term": "public transport",
+      "translation": "der öffentliche Verkehr"
+    },
+    {
+      "id": "u20_024",
+      "term": "recently",
+      "translation": "kürzlich"
+    },
+    {
+      "id": "u20_025",
+      "term": "vegan",
+      "translation": "vegan"
+    },
+    {
+      "id": "u20_026",
+      "term": "viewer",
+      "translation": "der Zuschauer, die Zuschauerin"
+    },
+    {
+      "id": "u20_027",
+      "term": "voucher",
+      "translation": "der Gutschein"
+    },
+    {
+      "id": "u20_028",
+      "term": "washing-up liquid",
+      "translation": "das Spülmittel"
+    },
+    {
+      "id": "u20_029",
+      "term": "analyse",
+      "translation": "analysieren"
+    },
+    {
+      "id": "u20_030",
+      "term": "body of text",
+      "translation": "der Fliesstext"
+    },
+    {
+      "id": "u20_031",
+      "term": "bold",
+      "translation": "kühn"
+    },
+    {
+      "id": "u20_032",
+      "term": "break",
+      "translation": "hier: die Pause"
+    },
+    {
+      "id": "u20_033",
+      "term": "capital letter",
+      "translation": "der Grossbuchstabe"
+    },
+    {
+      "id": "u20_034",
+      "term": "Europe",
+      "translation": "Europa"
+    },
+    {
+      "id": "u20_035",
+      "term": "fashion",
+      "translation": "die Mode"
+    },
+    {
+      "id": "u20_036",
+      "term": "full-page",
+      "translation": "ganzseitig"
+    },
+    {
+      "id": "u20_037",
+      "term": "good-value",
+      "translation": "preisgünstig, preiswert"
+    },
+    {
+      "id": "u20_038",
+      "term": "listener",
+      "translation": "der Zuhörer, die Zuhörerin"
+    },
+    {
+      "id": "u20_039",
+      "term": "logo",
+      "translation": "das Logo, das Firmenzeichen"
+    },
+    {
+      "id": "u20_040",
+      "term": "optimistic",
+      "translation": "optimistisch"
+    },
+    {
+      "id": "u20_041",
+      "term": "postage and packing",
+      "translation": "Porto und Verpackung"
+    },
+    {
+      "id": "u20_042",
+      "term": "print ad",
+      "translation": "das gedruckte Inserat"
+    },
+    {
+      "id": "u20_043",
+      "term": "rhyme",
+      "translation": "der Reim"
+    },
+    {
+      "id": "u20_044",
+      "term": "small letter",
+      "translation": "der Kleinbuchstabe"
+    },
+    {
+      "id": "u20_045",
+      "term": "stand out",
+      "translation": "herausragen"
+    },
+    {
+      "id": "u20_046",
+      "term": "subscription",
+      "translation": "das Abonnement"
+    },
+    {
+      "id": "u20_047",
+      "term": "win the lottery",
+      "translation": "den Hauptpreis gewinnen"
+    },
+    {
+      "id": "u20_048",
+      "term": "alcohol",
+      "translation": "der Alkohol"
+    },
+    {
+      "id": "u20_049",
+      "term": "at a big profit",
+      "translation": "mit grossem Gewinn"
+    },
+    {
+      "id": "u20_050",
+      "term": "behaviour change",
+      "translation": "die Verhaltensänderung"
+    },
+    {
+      "id": "u20_051",
+      "term": "better value",
+      "translation": "preiswerter"
+    },
+    {
+      "id": "u20_052",
+      "term": "brush one's teeth",
+      "translation": "sich die Zähne putzen"
+    },
+    {
+      "id": "u20_053",
+      "term": "concept",
+      "translation": "das Konzept"
+    },
+    {
+      "id": "u20_054",
+      "term": "download",
+      "translation": "herunterladen, downloaden"
+    },
+    {
+      "id": "u20_055",
+      "term": "ethnic minorities",
+      "translation": "die ethnischen Minderheiten"
+    },
+    {
+      "id": "u20_056",
+      "term": "for sale",
+      "translation": "zu verkaufen"
+    },
+    {
+      "id": "u20_057",
+      "term": "hang out",
+      "translation": "rumhängen"
+    },
+    {
+      "id": "u20_058",
+      "term": "hire",
+      "translation": "mieten"
+    },
+    {
+      "id": "u20_059",
+      "term": "household",
+      "translation": "der Haushalt"
+    },
+    {
+      "id": "u20_060",
+      "term": "interactive",
+      "translation": "interaktiv"
+    },
+    {
+      "id": "u20_061",
+      "term": "media planner",
+      "translation": "der Mediaplaner, die Mediaplanerin"
+    },
+    {
+      "id": "u20_062",
+      "term": "no matter",
+      "translation": "es spielt keine Rolle"
+    },
+    {
+      "id": "u20_063",
+      "term": "paid-for article",
+      "translation": "der bezahlte Artikel"
+    },
+    {
+      "id": "u20_064",
+      "term": "research",
+      "translation": "die Forschung"
+    },
+    {
+      "id": "u20_065",
+      "term": "stage",
+      "translation": "hier: das Stadium"
+    },
+    {
+      "id": "u20_066",
+      "term": "students' union",
+      "translation": "die Studentenvereinigung"
+    },
+    {
+      "id": "u20_067",
+      "term": "teen",
+      "translation": "der/die Teenie"
+    },
+    {
+      "id": "u20_068",
+      "term": "turn out to be",
+      "translation": "sich herausstellen, dass"
+    },
+    {
+      "id": "u20_069",
+      "term": "website",
+      "translation": "die Website"
+    },
+    {
+      "id": "u20_070",
+      "term": "redo",
+      "translation": "nochmals machen"
+    },
+    {
+      "id": "u20_071",
+      "term": "remove",
+      "translation": "entfernen"
+    },
+    {
+      "id": "u20_072",
+      "term": "replace",
+      "translation": "ersetzen"
+    },
+    {
+      "id": "u20_073",
+      "term": "rewrite",
+      "translation": "neu schreiben"
+    }
+  ]
+},
+{
+  "language": "en",
+  "course": "Open World 3",
+  "schoolLevel": "secondary",
+  "unit": "Unit 21 – Backpacking",
+  "objective": "LZ 1 · Alle Vokabeln",
+  "words": [
+    {
+      "id": "u21_001",
+      "term": "Aboriginal",
+      "translation": "von den Ureinwohnern Australiens"
+    },
+    {
+      "id": "u21_002",
+      "term": "Australia",
+      "translation": "Australien"
+    },
+    {
+      "id": "u21_003",
+      "term": "backpacker",
+      "translation": "der Rucksacktourist, die Rucksacktouristin"
+    },
+    {
+      "id": "u21_004",
+      "term": "chemist",
+      "translation": "hier: der Apotheker, die Apothekerin"
+    },
+    {
+      "id": "u21_005",
+      "term": "headache",
+      "translation": "die Kopfschmerzen"
+    },
+    {
+      "id": "u21_006",
+      "term": "kangaroo",
+      "translation": "das Känguru"
+    },
+    {
+      "id": "u21_007",
+      "term": "landscape",
+      "translation": "die Landschaft"
+    },
+    {
+      "id": "u21_008",
+      "term": "medicine",
+      "translation": "die Medizin, das Medikament"
+    },
+    {
+      "id": "u21_009",
+      "term": "pill",
+      "translation": "die Tablette, die Pille"
+    },
+    {
+      "id": "u21_010",
+      "term": "region",
+      "translation": "die Region"
+    },
+    {
+      "id": "u21_011",
+      "term": "ancient",
+      "translation": "alt, antik"
+    },
+    {
+      "id": "u21_012",
+      "term": "Australian",
+      "translation": "der Australier, die Australierin; australisch"
+    },
+    {
+      "id": "u21_013",
+      "term": "available",
+      "translation": "verfügbar, erhältlich"
+    },
+    {
+      "id": "u21_014",
+      "term": "burn",
+      "translation": "brennen"
+    },
+    {
+      "id": "u21_015",
+      "term": "capital",
+      "translation": "die Hauptstadt"
+    },
+    {
+      "id": "u21_016",
+      "term": "coral",
+      "translation": "die Koralle"
+    },
+    {
+      "id": "u21_017",
+      "term": "crocodile",
+      "translation": "das Krokodil"
+    },
+    {
+      "id": "u21_018",
+      "term": "dolphin",
+      "translation": "der Delfin"
+    },
+    {
+      "id": "u21_019",
+      "term": "endless",
+      "translation": "endlos"
+    },
+    {
+      "id": "u21_020",
+      "term": "essential",
+      "translation": "äusserst wichtig"
+    },
+    {
+      "id": "u21_021",
+      "term": "guarantee",
+      "translation": "garantieren"
+    },
+    {
+      "id": "u21_022",
+      "term": "ideal",
+      "translation": "ideal"
+    },
+    {
+      "id": "u21_023",
+      "term": "insect",
+      "translation": "das Insekt"
+    },
+    {
+      "id": "u21_024",
+      "term": "local",
+      "translation": "örtlich, lokal"
+    },
+    {
+      "id": "u21_025",
+      "term": "national park",
+      "translation": "der Nationalpark"
+    },
+    {
+      "id": "u21_026",
+      "term": "penguin",
+      "translation": "der Pinguin"
+    },
+    {
+      "id": "u21_027",
+      "term": "sacred",
+      "translation": "heilig"
+    },
+    {
+      "id": "u21_028",
+      "term": "shark",
+      "translation": "der Hai"
+    },
+    {
+      "id": "u21_029",
+      "term": "species",
+      "translation": "die Art, die Spezies"
+    },
+    {
+      "id": "u21_030",
+      "term": "sunrise",
+      "translation": "der Sonnenaufgang"
+    },
+    {
+      "id": "u21_031",
+      "term": "sunset",
+      "translation": "der Sonnenuntergang"
+    },
+    {
+      "id": "u21_032",
+      "term": "tough",
+      "translation": "hart, zäh"
+    },
+    {
+      "id": "u21_033",
+      "term": "tropical",
+      "translation": "tropisch"
+    },
+    {
+      "id": "u21_034",
+      "term": "wildlife",
+      "translation": "hier: die Wildtiere"
+    },
+    {
+      "id": "u21_035",
+      "term": "abroad",
+      "translation": "im Ausland, ins Ausland"
+    },
+    {
+      "id": "u21_036",
+      "term": "accommodation",
+      "translation": "die Unterkunft"
+    },
+    {
+      "id": "u21_037",
+      "term": "allergic",
+      "translation": "allergisch"
+    },
+    {
+      "id": "u21_038",
+      "term": "ambulance",
+      "translation": "der Krankenwagen"
+    },
+    {
+      "id": "u21_039",
+      "term": "appointment",
+      "translation": "der Termin, die Verabredung"
+    },
+    {
+      "id": "u21_040",
+      "term": "assistant",
+      "translation": "der Mitarbeiter, die Mitarbeiterin"
+    },
+    {
+      "id": "u21_041",
+      "term": "at the chemist's",
+      "translation": "in der Apotheke"
+    },
+    {
+      "id": "u21_042",
+      "term": "backpack",
+      "translation": "der Rucksack"
+    },
+    {
+      "id": "u21_043",
+      "term": "bandage",
+      "translation": "der Verband"
+    },
+    {
+      "id": "u21_044",
+      "term": "brekkie (AuE)",
+      "translation": "das Frühstück, Zmorge (AuE)"
+    },
+    {
+      "id": "u21_045",
+      "term": "catch",
+      "translation": "erwischen"
+    },
+    {
+      "id": "u21_046",
+      "term": "chill",
+      "translation": "die Erkältung, das Kältegefühl"
+    },
+    {
+      "id": "u21_047",
+      "term": "confirm",
+      "translation": "bestätigen"
+    },
+    {
+      "id": "u21_048",
+      "term": "Dad",
+      "translation": "Papa"
+    },
+    {
+      "id": "u21_049",
+      "term": "delay",
+      "translation": "verschieben"
+    },
+    {
+      "id": "u21_050",
+      "term": "diarrhoea",
+      "translation": "der Durchfall"
+    },
+    {
+      "id": "u21_051",
+      "term": "down under",
+      "translation": "Australien (und/oder Neuseeland)"
+    },
+    {
+      "id": "u21_052",
+      "term": "exception",
+      "translation": "die Ausnahme"
+    },
+    {
+      "id": "u21_053",
+      "term": "extra fee",
+      "translation": "die zusätzliche Gebühr, der Aufpreis"
+    },
+    {
+      "id": "u21_054",
+      "term": "fasten",
+      "translation": "hier: zumachen, befestigen"
+    },
+    {
+      "id": "u21_055",
+      "term": "fever",
+      "translation": "das Fieber"
+    },
+    {
+      "id": "u21_056",
+      "term": "first aid kit",
+      "translation": "die Erste-Hilfe-Ausrüstung"
+    },
+    {
+      "id": "u21_057",
+      "term": "fridge",
+      "translation": "der Kühlschrank"
+    },
+    {
+      "id": "u21_058",
+      "term": "harbour",
+      "translation": "der Hafen"
+    },
+    {
+      "id": "u21_059",
+      "term": "hospital",
+      "translation": "das Spital"
+    },
+    {
+      "id": "u21_060",
+      "term": "illness",
+      "translation": "die Krankheit"
+    },
+    {
+      "id": "u21_061",
+      "term": "injury",
+      "translation": "die Verletzung"
+    },
+    {
+      "id": "u21_062",
+      "term": "luckily",
+      "translation": "glücklicherweise"
+    },
+    {
+      "id": "u21_063",
+      "term": "mate",
+      "translation": "der Kamerad, die Kameradin"
+    },
+    {
+      "id": "u21_064",
+      "term": "mess",
+      "translation": "das Durcheinander, die Unordnung"
+    },
+    {
+      "id": "u21_065",
+      "term": "milk",
+      "translation": "die Milch"
+    },
+    {
+      "id": "u21_066",
+      "term": "moreover",
+      "translation": "zudem"
+    },
+    {
+      "id": "u21_067",
+      "term": "Mum",
+      "translation": "Mama"
+    },
+    {
+      "id": "u21_068",
+      "term": "no way",
+      "translation": "auf keinen Fall, ausgeschlossen"
+    },
+    {
+      "id": "u21_069",
+      "term": "operation",
+      "translation": "die Operation"
+    },
+    {
+      "id": "u21_070",
+      "term": "painkiller",
+      "translation": "das Schmerzmittel"
+    },
+    {
+      "id": "u21_071",
+      "term": "refuse",
+      "translation": "sich weigern, ablehnen"
+    },
+    {
+      "id": "u21_072",
+      "term": "roommate",
+      "translation": "der Zimmergenosse, die Zimmergenossin"
+    },
+    {
+      "id": "u21_073",
+      "term": "scissors",
+      "translation": "die Schere"
+    },
+    {
+      "id": "u21_074",
+      "term": "seatbelt",
+      "translation": "der Gurt"
+    },
+    {
+      "id": "u21_075",
+      "term": "sightseeing",
+      "translation": "die Besichtigung von Sehenswürdigkeiten"
+    },
+    {
+      "id": "u21_076",
+      "term": "snore",
+      "translation": "schnarchen"
+    },
+    {
+      "id": "u21_077",
+      "term": "staff",
+      "translation": "das Personal"
+    },
+    {
+      "id": "u21_078",
+      "term": "stay at",
+      "translation": "wohnen in, übernachten in"
+    },
+    {
+      "id": "u21_079",
+      "term": "stomach ache",
+      "translation": "das Bauchweh"
+    },
+    {
+      "id": "u21_080",
+      "term": "stunning",
+      "translation": "überwältigend, umwerfend"
+    },
+    {
+      "id": "u21_081",
+      "term": "sunburn",
+      "translation": "der Sonnenbrand"
+    },
+    {
+      "id": "u21_082",
+      "term": "supermarket",
+      "translation": "der Supermarkt"
+    },
+    {
+      "id": "u21_083",
+      "term": "therefore",
+      "translation": "deshalb, deswegen"
+    },
+    {
+      "id": "u21_084",
+      "term": "tour guide",
+      "translation": "der Reiseleiter, die Reiseleiterin"
+    },
+    {
+      "id": "u21_085",
+      "term": "travel blog",
+      "translation": "der Reiseblog"
+    },
+    {
+      "id": "u21_086",
+      "term": "wild",
+      "translation": "wild"
+    },
+    {
+      "id": "u21_087",
+      "term": "within",
+      "translation": "innerhalb (von)"
+    }
+  ]
+}
 ]

@@ -28,8 +28,8 @@ Students select English or French, choose one or more Units/Unités and learning
 
 ## Capabilities and Constraints
 
-- The app can optionally connect to Supabase for email/password accounts and cross-device synchronization.
-- Vocabulary lists are curated and grouped by language, Unit/Unité, and learning objective.
+- The app can optionally connect to Supabase for email/password accounts, cross-device synchronization, and seven-day learning-set links.
+- Vocabulary lists are curated and grouped by language, course, Unit/Unité, and learning objective.
 - The exam date, selected vocabulary, and learning progress are saved locally and synchronized per account when Supabase is configured.
 - Practice tests show their evaluation after the last answer.
 - Teacher functions are later work.
