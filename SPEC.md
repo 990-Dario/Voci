@@ -1,5 +1,7 @@
 # Spec: Voci – Schüler-Version
 
+Die optionale Erweiterung für Schulen und Lehrpersonen ist in `docs/LEHRPERSONENFUNKTION.md` beschrieben. Die Aktivierung steht in `docs/SCHULFUNKTION_EINRICHTEN.md`; sie benötigt die zusätzliche Migration und Serverfunktionen.
+
 ## Annahmen für diesen Entwurf
 
 1. Die erste Auslieferung ist eine responsive Web-App, keine native App.

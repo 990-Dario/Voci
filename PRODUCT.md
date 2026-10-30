@@ -32,7 +32,7 @@ Students select English or French, choose one or more Units/Unités and learning
 - Vocabulary lists are curated and grouped by language, course, Unit/Unité, and learning objective.
 - The exam date, selected vocabulary, and learning progress are saved locally and synchronized per account when Supabase is configured.
 - Practice tests show their evaluation after the last answer.
-- Teacher functions are later work.
+- Optional school features use a separate Supabase migration: verified school roles, classes, join codes, shared exam announcements, private study progress, notification preferences, and server-side billing/email integrations. See `docs/SCHULFUNKTION_EINRICHTEN.md` for activation.
 - The first screen briefly introduces the learning offer before leading into vocabulary selection.
 
 ## Evidence on Hand

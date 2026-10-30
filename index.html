@@ -3,28 +3,42 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3f5f0">
-    <meta name="description" content="Mit Voci den Prüfungsstoff in Englisch und Französisch üben.">
-    <title>Voci – Vokabeln lernen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#234f45">
+    <meta name="description" content="Dein Lernplatz für Deutsch, Englisch, Französisch, Mathematik und Geografie.">
+    <title>Voci – Dein Lernplatz</title>
+    <link rel="preload" href="assets/fonts/atkinson-hyperlegible-next.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
     <script src="app-data.js"></script>
+    <script src="content-data.js"></script>
+    <script src="grammar-data.js"></script>
+    <script src="math-data.js"></script>
+    <script src="calculator-data.js"></script>
+    <script src="practice.js"></script>
+    <script src="geography-data.js"></script>
+    <script src="geography.js"></script>
+    <script src="school-data.js"></script>
+    <script src="school.js"></script>
     <script src="app.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#app">Zum Inhalt</a>
+    <aside class="app-sidebar">
+      <a class="brand" href="#start" data-nav="intro" aria-label="Voci Startseite">voci<span class="brand-period">.</span></a>
+      <nav class="main-nav" aria-label="Lernen">
+        <button data-nav="intro">Mein Lernplatz</button>
+        <button data-nav="sets">Lernsets</button>
+        <button data-nav="progress">Lernfortschritt</button>
+      </nav>
+      <nav id="learning-nav" class="learning-nav" aria-label="Schule und Klassen" hidden></nav>
+      <p class="sidebar-note">Schritt für Schritt.<br>In deinem Tempo.</p>
+    </aside>
     <header class="site-header">
-      <a class="brand" href="#start" data-action="home" aria-label="Voci Startseite">
-        <span class="brand-mark" aria-hidden="true">v</span>
-        <span>voci<span class="brand-period">.</span></span>
-      </a>
-      <span class="header-note">Dein Lernplatz für Englisch &amp; Französisch</span>
+      <span id="page-location" class="header-note">Mein Lernplatz</span>
       <div id="account-controls" class="account-controls"></div>
     </header>
-    <main id="app" class="app-shell" aria-live="off" data-ui>
+    <main id="app" class="app-shell" tabindex="-1" aria-live="off" data-ui>
       <p class="loading">Dein Lernplatz wird vorbereitet …</p>
     </main>
     <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
@@ -43,6 +57,7 @@
           <label class="school-level-choice"><input type="radio" name="school-level" value="primary" checked><span>Primarschule</span></label>
           <label class="school-level-choice"><input type="radio" name="school-level" value="secondary"><span>Sekundarschule</span></label>
         </fieldset>
+        <div id="signup-school-profile" hidden></div>
         <label class="date-field"><span class="section-label">E-Mail-Adresse</span><input id="auth-email" name="email" type="email" autocomplete="email" required></label>
         <label class="date-field"><span class="section-label">Passwort</span><input id="auth-password" name="password" type="password" autocomplete="current-password" minlength="8" required></label>
         <div class="auth-dialog-actions">
@@ -62,7 +77,9 @@
           <label class="school-level-choice"><input type="radio" name="account-school-level" value="primary"><span>Primarschule</span></label>
           <label class="school-level-choice"><input type="radio" name="account-school-level" value="secondary"><span>Sekundarschule</span></label>
         </fieldset>
-        <div class="auth-dialog-actions"><button class="button" type="submit">Schulstufe speichern</button></div>
+        <div id="notification-settings"></div>
+        <p id="account-status" class="auth-status is-error" role="status" hidden></p>
+        <div class="auth-dialog-actions"><button class="button" type="submit">Einstellungen speichern</button></div>
       </form>
     </dialog>
     <footer class="site-footer">

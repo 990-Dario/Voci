@@ -1,0 +1,1306 @@
+{
+  "version": 1,
+  "subjectId": "de",
+  "source": "Eigene Voci-Übungsaufgaben; kein offizieller Lehrmittelkatalog. Fachliche Freigabe ausstehend.",
+  "topics": [
+    {
+      "id": "de:wortarten",
+      "name": "Nomen, Verben und Adjektive",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart.",
+      "examples": [
+        {
+          "prompt": "Welche Wortart ist «Hund»?",
+          "answer": "Nomen"
+        },
+        {
+          "prompt": "Welche Wortart ist «springen»?",
+          "answer": "Verb"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:wortarten:1",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «Hund»?",
+          "acceptedAnswers": [
+            "Nomen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:2",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «springen»?",
+          "acceptedAnswers": [
+            "Verb"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:3",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «blau»?",
+          "acceptedAnswers": [
+            "Adjektiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:4",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «Freude»?",
+          "acceptedAnswers": [
+            "Nomen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:5",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «schlafen»?",
+          "acceptedAnswers": [
+            "Verb"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:6",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «freundlich»?",
+          "acceptedAnswers": [
+            "Adjektiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:7",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «Schule»?",
+          "acceptedAnswers": [
+            "Nomen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        },
+        {
+          "id": "de:wortarten:8",
+          "topicId": "de:wortarten",
+          "type": "written",
+          "prompt": "Welche Wortart ist «lernen»?",
+          "acceptedAnswers": [
+            "Verb"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nomen benennen Dinge, Lebewesen oder Begriffe. Verben beschreiben Tätigkeiten oder Zustände. Adjektive beschreiben Eigenschaften. Bestimme jeweils nur die markierte Wortart."
+        }
+      ]
+    },
+    {
+      "id": "de:praesens",
+      "name": "Präsens, Personalformen und Infinitiv",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform.",
+      "examples": [
+        {
+          "prompt": "Präsens: Ich ___ nach Hause. (gehen)",
+          "answer": "gehe"
+        },
+        {
+          "prompt": "Präsens: Du ___ ein Buch. (lesen)",
+          "answer": "liest"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:praesens:1",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Ich ___ nach Hause. (gehen)",
+          "acceptedAnswers": [
+            "gehe"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:2",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Du ___ ein Buch. (lesen)",
+          "acceptedAnswers": [
+            "liest"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:3",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Wir ___ im Hof. (spielen)",
+          "acceptedAnswers": [
+            "spielen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:4",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Ihr ___ schnell. (laufen)",
+          "acceptedAnswers": [
+            "lauft"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:5",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Er ___ einen Apfel. (essen)",
+          "acceptedAnswers": [
+            "isst"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:6",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Nenne den Infinitiv von «sie schreibt».",
+          "acceptedAnswers": [
+            "schreiben"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:7",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Nenne den Infinitiv von «du siehst».",
+          "acceptedAnswers": [
+            "sehen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        },
+        {
+          "id": "de:praesens:8",
+          "topicId": "de:praesens",
+          "type": "written",
+          "prompt": "Präsens: Das Kind ___ ein Bild. (malen)",
+          "acceptedAnswers": [
+            "malt"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Präsens richtet sich die Verbendung nach der Person. Der Infinitiv ist die Grundform: gehen. Ergänze nur die verlangte Verbform."
+        }
+      ]
+    },
+    {
+      "id": "de:vergangenheit",
+      "name": "Präteritum und Perfekt",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form.",
+      "examples": [
+        {
+          "prompt": "Präteritum: Ich ___ nach Hause. (gehen)",
+          "answer": "ging"
+        },
+        {
+          "prompt": "Präteritum: Er ___ einen Brief. (schreiben)",
+          "answer": "schrieb"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:vergangenheit:1",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Präteritum: Ich ___ nach Hause. (gehen)",
+          "acceptedAnswers": [
+            "ging"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:2",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Präteritum: Er ___ einen Brief. (schreiben)",
+          "acceptedAnswers": [
+            "schrieb"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:3",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Präteritum: Wir ___ im Garten. (spielen)",
+          "acceptedAnswers": [
+            "spielten"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:4",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Präteritum: Du ___ ein Buch. (lesen)",
+          "acceptedAnswers": [
+            "lasest",
+            "last"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:5",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Perfekt: Ich habe ein Bild ___. (malen)",
+          "acceptedAnswers": [
+            "gemalt"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:6",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Perfekt: Sie ist nach Hause ___. (gehen)",
+          "acceptedAnswers": [
+            "gegangen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:7",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Perfekt: Wir haben Brot ___. (essen)",
+          "acceptedAnswers": [
+            "gegessen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        },
+        {
+          "id": "de:vergangenheit:8",
+          "topicId": "de:vergangenheit",
+          "type": "written",
+          "prompt": "Perfekt: Ihr seid schnell ___. (laufen)",
+          "acceptedAnswers": [
+            "gelaufen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Präteritum ist eine einfache Vergangenheitsform. Das Perfekt besteht aus haben oder sein und einem Partizip II. Ergänze die fehlende Form."
+        }
+      ]
+    },
+    {
+      "id": "de:wortfamilien",
+      "name": "Wortstamm und Wortfamilien",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer.",
+      "examples": [
+        {
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «spielen», «Spieler», «Spielplatz»?",
+          "answer": "spiel"
+        },
+        {
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «malen», «Maler», «Malbuch»?",
+          "answer": "mal"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:wortfamilien:1",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «spielen», «Spieler», «Spielplatz»?",
+          "acceptedAnswers": [
+            "spiel"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:2",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «malen», «Maler», «Malbuch»?",
+          "acceptedAnswers": [
+            "mal"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:3",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «lernen», «Lernzeit», «Lerngruppe»?",
+          "acceptedAnswers": [
+            "lern"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:4",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welcher gemeinsame Wortstamm steckt in «lesen», «Leser», «Lesebuch»?",
+          "acceptedAnswers": [
+            "les"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:5",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welches Wort gehört nicht zu «fahren, Fahrer, Farbe, Fahrt»?",
+          "acceptedAnswers": [
+            "Farbe"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:6",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welches Wort gehört nicht zu «singen, Sänger, springen, Gesang»?",
+          "acceptedAnswers": [
+            "springen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:7",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welches Wort gehört nicht zu «spielen, Spiel, Spielzeug, Spiegel»?",
+          "acceptedAnswers": [
+            "Spiegel"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        },
+        {
+          "id": "de:wortfamilien:8",
+          "topicId": "de:wortfamilien",
+          "type": "written",
+          "prompt": "Welches Wort gehört nicht zu «Bau, bauen, Bauer, Baum»?",
+          "acceptedAnswers": [
+            "Baum"
+          ],
+          "caseSensitive": false,
+          "explanation": "Wörter einer Wortfamilie teilen einen Wortstamm und eine verwandte Bedeutung. Ein Umlaut kann sich dabei ändern: fahren – Fahrt – Fahrer."
+        }
+      ]
+    },
+    {
+      "id": "de:satzglieder",
+      "name": "Subjekt, Objekt und einfache Fälle",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an.",
+      "examples": [
+        {
+          "prompt": "Nenne das Subjekt: «Der Hund schläft.»",
+          "answer": "Der Hund"
+        },
+        {
+          "prompt": "Nenne das Subjekt: «Heute kommt meine Schwester.»",
+          "answer": "meine Schwester"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:satzglieder:1",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Subjekt: «Der Hund schläft.»",
+          "acceptedAnswers": [
+            "Der Hund"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:2",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Subjekt: «Heute kommt meine Schwester.»",
+          "acceptedAnswers": [
+            "meine Schwester"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:3",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Akkusativobjekt: «Lena liest ein Buch.»",
+          "acceptedAnswers": [
+            "ein Buch"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:4",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Dativobjekt: «Wir helfen dem Nachbarn.»",
+          "acceptedAnswers": [
+            "dem Nachbarn"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:5",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Subjekt: «Im Garten spielen die Kinder.»",
+          "acceptedAnswers": [
+            "die Kinder"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:6",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Akkusativobjekt: «Ich sehe den Berg.»",
+          "acceptedAnswers": [
+            "den Berg"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:7",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Dativobjekt: «Sie schenkt ihrer Mutter Blumen.»",
+          "acceptedAnswers": [
+            "ihrer Mutter"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        },
+        {
+          "id": "de:satzglieder:8",
+          "topicId": "de:satzglieder",
+          "type": "written",
+          "prompt": "Nenne das Subjekt: «Der Zug fährt ab.»",
+          "acceptedAnswers": [
+            "Der Zug"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Subjekt beantwortet «Wer oder was?». Ein Akkusativobjekt beantwortet «Wen oder was?», ein Dativobjekt «Wem?». Gib nur die gesuchte Wortgruppe an."
+        }
+      ]
+    },
+    {
+      "id": "de:faelle",
+      "name": "Die vier Fälle",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe.",
+      "examples": [
+        {
+          "prompt": "«Der Vogel» singt. Welcher Fall?",
+          "answer": "Nominativ"
+        },
+        {
+          "prompt": "Das Dach «des Hauses» ist rot. Welcher Fall?",
+          "answer": "Genitiv"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:faelle:1",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "«Der Vogel» singt. Welcher Fall?",
+          "acceptedAnswers": [
+            "Nominativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:2",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Das Dach «des Hauses» ist rot. Welcher Fall?",
+          "acceptedAnswers": [
+            "Genitiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:3",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Wir helfen «dem Kind». Welcher Fall?",
+          "acceptedAnswers": [
+            "Dativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:4",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Ich sehe «den Hund». Welcher Fall?",
+          "acceptedAnswers": [
+            "Akkusativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:5",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "«Die Frau» lacht. Welcher Fall?",
+          "acceptedAnswers": [
+            "Nominativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:6",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Die Farbe «des Autos» gefällt mir. Welcher Fall?",
+          "acceptedAnswers": [
+            "Genitiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:7",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Sie dankt «ihrem Vater». Welcher Fall?",
+          "acceptedAnswers": [
+            "Dativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        },
+        {
+          "id": "de:faelle:8",
+          "topicId": "de:faelle",
+          "type": "written",
+          "prompt": "Er kauft «einen Apfel». Welcher Fall?",
+          "acceptedAnswers": [
+            "Akkusativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nominativ: Wer oder was? Genitiv: Wessen? Dativ: Wem? Akkusativ: Wen oder was? Bestimme den Fall der markierten Wortgruppe."
+        }
+      ]
+    },
+    {
+      "id": "de:funktionswoerter",
+      "name": "Pronomen, Partikeln, Präpositionen und Konjunktionen",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel.",
+      "examples": [
+        {
+          "prompt": "Welche Wortart hat «ich»?",
+          "answer": "Pronomen"
+        },
+        {
+          "prompt": "Welche Wortart hat «unter» in «unter dem Tisch»?",
+          "answer": "Präposition"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:funktionswoerter:1",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «ich»?",
+          "acceptedAnswers": [
+            "Pronomen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:2",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «unter» in «unter dem Tisch»?",
+          "acceptedAnswers": [
+            "Präposition"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:3",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «und»?",
+          "acceptedAnswers": [
+            "Konjunktion"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:4",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «nicht»?",
+          "acceptedAnswers": [
+            "Negationspartikel",
+            "Partikel"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:5",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «sie»?",
+          "acceptedAnswers": [
+            "Pronomen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:6",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «wegen» in «wegen des Regens»?",
+          "acceptedAnswers": [
+            "Präposition"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:7",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «weil»?",
+          "acceptedAnswers": [
+            "Konjunktion"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        },
+        {
+          "id": "de:funktionswoerter:8",
+          "topicId": "de:funktionswoerter",
+          "type": "written",
+          "prompt": "Welche Wortart hat «ohne» in «ohne einen Schirm»?",
+          "acceptedAnswers": [
+            "Präposition"
+          ],
+          "caseSensitive": false,
+          "explanation": "Pronomen können Nomen begleiten oder ersetzen. Präpositionen stehen bei einer Wortgruppe, Konjunktionen verbinden Wörter oder Sätze. «Nicht» ist eine Negationspartikel."
+        }
+      ]
+    },
+    {
+      "id": "de:weitere-zeiten",
+      "name": "Futur und Plusquamperfekt",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit.",
+      "examples": [
+        {
+          "prompt": "Futur I: Ich ___ morgen kommen.",
+          "answer": "werde"
+        },
+        {
+          "prompt": "Futur I: Du ___ das schaffen.",
+          "answer": "wirst"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:weitere-zeiten:1",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Futur I: Ich ___ morgen kommen.",
+          "acceptedAnswers": [
+            "werde"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:2",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Futur I: Du ___ das schaffen.",
+          "acceptedAnswers": [
+            "wirst"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:3",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Futur I: Wir ___ bald verreisen.",
+          "acceptedAnswers": [
+            "werden"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:4",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Futur I: Ihr ___ viel lernen.",
+          "acceptedAnswers": [
+            "werdet"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:5",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Plusquamperfekt: Ich ___ bereits gegessen. (haben)",
+          "acceptedAnswers": [
+            "hatte"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:6",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Plusquamperfekt: Sie ___ schon gegangen. (sein, Singular)",
+          "acceptedAnswers": [
+            "war"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:7",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Plusquamperfekt: Wir ___ lange gewartet. (haben)",
+          "acceptedAnswers": [
+            "hatten"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        },
+        {
+          "id": "de:weitere-zeiten:8",
+          "topicId": "de:weitere-zeiten",
+          "type": "written",
+          "prompt": "Plusquamperfekt: Ihr ___ früh aufgestanden. (sein)",
+          "acceptedAnswers": [
+            "wart"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Futur I besteht aus werden und Infinitiv. Das Plusquamperfekt besteht aus hatte oder war und Partizip II und bezeichnet Vorvergangenheit."
+        }
+      ]
+    },
+    {
+      "id": "de:satzbau",
+      "name": "Hauptsatz und Nebensatz",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen.",
+      "examples": [
+        {
+          "prompt": "Ordne: Ich / bleibe / zu Hause / .",
+          "answer": "Ich bleibe zu Hause."
+        },
+        {
+          "prompt": "Ordne: Morgen / kommt / mein Bruder / .",
+          "answer": "Morgen kommt mein Bruder."
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:satzbau:1",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ordne: Ich / bleibe / zu Hause / .",
+          "acceptedAnswers": [
+            "Ich bleibe zu Hause."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:2",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ordne: Morgen / kommt / mein Bruder / .",
+          "acceptedAnswers": [
+            "Morgen kommt mein Bruder."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:3",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ergänze mit allen Wörtern «weil / es / regnet»: Ich bleibe drinnen, ___.",
+          "acceptedAnswers": [
+            "weil es regnet"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:4",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ergänze mit allen Wörtern «dass / du / kommst»: Ich hoffe, ___.",
+          "acceptedAnswers": [
+            "dass du kommst"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:5",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ergänze mit allen Wörtern «obwohl / er / müde / ist»: Er lernt, ___.",
+          "acceptedAnswers": [
+            "obwohl er müde ist"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:6",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ist «weil es regnet» ein Hauptsatz oder Nebensatz?",
+          "acceptedAnswers": [
+            "Nebensatz"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:7",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ist «Die Sonne scheint.» ein Hauptsatz oder Nebensatz?",
+          "acceptedAnswers": [
+            "Hauptsatz"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        },
+        {
+          "id": "de:satzbau:8",
+          "topicId": "de:satzbau",
+          "type": "written",
+          "prompt": "Ergänze mit allen Wörtern «wenn / der Bus / kommt»: Wir gehen, ___.",
+          "acceptedAnswers": [
+            "wenn der Bus kommt"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Aussagesatz steht das finite Verb an zweiter Satzgliedposition. In einem mit weil, dass oder obwohl eingeleiteten Nebensatz steht es meist am Ende. Setze den ganzen Satz samt Satzzeichen zusammen."
+        }
+      ]
+    },
+    {
+      "id": "de:verbmodi",
+      "name": "Indikativ, Imperativ und Konjunktiv",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus.",
+      "examples": [
+        {
+          "prompt": "Bestimme den Modus: «Er kommt.»",
+          "answer": "Indikativ"
+        },
+        {
+          "prompt": "Bestimme den Modus: «Komm!»",
+          "answer": "Imperativ"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:verbmodi:1",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Bestimme den Modus: «Er kommt.»",
+          "acceptedAnswers": [
+            "Indikativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:2",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Bestimme den Modus: «Komm!»",
+          "acceptedAnswers": [
+            "Imperativ"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:3",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Bestimme den Modus: «Er komme», sagt sie.",
+          "acceptedAnswers": [
+            "Konjunktiv I"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:4",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Bestimme den Modus: «Wenn er käme!»",
+          "acceptedAnswers": [
+            "Konjunktiv II"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:5",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Imperativ, du-Form: ___ leise! (sein)",
+          "acceptedAnswers": [
+            "Sei"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:6",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Imperativ, ihr-Form: ___ das Buch! (lesen)",
+          "acceptedAnswers": [
+            "Lest"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:7",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Konjunktiv II: Wenn ich mehr Zeit ___! (haben)",
+          "acceptedAnswers": [
+            "hätte"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        },
+        {
+          "id": "de:verbmodi:8",
+          "topicId": "de:verbmodi",
+          "type": "written",
+          "prompt": "Konjunktiv II: Wenn sie hier ___! (sein)",
+          "acceptedAnswers": [
+            "wäre"
+          ],
+          "caseSensitive": false,
+          "explanation": "Der Indikativ stellt etwas als wirklich dar. Der Imperativ fordert auf. Konjunktiv I dient oft der indirekten Rede; Konjunktiv II drückt etwa einen Wunsch oder eine Möglichkeit aus."
+        }
+      ]
+    },
+    {
+      "id": "de:passiv",
+      "name": "Aktiv und Passiv",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet.",
+      "examples": [
+        {
+          "prompt": "Ergänze im Präsens-Passiv: Die Tür wird ___. (öffnen)",
+          "answer": "geöffnet"
+        },
+        {
+          "prompt": "Ergänze im Präsens-Passiv: Das Brot wird ___. (backen)",
+          "answer": "gebacken"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:passiv:1",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Ergänze im Präsens-Passiv: Die Tür wird ___. (öffnen)",
+          "acceptedAnswers": [
+            "geöffnet"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:2",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Ergänze im Präsens-Passiv: Das Brot wird ___. (backen)",
+          "acceptedAnswers": [
+            "gebacken"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:3",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Ergänze im Präsens-Passiv: Der Brief ___ geschrieben.",
+          "acceptedAnswers": [
+            "wird"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:4",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Ergänze im Präsens-Passiv: Die Bilder ___ gemalt.",
+          "acceptedAnswers": [
+            "werden"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:5",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Bestimme Aktiv oder Passiv: «Der Junge trägt die Tasche.»",
+          "acceptedAnswers": [
+            "Aktiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:6",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Bestimme Aktiv oder Passiv: «Die Tasche wird getragen.»",
+          "acceptedAnswers": [
+            "Passiv"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:7",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Setze ins Passiv, ohne Täterangabe: «Jemand schliesst das Fenster.»",
+          "acceptedAnswers": [
+            "Das Fenster wird geschlossen."
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        },
+        {
+          "id": "de:passiv:8",
+          "topicId": "de:passiv",
+          "type": "written",
+          "prompt": "Setze ins Passiv, ohne Täterangabe: «Jemand repariert das Fahrrad.»",
+          "acceptedAnswers": [
+            "Das Fahrrad wird repariert."
+          ],
+          "caseSensitive": false,
+          "explanation": "Das Vorgangspassiv wird mit werden und Partizip II gebildet. Das Akkusativobjekt des Aktivsatzes wird zum Subjekt: Lea öffnet die Tür. → Die Tür wird von Lea geöffnet."
+        }
+      ]
+    },
+    {
+      "id": "de:indirekte-rede",
+      "name": "Direkte und indirekte Rede",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde.",
+      "examples": [
+        {
+          "prompt": "Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie ___ müde.",
+          "answer": "sei"
+        },
+        {
+          "prompt": "Konjunktiv I: Tom sagt: «Ich habe Zeit.» → Tom sagt, er ___ Zeit.",
+          "answer": "habe"
+        }
+      ],
+      "questions": [
+        {
+          "id": "de:indirekte-rede:1",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie ___ müde.",
+          "acceptedAnswers": [
+            "sei"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:2",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Tom sagt: «Ich habe Zeit.» → Tom sagt, er ___ Zeit.",
+          "acceptedAnswers": [
+            "habe"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:3",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Mia sagt: «Ich komme morgen.» → Mia sagt, sie ___ morgen.",
+          "acceptedAnswers": [
+            "komme"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:4",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Ben sagt: «Ich kann helfen.» → Ben sagt, er ___ helfen.",
+          "acceptedAnswers": [
+            "könne"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:5",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Anna sagt: «Ich lese gern.» → Anna sagt, sie ___ gern.",
+          "acceptedAnswers": [
+            "lese"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:6",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Paul sagt: «Ich gehe heim.» → Paul sagt, er ___ heim.",
+          "acceptedAnswers": [
+            "gehe"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:7",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Eva sagt: «Ich muss lernen.» → Eva sagt, sie ___ lernen.",
+          "acceptedAnswers": [
+            "müsse"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        },
+        {
+          "id": "de:indirekte-rede:8",
+          "topicId": "de:indirekte-rede",
+          "type": "written",
+          "prompt": "Konjunktiv I: Noah sagt: «Ich wohne hier.» → Noah sagt, er ___ hier.",
+          "acceptedAnswers": [
+            "wohne"
+          ],
+          "caseSensitive": false,
+          "explanation": "In indirekter Rede werden Pronomen angepasst. Für eine eindeutige Übung verwenden wir hier Konjunktiv I: Lea sagt: «Ich bin müde.» → Lea sagt, sie sei müde."
+        }
+      ]
+    }
+  ]
+}

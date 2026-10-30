@@ -1,0 +1,1091 @@
+{
+  "version": 1,
+  "subjectId": "fr",
+  "source": "Eigene Voci-Übungsaufgaben; kein offizieller Lehrmittelkatalog. Fachliche Freigabe ausstehend.",
+  "topics": [
+    {
+      "id": "fr:articles",
+      "name": "Artikel, Geschlecht und Mehrzahl",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s.",
+      "examples": [
+        {
+          "prompt": "Artikel bestimmt: ___ maison",
+          "answer": "la"
+        },
+        {
+          "prompt": "Artikel bestimmt: ___ livre",
+          "answer": "le"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:articles:1",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Artikel bestimmt: ___ maison",
+          "acceptedAnswers": [
+            "la"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:2",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Artikel bestimmt: ___ livre",
+          "acceptedAnswers": [
+            "le"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:3",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Artikel unbestimmt: ___ fille",
+          "acceptedAnswers": [
+            "une"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:4",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Artikel unbestimmt: ___ garçon",
+          "acceptedAnswers": [
+            "un"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:5",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Mehrzahl von «le chat»",
+          "acceptedAnswers": [
+            "les chats"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:6",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Mehrzahl von «la table»",
+          "acceptedAnswers": [
+            "les tables"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:7",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Mehrzahl von «le jeu»",
+          "acceptedAnswers": [
+            "les jeux"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        },
+        {
+          "id": "fr:articles:8",
+          "topicId": "fr:articles",
+          "type": "written",
+          "prompt": "Mehrzahl von «un cheval»",
+          "acceptedAnswers": [
+            "des chevaux"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/un stehen bei maskulinen, la/une bei femininen Nomen. Vor einem Vokal wird le/la zu l’. Der bestimmte Pluralartikel ist les. Häufig erhält das Nomen ein -s."
+        }
+      ]
+    },
+    {
+      "id": "fr:present",
+      "name": "Subjektpronomen, être, avoir und présent",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent.",
+      "examples": [
+        {
+          "prompt": "Je ___ suisse. (être)",
+          "answer": "suis"
+        },
+        {
+          "prompt": "Tu ___ un livre. (avoir)",
+          "answer": "as"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:present:1",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Je ___ suisse. (être)",
+          "acceptedAnswers": [
+            "suis"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:2",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Tu ___ un livre. (avoir)",
+          "acceptedAnswers": [
+            "as"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:3",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Elle ___ douze ans. (avoir)",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:4",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Nous ___ contents. (être)",
+          "acceptedAnswers": [
+            "sommes"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:5",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Vous ___ français. (parler)",
+          "acceptedAnswers": [
+            "parlez"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:6",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Ils ___ au parc. (jouer)",
+          "acceptedAnswers": [
+            "jouent"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:7",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Ersetze «Marie» durch ein Subjektpronomen.",
+          "acceptedAnswers": [
+            "elle"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        },
+        {
+          "id": "fr:present:8",
+          "topicId": "fr:present",
+          "type": "written",
+          "prompt": "Ersetze «Paul et moi» durch ein Subjektpronomen.",
+          "acceptedAnswers": [
+            "nous"
+          ],
+          "caseSensitive": false,
+          "explanation": "Die Verbform richtet sich nach je, tu, il/elle, nous, vous, ils/elles. Être und avoir sind unregelmässig. Regelmässige -er-Verben haben im présent die Endungen -e, -es, -e, -ons, -ez, -ent."
+        }
+      ]
+    },
+    {
+      "id": "fr:questions",
+      "name": "Verneinung und Fragen",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein.",
+      "examples": [
+        {
+          "prompt": "Verneine: «Je parle.»",
+          "answer": "Je ne parle pas."
+        },
+        {
+          "prompt": "Verneine: «Il chante.»",
+          "answer": "Il ne chante pas."
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:questions:1",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Verneine: «Je parle.»",
+          "acceptedAnswers": [
+            "Je ne parle pas."
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:2",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Verneine: «Il chante.»",
+          "acceptedAnswers": [
+            "Il ne chante pas."
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:3",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Verneine: «Nous jouons.»",
+          "acceptedAnswers": [
+            "Nous ne jouons pas."
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:4",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Verneine: «Elle aime le thé.»",
+          "acceptedAnswers": [
+            "Elle n’aime pas le thé."
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:5",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Frage mit est-ce que: «Tu viens.»",
+          "acceptedAnswers": [
+            "Est-ce que tu viens ?",
+            "Est-ce que tu viens?"
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:6",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Frage mit est-ce que: «Vous parlez français.»",
+          "acceptedAnswers": [
+            "Est-ce que vous parlez français ?",
+            "Est-ce que vous parlez français?"
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:7",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Ergänze: Je ___ suis pas fatigué.",
+          "acceptedAnswers": [
+            "ne"
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        },
+        {
+          "id": "fr:questions:8",
+          "topicId": "fr:questions",
+          "type": "written",
+          "prompt": "Ergänze: Il n’aime ___ le café.",
+          "acceptedAnswers": [
+            "pas"
+          ],
+          "caseSensitive": false,
+          "explanation": "Ne … pas umschliesst in der geschriebenen Sprache das konjugierte Verb. Vor einem Vokal wird ne zu n’. Est-ce que leitet eine Frage ein."
+        }
+      ]
+    },
+    {
+      "id": "fr:adjectives",
+      "name": "Adjektivübereinstimmung und Possessivbegleiter",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres.",
+      "examples": [
+        {
+          "prompt": "Une fille ___. (petit)",
+          "answer": "petite"
+        },
+        {
+          "prompt": "Des garçons ___. (grand)",
+          "answer": "grands"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:adjectives:1",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "Une fille ___. (petit)",
+          "acceptedAnswers": [
+            "petite"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:2",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "Des garçons ___. (grand)",
+          "acceptedAnswers": [
+            "grands"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:3",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "Des filles ___. (content)",
+          "acceptedAnswers": [
+            "contentes"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:4",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "Une robe ___. (bleu)",
+          "acceptedAnswers": [
+            "bleue"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:5",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "___ livre (mein)",
+          "acceptedAnswers": [
+            "mon"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:6",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "___ maison (mein)",
+          "acceptedAnswers": [
+            "ma"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:7",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "___ livres (meine)",
+          "acceptedAnswers": [
+            "mes"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        },
+        {
+          "id": "fr:adjectives:8",
+          "topicId": "fr:adjectives",
+          "type": "written",
+          "prompt": "___ école (meine; vor Vokal)",
+          "acceptedAnswers": [
+            "mon"
+          ],
+          "caseSensitive": false,
+          "explanation": "Adjektive richten sich nach Geschlecht und Zahl des Nomens. Possessivbegleiter richten sich ebenfalls nach dem folgenden Nomen: mon livre, ma maison, mes livres."
+        }
+      ]
+    },
+    {
+      "id": "fr:irregular-present",
+      "name": "Häufige unregelmässige Verben",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt.",
+      "examples": [
+        {
+          "prompt": "Je ___ à l’école. (aller)",
+          "answer": "vais"
+        },
+        {
+          "prompt": "Nous ___ au cinéma. (aller)",
+          "answer": "allons"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:irregular-present:1",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Je ___ à l’école. (aller)",
+          "acceptedAnswers": [
+            "vais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:2",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Nous ___ au cinéma. (aller)",
+          "acceptedAnswers": [
+            "allons"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:3",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Vous ___ du sport. (faire)",
+          "acceptedAnswers": [
+            "faites"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:4",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Ils ___ un gâteau. (faire)",
+          "acceptedAnswers": [
+            "font"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:5",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Tu ___ le bus. (prendre)",
+          "acceptedAnswers": [
+            "prends"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:6",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Nous ___ le train. (prendre)",
+          "acceptedAnswers": [
+            "prenons"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:7",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Elle ___ demain. (venir)",
+          "acceptedAnswers": [
+            "vient"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        },
+        {
+          "id": "fr:irregular-present:8",
+          "topicId": "fr:irregular-present",
+          "type": "written",
+          "prompt": "Ils ___ de Paris. (venir)",
+          "acceptedAnswers": [
+            "viennent"
+          ],
+          "caseSensitive": false,
+          "explanation": "Aller, faire, prendre und venir haben unregelmässige Formen. Lerne die Form immer zusammen mit dem Subjekt."
+        }
+      ]
+    },
+    {
+      "id": "fr:past",
+      "name": "Passé composé und imparfait",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-.",
+      "examples": [
+        {
+          "prompt": "Passé composé: J’ai ___. (manger)",
+          "answer": "mangé"
+        },
+        {
+          "prompt": "Passé composé: Nous avons ___. (finir)",
+          "answer": "fini"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:past:1",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Passé composé: J’ai ___. (manger)",
+          "acceptedAnswers": [
+            "mangé"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:2",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Passé composé: Nous avons ___. (finir)",
+          "acceptedAnswers": [
+            "fini"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:3",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Passé composé: Elle est ___. (aller)",
+          "acceptedAnswers": [
+            "allée"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:4",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Passé composé: Ils ont ___. (prendre)",
+          "acceptedAnswers": [
+            "pris"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:5",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Imparfait: Je ___ petit. (être)",
+          "acceptedAnswers": [
+            "étais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:6",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Imparfait: Nous ___ souvent. (jouer)",
+          "acceptedAnswers": [
+            "jouions"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:7",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Imparfait: Elle ___ beaucoup. (lire)",
+          "acceptedAnswers": [
+            "lisait"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        },
+        {
+          "id": "fr:past:8",
+          "topicId": "fr:past",
+          "type": "written",
+          "prompt": "Imparfait: Vous ___ un chien. (avoir)",
+          "acceptedAnswers": [
+            "aviez"
+          ],
+          "caseSensitive": false,
+          "explanation": "Passé composé verwendet avoir/être und participe passé. Imparfait verwendet den Stamm der nous-Form ohne -ons und -ais, -ais, -ait, -ions, -iez, -aient; être hat den Stamm ét-."
+        }
+      ]
+    },
+    {
+      "id": "fr:future-imperative",
+      "name": "Futur proche und Imperativ",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg.",
+      "examples": [
+        {
+          "prompt": "Futur proche: Je ___ partir.",
+          "answer": "vais"
+        },
+        {
+          "prompt": "Futur proche: Tu ___ manger.",
+          "answer": "vas"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:future-imperative:1",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Futur proche: Je ___ partir.",
+          "acceptedAnswers": [
+            "vais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:2",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Futur proche: Tu ___ manger.",
+          "acceptedAnswers": [
+            "vas"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:3",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Futur proche: Nous ___ jouer.",
+          "acceptedAnswers": [
+            "allons"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:4",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Futur proche: Elles ___ venir.",
+          "acceptedAnswers": [
+            "vont"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:5",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Imperativ, tu: ___ ! (parler)",
+          "acceptedAnswers": [
+            "Parle"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:6",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Imperativ, vous: ___ ! (écouter)",
+          "acceptedAnswers": [
+            "Écoutez"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:7",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Imperativ, nous: ___ ! (aller)",
+          "acceptedAnswers": [
+            "Allons"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        },
+        {
+          "id": "fr:future-imperative:8",
+          "topicId": "fr:future-imperative",
+          "type": "written",
+          "prompt": "Imperativ, tu: ___ ! (finir)",
+          "acceptedAnswers": [
+            "Finis"
+          ],
+          "caseSensitive": false,
+          "explanation": "Futur proche besteht aus aller im présent und Infinitiv. Im Imperativ fällt das Subjektpronomen weg; bei der tu-Form regelmässiger -er-Verben fällt normalerweise auch -s weg."
+        }
+      ]
+    },
+    {
+      "id": "fr:object-pronouns",
+      "name": "Objektpronomen",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb.",
+      "examples": [
+        {
+          "prompt": "Ersetze «le livre»: Je lis le livre. → Je ___ lis.",
+          "answer": "le"
+        },
+        {
+          "prompt": "Ersetze «la chanson»: Il chante la chanson. → Il ___ chante.",
+          "answer": "la"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:object-pronouns:1",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «le livre»: Je lis le livre. → Je ___ lis.",
+          "acceptedAnswers": [
+            "le"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:2",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «la chanson»: Il chante la chanson. → Il ___ chante.",
+          "acceptedAnswers": [
+            "la"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:3",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «les chats»: Elle voit les chats. → Elle ___ voit.",
+          "acceptedAnswers": [
+            "les"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:4",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «à Paul»: Je parle à Paul. → Je ___ parle.",
+          "acceptedAnswers": [
+            "lui"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:5",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «aux enfants»: Elle téléphone aux enfants. → Elle ___ téléphone.",
+          "acceptedAnswers": [
+            "leur"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:6",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «la porte»: Nous fermons la porte. → Nous ___ fermons.",
+          "acceptedAnswers": [
+            "la"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:7",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «les fleurs»: Tu regardes les fleurs. → Tu ___ regardes.",
+          "acceptedAnswers": [
+            "les"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        },
+        {
+          "id": "fr:object-pronouns:8",
+          "topicId": "fr:object-pronouns",
+          "type": "written",
+          "prompt": "Ersetze «à Marie»: Il écrit à Marie. → Il ___ écrit.",
+          "acceptedAnswers": [
+            "lui"
+          ],
+          "caseSensitive": false,
+          "explanation": "Le/la/les ersetzen direkte Objekte; lui/leur ersetzen hier Personen nach à. Das Pronomen steht in diesen einfachen Aussagesätzen vor dem konjugierten Verb."
+        }
+      ]
+    },
+    {
+      "id": "fr:comparison-relative",
+      "name": "Steigerung und Relativsätze",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt.",
+      "examples": [
+        {
+          "prompt": "Elle est ___ grande que moi. (grösser)",
+          "answer": "plus"
+        },
+        {
+          "prompt": "Il est ___ rapide que toi. (weniger schnell)",
+          "answer": "moins"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:comparison-relative:1",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Elle est ___ grande que moi. (grösser)",
+          "acceptedAnswers": [
+            "plus"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:2",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Il est ___ rapide que toi. (weniger schnell)",
+          "acceptedAnswers": [
+            "moins"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:3",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Elle est ___ gentille que lui. (ebenso nett)",
+          "acceptedAnswers": [
+            "aussi"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:4",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Comparatif de «bon» au masculin singulier.",
+          "acceptedAnswers": [
+            "meilleur"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:5",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "C’est le garçon ___ chante.",
+          "acceptedAnswers": [
+            "qui"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:6",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "C’est le livre ___ je lis.",
+          "acceptedAnswers": [
+            "que"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:7",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Voici la fille ___ parle.",
+          "acceptedAnswers": [
+            "qui"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        },
+        {
+          "id": "fr:comparison-relative:8",
+          "topicId": "fr:comparison-relative",
+          "type": "written",
+          "prompt": "Voici la chanson ___ nous aimons.",
+          "acceptedAnswers": [
+            "que"
+          ],
+          "caseSensitive": false,
+          "explanation": "Plus … que bedeutet mehr … als, moins … que weniger … als, aussi … que ebenso … wie. Qui ist im Relativsatz Subjekt, que ist direktes Objekt."
+        }
+      ]
+    },
+    {
+      "id": "fr:conditionnel",
+      "name": "Conditionnel présent",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken.",
+      "examples": [
+        {
+          "prompt": "Je ___ un café. (vouloir)",
+          "answer": "voudrais"
+        },
+        {
+          "prompt": "Tu ___ venir. (pouvoir)",
+          "answer": "pourrais"
+        }
+      ],
+      "questions": [
+        {
+          "id": "fr:conditionnel:1",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Je ___ un café. (vouloir)",
+          "acceptedAnswers": [
+            "voudrais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:2",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Tu ___ venir. (pouvoir)",
+          "acceptedAnswers": [
+            "pourrais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:3",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Elle ___ contente. (être)",
+          "acceptedAnswers": [
+            "serait"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:4",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Nous ___ du temps. (avoir)",
+          "acceptedAnswers": [
+            "aurions"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:5",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Vous ___ à Paris. (aller)",
+          "acceptedAnswers": [
+            "iriez"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:6",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Ils ___ demain. (venir)",
+          "acceptedAnswers": [
+            "viendraient"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:7",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Je ___ français. (parler)",
+          "acceptedAnswers": [
+            "parlerais"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        },
+        {
+          "id": "fr:conditionnel:8",
+          "topicId": "fr:conditionnel",
+          "type": "written",
+          "prompt": "Nous ___ ensemble. (finir)",
+          "acceptedAnswers": [
+            "finirions"
+          ],
+          "caseSensitive": false,
+          "explanation": "Das conditionnel présent verbindet den Futurstamm mit den imparfait-Endungen: -ais, -ais, -ait, -ions, -iez, -aient. Es kann Wünsche und höfliche Bitten ausdrücken."
+        }
+      ]
+    }
+  ]
+}

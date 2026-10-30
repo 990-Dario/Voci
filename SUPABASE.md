@@ -1,5 +1,7 @@
 # Voci mit Supabase verbinden
 
+Für die neuen Schul-, Klassen- und Abofunktionen folgt nach dieser Grundeinrichtung die Anleitung [Schulfunktionen einrichten](docs/SCHULFUNKTION_EINRICHTEN.md).
+
 Diese Anleitung verbindet die bestehende Voci-Webseite mit Supabase. Danach können Schülerinnen und Schüler ein Konto mit E-Mail und Passwort erstellen und Lernsets sowie Lernfortschritt auf mehreren Geräten verwenden.
 
 ## Was du vorher brauchst

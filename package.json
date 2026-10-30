@@ -1,0 +1,13 @@
+{
+  "name": "voci",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "test": "node --test tests/*test.js tests/*test.mjs",
+    "test:logic": "node --test tests/app-data.test.js tests/content-data.test.js tests/grammar-data.test.js tests/math-data.test.js tests/calculator-data.test.js tests/school-data.test.js tests/billing.test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10",
+    "d3-geo": "3.1.1"
+  }
+}

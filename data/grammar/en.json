@@ -1,0 +1,1414 @@
+{
+  "version": 1,
+  "subjectId": "en",
+  "source": "Eigene Voci-Übungsaufgaben; kein offizieller Lehrmittelkatalog. Fachliche Freigabe ausstehend.",
+  "topics": [
+    {
+      "id": "en:pronouns-be-have",
+      "name": "Pronomen, be und have",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has.",
+      "examples": [
+        {
+          "prompt": "I ___ happy. (be)",
+          "answer": "am"
+        },
+        {
+          "prompt": "She ___ twelve. (be)",
+          "answer": "is"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:pronouns-be-have:1",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "I ___ happy. (be)",
+          "acceptedAnswers": [
+            "am"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:2",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "She ___ twelve. (be)",
+          "acceptedAnswers": [
+            "is"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:3",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "We ___ friends. (be)",
+          "acceptedAnswers": [
+            "are"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:4",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "He ___ a bike. (have)",
+          "acceptedAnswers": [
+            "has"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:5",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "They ___ a dog. (have)",
+          "acceptedAnswers": [
+            "have"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:6",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "Replace «Anna» with a subject pronoun.",
+          "acceptedAnswers": [
+            "she"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:7",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "Replace «Tom and I» with a subject pronoun.",
+          "acceptedAnswers": [
+            "we"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        },
+        {
+          "id": "en:pronouns-be-have:8",
+          "topicId": "en:pronouns-be-have",
+          "type": "written",
+          "prompt": "Replace «the book» with a subject pronoun.",
+          "acceptedAnswers": [
+            "it"
+          ],
+          "caseSensitive": false,
+          "explanation": "I, you, he, she, it, we und they sind Personalpronomen. Be verändert sich zu am/is/are; have wird bei he/she/it zu has."
+        }
+      ]
+    },
+    {
+      "id": "en:articles-plurals",
+      "name": "Artikel und Plural",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig.",
+      "examples": [
+        {
+          "prompt": "___ apple (a/an)",
+          "answer": "an"
+        },
+        {
+          "prompt": "___ book (a/an)",
+          "answer": "a"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:articles-plurals:1",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "___ apple (a/an)",
+          "acceptedAnswers": [
+            "an"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:2",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "___ book (a/an)",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:3",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "___ orange (a/an)",
+          "acceptedAnswers": [
+            "an"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:4",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "___ university (a/an)",
+          "acceptedAnswers": [
+            "a"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:5",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "Plural of «box»",
+          "acceptedAnswers": [
+            "boxes"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:6",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "Plural of «baby»",
+          "acceptedAnswers": [
+            "babies"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:7",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "Plural of «child»",
+          "acceptedAnswers": [
+            "children"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        },
+        {
+          "id": "en:articles-plurals:8",
+          "topicId": "en:articles-plurals",
+          "type": "written",
+          "prompt": "Plural of «book»",
+          "acceptedAnswers": [
+            "books"
+          ],
+          "caseSensitive": false,
+          "explanation": "A steht vor einem Konsonantenlaut, an vor einem Vokallaut. Im Plural folgt meist -s, nach bestimmten Endungen -es. Manche Plurale sind unregelmässig."
+        }
+      ]
+    },
+    {
+      "id": "en:present",
+      "name": "Simple Present und Present Continuous",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen.",
+      "examples": [
+        {
+          "prompt": "Every day, she ___ to school. (walk)",
+          "answer": "walks"
+        },
+        {
+          "prompt": "We usually ___ breakfast at seven. (eat)",
+          "answer": "eat"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:present:1",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "Every day, she ___ to school. (walk)",
+          "acceptedAnswers": [
+            "walks"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:2",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "We usually ___ breakfast at seven. (eat)",
+          "acceptedAnswers": [
+            "eat"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:3",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "He always ___ his homework. (do)",
+          "acceptedAnswers": [
+            "does"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:4",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "My brother ___ football on Mondays. (play)",
+          "acceptedAnswers": [
+            "plays"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:5",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "Look! She is ___. (run)",
+          "acceptedAnswers": [
+            "running"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:6",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "Listen! They are ___. (sing)",
+          "acceptedAnswers": [
+            "singing"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:7",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "Right now, I ___ reading. (be)",
+          "acceptedAnswers": [
+            "am"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        },
+        {
+          "id": "en:present:8",
+          "topicId": "en:present",
+          "type": "written",
+          "prompt": "Look! He ___ swimming. (be)",
+          "acceptedAnswers": [
+            "is"
+          ],
+          "caseSensitive": false,
+          "explanation": "Simple Present beschreibt Gewohnheiten; bei he/she/it folgt meist -s. Present Continuous besteht aus am/is/are und -ing und beschreibt hier Handlungen, die gerade laufen."
+        }
+      ]
+    },
+    {
+      "id": "en:questions",
+      "name": "Satzstellung, Fragen und Verneinung",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt.",
+      "examples": [
+        {
+          "prompt": "___ you like apples? (do/does)",
+          "answer": "Do"
+        },
+        {
+          "prompt": "___ she play tennis? (do/does)",
+          "answer": "Does"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:questions:1",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "___ you like apples? (do/does)",
+          "acceptedAnswers": [
+            "Do"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:2",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "___ she play tennis? (do/does)",
+          "acceptedAnswers": [
+            "Does"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:3",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "He does not ___ coffee. (drink)",
+          "acceptedAnswers": [
+            "drink"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:4",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "We ___ not live here. (do/does)",
+          "acceptedAnswers": [
+            "do"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:5",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "Ordne: you / Are / ready / ?",
+          "acceptedAnswers": [
+            "Are you ready?"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:6",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "Ordne: like / I / music / .",
+          "acceptedAnswers": [
+            "I like music."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:7",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "Verneine ohne Kurzform: «She is tired.»",
+          "acceptedAnswers": [
+            "She is not tired."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        },
+        {
+          "id": "en:questions:8",
+          "topicId": "en:questions",
+          "type": "written",
+          "prompt": "Verneine ohne Kurzform: «They play football.»",
+          "acceptedAnswers": [
+            "They do not play football."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Simple Present braucht eine Frage do oder does; das Vollverb bleibt in der Grundform. Eine Verneinung verwendet do not/does not. Be steht in Fragen vor dem Subjekt."
+        }
+      ]
+    },
+    {
+      "id": "en:past",
+      "name": "Simple Past",
+      "levels": [
+        "primary"
+      ],
+      "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform.",
+      "examples": [
+        {
+          "prompt": "Yesterday, I ___ to school. (walk)",
+          "answer": "walked"
+        },
+        {
+          "prompt": "Last week, she ___ a film. (watch)",
+          "answer": "watched"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:past:1",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Yesterday, I ___ to school. (walk)",
+          "acceptedAnswers": [
+            "walked"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:2",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Last week, she ___ a film. (watch)",
+          "acceptedAnswers": [
+            "watched"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:3",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Yesterday, we ___ pizza. (eat)",
+          "acceptedAnswers": [
+            "ate"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:4",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Last night, he ___ home. (go)",
+          "acceptedAnswers": [
+            "went"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:5",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Yesterday, they ___ a dog. (see)",
+          "acceptedAnswers": [
+            "saw"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:6",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "I ___ happy yesterday. (be)",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:7",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "We ___ late yesterday. (be)",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        },
+        {
+          "id": "en:past:8",
+          "topicId": "en:past",
+          "type": "written",
+          "prompt": "Did you ___ the book? (read)",
+          "acceptedAnswers": [
+            "read"
+          ],
+          "caseSensitive": false,
+          "explanation": "Bei regelmässigen Verben endet das Simple Past auf -ed. Häufige Verben haben eigene Formen wie went und ate. Nach did bleibt das Vollverb in der Grundform."
+        }
+      ]
+    },
+    {
+      "id": "en:possessives",
+      "name": "Possessivformen und Pronomen",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us.",
+      "examples": [
+        {
+          "prompt": "This is ___ book. (I)",
+          "answer": "my"
+        },
+        {
+          "prompt": "This is ___ bag. (she)",
+          "answer": "her"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:possessives:1",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "This is ___ book. (I)",
+          "acceptedAnswers": [
+            "my"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:2",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "This is ___ bag. (she)",
+          "acceptedAnswers": [
+            "her"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:3",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "This is ___ bike. (he)",
+          "acceptedAnswers": [
+            "his"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:4",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "These are ___ shoes. (we)",
+          "acceptedAnswers": [
+            "our"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:5",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "These are ___ pencils. (they)",
+          "acceptedAnswers": [
+            "their"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:6",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "The book belongs to me. It is ___.",
+          "acceptedAnswers": [
+            "mine"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:7",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "I know Tom. I know ___.",
+          "acceptedAnswers": [
+            "him"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        },
+        {
+          "id": "en:possessives:8",
+          "topicId": "en:possessives",
+          "type": "written",
+          "prompt": "They help Anna and me. They help ___.",
+          "acceptedAnswers": [
+            "us"
+          ],
+          "caseSensitive": false,
+          "explanation": "My/your/his/her/its/our/their stehen vor einem Nomen. Mine/yours usw. stehen allein. Objektpronomen sind etwa me, him, her und us."
+        }
+      ]
+    },
+    {
+      "id": "en:comparison",
+      "name": "Adjektivsteigerung",
+      "levels": [
+        "primary",
+        "secondary"
+      ],
+      "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best.",
+      "examples": [
+        {
+          "prompt": "Comparative of «small»",
+          "answer": "smaller"
+        },
+        {
+          "prompt": "Superlative of «small»",
+          "answer": "smallest"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:comparison:1",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Comparative of «small»",
+          "acceptedAnswers": [
+            "smaller"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:2",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Superlative of «small»",
+          "acceptedAnswers": [
+            "smallest"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:3",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Comparative of «big»",
+          "acceptedAnswers": [
+            "bigger"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:4",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Comparative of «happy»",
+          "acceptedAnswers": [
+            "happier"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:5",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Comparative of «beautiful»",
+          "acceptedAnswers": [
+            "more beautiful"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:6",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Superlative of «interesting»",
+          "acceptedAnswers": [
+            "most interesting"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:7",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Comparative of «good»",
+          "acceptedAnswers": [
+            "better"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        },
+        {
+          "id": "en:comparison:8",
+          "topicId": "en:comparison",
+          "type": "written",
+          "prompt": "Superlative of «good»",
+          "acceptedAnswers": [
+            "best"
+          ],
+          "caseSensitive": false,
+          "explanation": "Kurze Adjektive bilden oft -er und -est; längere more und most. Good hat die Formen better und best."
+        }
+      ]
+    },
+    {
+      "id": "en:tenses",
+      "name": "Weitere Zeitformen und Hilfsverben",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze.",
+      "examples": [
+        {
+          "prompt": "Present Perfect: She has ___ her homework. (finish)",
+          "answer": "finished"
+        },
+        {
+          "prompt": "Present Perfect: I have ___ this film. (see)",
+          "answer": "seen"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:tenses:1",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Present Perfect: She has ___ her homework. (finish)",
+          "acceptedAnswers": [
+            "finished"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:2",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Present Perfect: I have ___ this film. (see)",
+          "acceptedAnswers": [
+            "seen"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:3",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Present Perfect: We ___ visited London. (have)",
+          "acceptedAnswers": [
+            "have"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:4",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Past Continuous: He was ___. (read)",
+          "acceptedAnswers": [
+            "reading"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:5",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Past Continuous: They ___ playing. (be)",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:6",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Past Perfect: She ___ left before I arrived.",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:7",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Future with will: I will ___ you. (help)",
+          "acceptedAnswers": [
+            "help"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        },
+        {
+          "id": "en:tenses:8",
+          "topicId": "en:tenses",
+          "type": "written",
+          "prompt": "Past Perfect: He had ___ his keys. (lose)",
+          "acceptedAnswers": [
+            "lost"
+          ],
+          "caseSensitive": false,
+          "explanation": "Present Perfect: have/has + past participle; Past Continuous: was/were + -ing; Past Perfect: had + past participle; will + Grundform für diese Zukunftssätze."
+        }
+      ]
+    },
+    {
+      "id": "en:modals",
+      "name": "Modalverben",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist.",
+      "examples": [
+        {
+          "prompt": "She can ___. (swim)",
+          "answer": "swim"
+        },
+        {
+          "prompt": "You must ___ here. (wait)",
+          "answer": "wait"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:modals:1",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "She can ___. (swim)",
+          "acceptedAnswers": [
+            "swim"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:2",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "You must ___ here. (wait)",
+          "acceptedAnswers": [
+            "wait"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:3",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "He should ___ more. (sleep)",
+          "acceptedAnswers": [
+            "sleep"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:4",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "You may ___ in. (come)",
+          "acceptedAnswers": [
+            "come"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:5",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "Verbot: You ___ touch this. (must not / do not have to)",
+          "acceptedAnswers": [
+            "must not"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:6",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "Nicht nötig: You ___ come if you are busy. (must not / do not have to)",
+          "acceptedAnswers": [
+            "do not have to"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:7",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "Vergangenheit von can: When I was five, I ___ swim.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        },
+        {
+          "id": "en:modals:8",
+          "topicId": "en:modals",
+          "type": "written",
+          "prompt": "Ordne: I / May / leave / ?",
+          "acceptedAnswers": [
+            "May I leave?"
+          ],
+          "caseSensitive": false,
+          "explanation": "Nach can, must, should und may steht die Grundform ohne to. Must not ist ein Verbot; do not have to bedeutet, dass etwas nicht nötig ist."
+        }
+      ]
+    },
+    {
+      "id": "en:prepositions",
+      "name": "Präpositionen und Konjunktionen",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund.",
+      "examples": [
+        {
+          "prompt": "The lesson starts ___ eight o’clock.",
+          "answer": "at"
+        },
+        {
+          "prompt": "We meet ___ Monday.",
+          "answer": "on"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:prepositions:1",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "The lesson starts ___ eight o’clock.",
+          "acceptedAnswers": [
+            "at"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:2",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "We meet ___ Monday.",
+          "acceptedAnswers": [
+            "on"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:3",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "My birthday is ___ June.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:4",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "She was born ___ 2012.",
+          "acceptedAnswers": [
+            "in"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:5",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "I stayed home ___ I was ill. (because/but)",
+          "acceptedAnswers": [
+            "because"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:6",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "I like tea ___ coffee. (and/because)",
+          "acceptedAnswers": [
+            "and"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:7",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "It is small ___ useful. (but/because)",
+          "acceptedAnswers": [
+            "but"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        },
+        {
+          "id": "en:prepositions:8",
+          "topicId": "en:prepositions",
+          "type": "written",
+          "prompt": "The cat is ___ the table, not on it. (under/and)",
+          "acceptedAnswers": [
+            "under"
+          ],
+          "caseSensitive": false,
+          "explanation": "Zeitangaben verwenden hier at bei Uhrzeiten, on bei Tagen und in bei Monaten/Jahren. And verbindet, but stellt gegenüber, because nennt einen Grund."
+        }
+      ]
+    },
+    {
+      "id": "en:relative-conditionals",
+      "name": "Relativsätze und Bedingungssätze",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform.",
+      "examples": [
+        {
+          "prompt": "The girl ___ lives next door is my friend. (who/which)",
+          "answer": "who"
+        },
+        {
+          "prompt": "The book ___ is on the table is mine. (who/which)",
+          "answer": "which"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:relative-conditionals:1",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "The girl ___ lives next door is my friend. (who/which)",
+          "acceptedAnswers": [
+            "who"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:2",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "The book ___ is on the table is mine. (who/which)",
+          "acceptedAnswers": [
+            "which"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:3",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "If it rains, we ___ stay inside. (First Conditional)",
+          "acceptedAnswers": [
+            "will"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:4",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "If she ___, I will call you. (arrive; First Conditional)",
+          "acceptedAnswers": [
+            "arrives"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:5",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "If I had time, I ___ help. (Second Conditional)",
+          "acceptedAnswers": [
+            "would"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:6",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "If he ___ harder, he would improve. (work; Second Conditional)",
+          "acceptedAnswers": [
+            "worked"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:7",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "This is the teacher ___ helped me. (who/which)",
+          "acceptedAnswers": [
+            "who"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        },
+        {
+          "id": "en:relative-conditionals:8",
+          "topicId": "en:relative-conditionals",
+          "type": "written",
+          "prompt": "If you heat ice, it ___. (melt; Zero Conditional)",
+          "acceptedAnswers": [
+            "melts"
+          ],
+          "caseSensitive": false,
+          "explanation": "Who bezieht sich auf Personen, which auf Dinge; that kann in notwendigen Relativsätzen oft beide ersetzen. First Conditional: if + Simple Present, will + Grundform. Second Conditional: if + Simple Past, would + Grundform."
+        }
+      ]
+    },
+    {
+      "id": "en:passive",
+      "name": "Passive voice",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker.",
+      "examples": [
+        {
+          "prompt": "Present passive: The door is ___. (open)",
+          "answer": "opened"
+        },
+        {
+          "prompt": "Present passive: The books ___ sold here. (be)",
+          "answer": "are"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:passive:1",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Present passive: The door is ___. (open)",
+          "acceptedAnswers": [
+            "opened"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:2",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Present passive: The books ___ sold here. (be)",
+          "acceptedAnswers": [
+            "are"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:3",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Past passive: The window was ___. (break)",
+          "acceptedAnswers": [
+            "broken"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:4",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Past passive: The letters ___ sent yesterday. (be)",
+          "acceptedAnswers": [
+            "were"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:5",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Present passive: Bread is ___. (make)",
+          "acceptedAnswers": [
+            "made"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:6",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Past passive: The story was ___. (write)",
+          "acceptedAnswers": [
+            "written"
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:7",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Setze ins Passiv, ohne Täter: «Someone cleans the room.»",
+          "acceptedAnswers": [
+            "The room is cleaned."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        },
+        {
+          "id": "en:passive:8",
+          "topicId": "en:passive",
+          "type": "written",
+          "prompt": "Setze ins Passiv, ohne Täter: «Someone built the bridge.»",
+          "acceptedAnswers": [
+            "The bridge was built."
+          ],
+          "caseSensitive": false,
+          "explanation": "Im Passiv steht be in der benötigten Zeitform mit dem past participle. The baker makes bread. → Bread is made by the baker."
+        }
+      ]
+    },
+    {
+      "id": "en:reported-speech",
+      "name": "Reported speech",
+      "levels": [
+        "secondary"
+      ],
+      "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an.",
+      "examples": [
+        {
+          "prompt": "Anna said, “I am tired.” → Anna said that she ___ tired.",
+          "answer": "was"
+        },
+        {
+          "prompt": "Tom said, “I have a dog.” → Tom said that he ___ a dog.",
+          "answer": "had"
+        }
+      ],
+      "questions": [
+        {
+          "id": "en:reported-speech:1",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Anna said, “I am tired.” → Anna said that she ___ tired.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:2",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Tom said, “I have a dog.” → Tom said that he ___ a dog.",
+          "acceptedAnswers": [
+            "had"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:3",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Mia said, “I will help.” → Mia said that she ___ help.",
+          "acceptedAnswers": [
+            "would"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:4",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Ben said, “I can swim.” → Ben said that he ___ swim.",
+          "acceptedAnswers": [
+            "could"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:5",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Eva said, “I like music.” → Eva said that she ___ music.",
+          "acceptedAnswers": [
+            "liked"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:6",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Noah said, “I am reading.” → Noah said that he ___ reading.",
+          "acceptedAnswers": [
+            "was"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:7",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Lena said, “I live here.” → Lena said that she ___ there.",
+          "acceptedAnswers": [
+            "lived"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        },
+        {
+          "id": "en:reported-speech:8",
+          "topicId": "en:reported-speech",
+          "type": "written",
+          "prompt": "Paul said, “I play tennis.” → Paul said that he ___ tennis.",
+          "acceptedAnswers": [
+            "played"
+          ],
+          "caseSensitive": false,
+          "explanation": "In diesen Übungen wird nach said die Zeit zurückverschoben: am/is → was, have → had, will → would, can → could. Passe auch das Pronomen an."
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,8 @@
 node_modules/
 dist/
 coverage/
+.impeccable/mocks/
+.impeccable/questions/
 
 # Hosting tools
 .netlify/

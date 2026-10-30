@@ -32,5 +32,11 @@
   function schoolLevelLabel(level) {
     return level === 'primary' ? 'Primarschule' : 'Sekundarschule';
   }
-  return { courses, getCourse, visibleCourses, schoolLevelLabel };
+  function promptForDirection(word, direction) {
+    return direction === 'foreign' ? word.translation : word.term;
+  }
+  function answerForDirection(word, direction) {
+    return direction === 'foreign' ? word.term : word.translation;
+  }
+  return { courses, getCourse, visibleCourses, schoolLevelLabel, promptForDirection, answerForDirection };
 });

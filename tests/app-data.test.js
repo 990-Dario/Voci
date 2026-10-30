@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const { getCourse, visibleCourses, schoolLevelLabel } = require('../app-data.js');
+const { getCourse, visibleCourses, schoolLevelLabel, promptForDirection, answerForDirection } = require('../app-data.js');
 
 const groups = [
   { language: 'en', course: 'Young World 4', schoolLevel: 'primary' },
@@ -12,5 +12,11 @@ assert.equal(schoolLevelLabel('primary'), 'Primarschule');
 assert.equal(getCourse({ language: 'fr', unit: 'Unité 3' }).schoolLevel, 'secondary');
 assert.deepEqual(visibleCourses(groups, 'primary', false).map(group => group.course), ['Young World 4', 'Dis Donc 6']);
 assert.deepEqual(visibleCourses(groups, 'primary', true).map(group => group.course), ['Young World 4', 'Open World 1', 'Dis Donc 6', 'Dis Donc 7']);
+
+const word = { term: 'book', translation: 'das Buch' };
+assert.equal(promptForDirection(word, 'german'), 'book');
+assert.equal(answerForDirection(word, 'german'), 'das Buch');
+assert.equal(promptForDirection(word, 'foreign'), 'das Buch');
+assert.equal(answerForDirection(word, 'foreign'), 'book');
 
 console.log('app-data tests passed');

@@ -1,0 +1,9 @@
+[functions.voci-billing]
+verify_jwt = false
+# voci-billing validates the user JWT against Supabase Auth in authenticatedUser().
+[functions.voci-stripe-webhook]
+verify_jwt = false
+# Stripe signature is verified against the raw request body.
+[functions.voci-mail-worker]
+verify_jwt = false
+# Worker accepts only VOCI_MAIL_WORKER_SECRET; never expose it to a browser.
