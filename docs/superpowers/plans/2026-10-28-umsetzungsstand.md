@@ -26,7 +26,7 @@ Fortschritt R1: Laufende Klassenrunden behalten nun ihren Inhaltsstand und zeige
 Fortschritt R2: Die lokale Datenbankprüfung beansprucht jetzt tatsächlich Worker-Aufträge, prüft den gleichzeitigen zweiten Aufruf und verweigert Aktivierung ohne bestätigte Zahlung. Beide Datenbankprüfungen bestehen. Die [Betriebsanleitung für die Schulaktivierung](../../AKTIVIERUNG_BETRIEB.md) ist vorbereitet; externe Einrichtung und Stripe-Abnahme bleiben offen.
 
 1. R1: Lern-, Konto- und Klassenabläufe vervollständigen, insbesondere Kontowechsel und Änderungen während einer laufenden Übung.
-2. R2: Zahlungswiederholungen, Rollen, Kündigung und Bestandsabo-Umstellung abschliessen; Preiswechselwerkzeug und zugehörige Tests fehlen noch.
+2. R2: Zahlungswiederholungen, Rollen, Kündigung und Bestandsabo-Umstellung abschliessen. Preiswechselwerkzeug und fünf zugehörige lokale Tests sind jetzt vorhanden und bestanden; die [Preiswechselanleitung](../../PREISWECHSEL.md) beschreibt Vorschau, Anwendung und Sonderfälle. Echte Stripe-Tests und der Bestandsbericht bleiben offen.
 3. R3: Visuelle Gesamtabnahme, fachliche Inhaltsprüfung und Dokumentationsabgleich durchführen.
 4. R4: Stripe-Testumgebung, Worker-Zeitpläne und Testmail-Versand einrichten.
 5. R5/P1/P2: Release-Bericht, Sicherheit, Sicherung und Rückfall vorbereiten; danach GitHub und Supabase aktualisieren und online prüfen.
