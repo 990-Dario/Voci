@@ -36,7 +36,7 @@ Optionale E-Mail-Benachrichtigungen können je Kategorie in den Kontoeinstellung
 
 Einzelne Lehrpersonen wählen die Fächer selbst. Das erste Fach kostet CHF 5.– pro Monat; das zweite bis vierte Fach kostet je zusätzlich CHF 2.– pro Monat; ab dem fünften Fach kostet jedes weitere je zusätzlich CHF 1.– pro Monat.
 
-Schulen erhalten alle Fächer. Bei höchstens 50 zählenden Lehrpersonen kostet das Schulpaket CHF 30.– pro Monat; bei mehr als 50 zählenden Lehrpersonen CHF 75.– pro Monat. Schüler können in unbegrenzter Zahl teilnehmen und verändern den Preis nicht. Zur Grenze zählen Lehrpersonen und Administratoren, die zugleich Lehrpersonen sind. Ausschliessliche Administratoren zählen nicht.
+Schulen erhalten alle Fächer. Bei höchstens 50 zählenden Lehrpersonen kostet das Schulpaket CHF 40.– pro Monat; bei mehr als 50 zählenden Lehrpersonen CHF 100.– pro Monat. Schüler können in unbegrenzter Zahl teilnehmen und verändern den Preis nicht. Zur Grenze zählen Lehrpersonen und Administratoren, die zugleich Lehrpersonen sind. Ausschliessliche Administratoren zählen nicht.
 
 Bei mehr als 50 zählenden Lehrpersonen muss die Schule auf das Paket über 50 upgraden. Liegt die Zahl bei höchstens 50, wird aber das grössere Paket bezahlt, erhält die Schule einen Hinweis, dass sie aktuell mehr als nötig bezahlt. Untermonatliche Tarifwechsel, Mehrwertsteuerbehandlung und Rechnungsstellung sind noch verbindlich festzulegen; bis dahin ist dieser Abschnitt kein abschliessendes Preisangebot.
 

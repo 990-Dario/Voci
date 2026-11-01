@@ -7,3 +7,6 @@ verify_jwt = false
 [functions.voci-mail-worker]
 verify_jwt = false
 # Worker accepts only VOCI_MAIL_WORKER_SECRET; never expose it to a browser.
+[functions.voci-activation-worker]
+verify_jwt = false
+# Worker accepts only VOCI_ACTIVATION_WORKER_SECRET.

@@ -4,6 +4,43 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
+test('Schulaktivierung: Zürcher Folgetag, Rechte, Freimonat und zweite Administration', {skip:!process.env.VOCI_PGLITE_PATH}, async()=>{
+  const {PGlite}=require(process.env.VOCI_PGLITE_PATH);const db=new PGlite();
+  try {
+    await db.exec(`create role anon;create role authenticated;create role service_role;create schema auth;
+      create table auth.users(id uuid primary key,email text,email_confirmed_at timestamptz default now(),raw_app_meta_data jsonb default '{}');
+      create function auth.uid() returns uuid language sql stable as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;`);
+    await db.exec(fs.readFileSync(path.join(__dirname,'../supabase-schema.sql'),'utf8').split('create extension if not exists pg_cron;')[0]);
+    for(const file of fs.readdirSync(path.join(__dirname,'../supabase/migrations')).sort().filter(f=>f.endsWith('.sql')))await db.exec(fs.readFileSync(path.join(__dirname,'../supabase/migrations',file),'utf8').split('-- pg_cron')[0]);
+    const times=[['2026-10-28T14:00:00Z','2026-10-28T23:00:00Z'],['2026-03-28T23:00:00Z','2026-03-29T22:00:00Z'],['2026-10-24T22:00:00Z','2026-10-25T23:00:00Z'],['2026-10-28T22:59:59Z','2026-10-28T23:00:00Z'],['2026-10-28T23:00:00Z','2026-10-29T23:00:00Z']];
+    for(const [at,next] of times)assert.equal(new Date((await db.query('select voci_private.next_school_day($1) as t',[at])).rows[0].t).toISOString(),new Date(next).toISOString());
+    const op='00000000-0000-0000-0000-000000000011',admin='00000000-0000-0000-0000-000000000012',second='00000000-0000-0000-0000-000000000013';
+    await db.query(`insert into auth.users(id,email,raw_app_meta_data) values($1,'op@schule.ch','{"voci_operator":true}'),($2,'admin@schule.ch','{}'),($3,'second@schule.ch','{}')`,[op,admin,second]);
+    const as=async id=>db.query("select set_config('request.jwt.claim.sub',$1,false)",[id]);
+    const rpc=async(action,payload={})=>(await db.query('select public.voci_school($1,$2::jsonb) as d',[action,JSON.stringify(payload)])).rows[0].d;
+    await as(admin);await rpc('profile',{first_name:'Anna',last_name:'Admin',school_name:'Testschule',postal_code:'8000',town:'Zürich'});
+    const school=(await db.query('select school_id from voci_private.profiles where user_id=$1',[admin])).rows[0].school_id;
+    const request=await rpc('request_admin',{reason:'Vollständiger Nachweis der Schulberechtigung',request_kind:'admin'});
+    await assert.rejects(rpc('review_admin',{id:request.request_id,approve:true,email_domain:'schule.ch'}),/Nur Voci/);
+    await db.query("update voci_private.admin_requests set created_at=now()-interval '16 days' where id=$1",[request.request_id]);
+    await as(op);await rpc('review_admin',{id:request.request_id,approve:true,email_domain:'schule.ch',completed_at:new Date(Date.now()-15*86400000).toISOString(),delay_reason:'Nachweise lagen vor, Prüfung intern verspätet.'});
+    const activation=async()=>(await db.query('select * from voci_private.school_activations where school_id=$1',[school])).rows[0];
+    const a=await activation();assert.equal(a.status,'scheduled');assert.ok(a.free_until);assert.equal(a.activated_at,null);
+    await as(admin);await rpc('invite_staff',{email:'teacher@schule.ch',is_teacher:true,is_admin:false});
+    assert.equal((await db.query('select voci_private.has_access($1,$2) as ok',[school,admin])).rows[0].ok,false);
+    await db.query("update voci_private.school_activations set scheduled_at=now()-interval '1 day',free_until=now()+interval '1 month',status='free_month',activated_at=now() where school_id=$1",[school]);
+    assert.equal((await db.query('select voci_private.has_access($1,$2) as ok',[school,admin])).rows[0].ok,true);
+    await as(second);await rpc('profile',{first_name:'Bea',last_name:'Admin',school_id:school});
+    const req2=await rpc('request_admin',{reason:'Zweite berechtigte Administration',request_kind:'admin'});
+    const before=await activation();await as(op);await rpc('review_admin',{id:req2.request_id,approve:true,email_domain:'schule.ch'});
+    assert.deepEqual(await activation(),before);
+    await assert.rejects(rpc('review_admin',{id:req2.request_id,approve:true,email_domain:'schule.ch'}),/Offener Antrag/);
+    await as(admin);const snap=(await db.query('select public.voci_school_snapshot() as d')).rows[0].d;assert.equal(snap.activation.status,'free_month');assert.equal(snap.activation.stripe_customer,undefined);
+    const ctx=(await db.query('select public.voci_billing_context($1,$2) as d',[admin,school])).rows[0].d;assert.equal(ctx.payment_allowed,true);
+    await db.exec('set role authenticated');await assert.rejects(db.exec('select public.voci_claim_activations(5)'),/permission denied/);await db.exec('reset role');
+  }finally{await db.close();}
+});
+
 test('Schul-RPCs: Rollen, Codes, Namen, Tarife und Klassenimport', {skip:!process.env.VOCI_PGLITE_PATH}, async () => {
   const {PGlite}=require(process.env.VOCI_PGLITE_PATH);
   const db=new PGlite();
@@ -95,7 +132,7 @@ test('Schul-RPCs: Rollen, Codes, Namen, Tarife und Klassenimport', {skip:!proces
     const lease='90000000-0000-0000-0000-000000000001';
     assert.equal((await db.query('select public.voci_billing_acquire($1,$2) as ok',[school,lease])).rows[0].ok,true);
     assert.equal((await db.query('select public.voci_billing_acquire($1,$2) as ok',[school,teacher])).rows[0].ok,false);
-    const details={school_id:school,user_id:null,plan:'school_large',subjects:[],stripe_customer:'cus_test',stripe_subscription:'sub_test',status:'active',period_end:new Date(Date.now()+30*86400000).toISOString(),cancel_at_period_end:true};
+    const details={payment_confirmed:true,school_id:school,user_id:null,plan:'school_large',subjects:[],stripe_customer:'cus_test',stripe_subscription:'sub_test',status:'active',period_end:new Date(Date.now()+30*86400000).toISOString(),cancel_at_period_end:true};
     await assert.rejects(db.query('select public.voci_billing_sync($1,$2,$3)',['evt_bad',JSON.stringify(details),teacher]),/erneut versuchen/);
     await db.query('select public.voci_billing_sync($1,$2,$3)',['evt_cancel',JSON.stringify(details),lease]);
     await db.query('select public.voci_billing_sync($1,$2,$3)',['evt_cancel',JSON.stringify(details),lease]);

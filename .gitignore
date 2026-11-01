@@ -13,6 +13,7 @@ coverage/
 
 # Hosting tools
 .netlify/
+supabase/.temp/
 
 # Operating system files
 .DS_Store

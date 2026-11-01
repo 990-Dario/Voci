@@ -32,11 +32,11 @@ Abgestimmte Anforderungen; die optionale Erweiterung ist im Projekt implementier
 
 ## Abonnement und Preise
 
-- Einzelne Lehrpersonen wählen Fächer individuell: Das erste Fach kostet CHF 5.– pro Monat, das zweite bis vierte Fach je zusätzlich CHF 2.– und jedes Fach ab dem fünften je zusätzlich CHF 1.– pro Monat.
-- Schulen erhalten alle Fächer. Das Schulpaket kostet CHF 30.– pro Monat bei bis zu 50 zählenden Lehrpersonen und CHF 75.– pro Monat bei mehr als 50. Schülerzahlen sind unbegrenzt und ändern den Preis nicht.
+- Einzelne Lehrpersonen wählen Fächer individuell: Das erste Fach kostet CHF 3.– pro Monat. Das zweite und dritte Fach kosten je CHF 2.– zusätzlich; jedes weitere Fach kostet CHF 1.– zusätzlich. Für ein bis fünf Fächer sind das CHF 3.–, 5.–, 7.–, 8.– und 9.– pro Monat.
+- Schulen erhalten alle Fächer. Das Schulpaket kostet CHF 40.– pro Monat bei bis zu 50 zählenden Lehrpersonen und CHF 100.– pro Monat bei mehr als 50. Schülerzahlen sind unbegrenzt und ändern den Preis nicht.
 - Zur 50er-Grenze zählen Lehrpersonen und Administratoren, die zugleich Lehrpersonen sind. Ausschliessliche Administratoren zählen nicht mit.
 - Bei mehr als 50 zählenden Lehrpersonen muss auf das grössere Paket upgegradet werden. Bei höchstens 50 und dem grösseren Paket erscheint ein Hinweis, dass aktuell mehr als nötig bezahlt wird.
-- Schulberechtigung wird vor einer Zahlung geprüft. Nach Freigabe erhält die Schule eine 30 Tage gültige Zahlungsfreigabe. Das Abo beginnt nach erfolgreicher Zahlung; die Freischaltung wird durch Stripe bestätigt. Die monatliche Periode wird bezahlt, die Kündigung ist jederzeit möglich und wird zum bezahlten Ende wirksam.
+- Schulberechtigung wird vor einer Zahlung geprüft. Der Administrator kann ab Bestätigung Lehrpersonen einladen. Der Unterrichtszugriff und der bezahlte Monat beginnen frühestens am Folgetag um 00:00 Uhr Schweizer Zeit und nach bestätigter Zahlung. Bei einer von Voci verursachten Prüfung über 14 Tage erhält die Schule einen Gratismonat. Die monatliche Periode wird bezahlt, die Kündigung ist jederzeit möglich und wird zum bezahlten Ende wirksam.
 - Upgrades sind jederzeit möglich; ein anteiliges Restguthaben soll angerechnet und ab dem Upgrade-Datum monatlich abgerechnet werden. Berechnung, Rückerstattungen und Abrechnungszeitpunkt müssen vor Umsetzung verbindlich spezifiziert werden.
 - Kündigung des Abos löst eine E-Mail an die Lehrpersonen der Schule aus, sofern deren entsprechende Benachrichtigung aktiv ist.
 
