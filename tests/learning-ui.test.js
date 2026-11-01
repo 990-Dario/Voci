@@ -25,6 +25,12 @@ test('subject navigation, saved mathematics, calculator Enter, correction and re
     await page.reload();await page.getByRole('button',{name:'Lernsets',exact:true}).click();
     await page.getByRole('heading',{name:'Geometrie',exact:true}).waitFor();
     for(const width of [320,390,768,1366,1920]){await page.setViewportSize({width,height:900});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`overflow ${width}`);}
+    const invalidCounts=await page.evaluate(()=>{
+      const group=vocabulary.find(g=>g.language==='en');const set=normalizeSet({id:'voci-test',language:'en',objectives:[objectiveKey(group)]});
+      store.sets.push(set);store.activeSetId=set.id;
+      return [0,-1,1.5,NaN].map(count=>{stage='dashboard';startMode('test',{count});return stage;});
+    });
+    assert.deepEqual(invalidCounts,['dashboard','dashboard','dashboard','dashboard']);
     assert.deepEqual(errors,[]);
   }finally{await browser.close();await server.close();}
 });

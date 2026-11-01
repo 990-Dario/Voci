@@ -28,7 +28,12 @@ test('Schulaktivierung: Zürcher Folgetag, Rechte, Freimonat und zweite Administ
     const a=await activation();assert.equal(a.status,'scheduled');assert.ok(a.free_until);assert.equal(a.activated_at,null);
     await as(admin);await rpc('invite_staff',{email:'teacher@schule.ch',is_teacher:true,is_admin:false});
     assert.equal((await db.query('select voci_private.has_access($1,$2) as ok',[school,admin])).rows[0].ok,false);
-    await db.query("update voci_private.school_activations set scheduled_at=now()-interval '1 day',free_until=now()+interval '1 month',status='free_month',activated_at=now() where school_id=$1",[school]);
+    await db.query("update voci_private.school_activations set scheduled_at=now()-interval '1 day',free_until=now()+interval '1 month' where school_id=$1",[school]);
+    const jobs=(await db.query('select public.voci_claim_activations(5) as d')).rows[0].d;
+    assert.equal(jobs.length,1);
+    assert.deepEqual((await db.query('select public.voci_claim_activations(5) as d')).rows[0].d,[]);
+    await assert.rejects(db.query('select public.voci_finish_activation($1,$2::jsonb)',[school,JSON.stringify({status:'active',lease_id:jobs[0].lease_id})]),/Zahlung/);
+    await db.query('select public.voci_finish_activation($1,$2::jsonb)',[school,JSON.stringify({status:'free_month',lease_id:jobs[0].lease_id})]);
     assert.equal((await db.query('select voci_private.has_access($1,$2) as ok',[school,admin])).rows[0].ok,true);
     await as(second);await rpc('profile',{first_name:'Bea',last_name:'Admin',school_id:school});
     const req2=await rpc('request_admin',{reason:'Zweite berechtigte Administration',request_kind:'admin'});

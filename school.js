@@ -48,6 +48,7 @@ globalThis.VociSchool = (() => {
     updateNav();
     const editing=Boolean(document.activeElement?.closest('[data-school-form]'));
     const examChanged=oldExams!==JSON.stringify(data?.classes.map(c=>c.exams));
+    if(!result.error && examChanged)hooks.examChanged?.();
     if(redraw || (!editing && ['school','classes'].includes(hooks.stage())) || (hooks.hasClassStudy() && examChanged && (hooks.stage()!=='mode'||!getExam(hooks.classStudyId())))) hooks.render();
   }
   function updateNav() {

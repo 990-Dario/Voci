@@ -39,6 +39,7 @@ VociSchool.init(supabaseClient, {
   notify,
   hasClassStudy: () => Boolean(classStudyId),
   classStudyId: () => classStudyId,
+  examChanged: updateClassRoundNotice,
   navigate: next => { stopMatchTimer(); classStudyId = ''; stage = next; render(); },
   curriculum: (language, selected) => renderCurriculum(vocabulary.filter(g => g.language === language), new Set(selected)),
   contentPicker: (subjectId, blocks) => contentPicker(subjectId,blocks,true),
@@ -124,12 +125,13 @@ function queueCloudSave() {
 }
 async function saveCloudStore() {
   if (!supabaseClient || !currentUser || !cloudReady || store.canSave === false) return;
+  const revision=sessionRevision;
   const { error } = await supabaseClient.from('learning_states').upsert({
     user_id: currentUser.id,
     state: structuredClone(store),
     updated_at: new Date().toISOString()
   }, { onConflict: 'user_id' });
-  if (error) notify('Der Lernstand konnte gerade nicht online gespeichert werden. Deine Daten bleiben auf diesem Gerät.');
+  if (revision===sessionRevision && error) notify('Der Lernstand konnte gerade nicht online gespeichert werden. Deine Daten bleiben auf diesem Gerät.');
 }
 function updateAccountControls() {
   if (currentUser) {
@@ -176,11 +178,12 @@ function setSchoolLevel(level) {
 }
 async function loadCloudStore() {
   if (!supabaseClient || !currentUser) return;
+  const revision=sessionRevision;
   const loadingUser = currentUser;
   cloudReady = false;
   let profileWasMissing = false;
   const { data, error } = await supabaseClient.from('learning_states').select('state').eq('user_id', loadingUser.id).maybeSingle();
-  if (currentUser?.id !== loadingUser.id) return;
+  if (revision!==sessionRevision || currentUser?.id !== loadingUser.id) return;
   if (error) {
     notify('Dein Online-Lernstand konnte nicht geladen werden. Du kannst lokal weiterlernen.');
   } else if (data?.state) {
@@ -195,6 +198,7 @@ async function loadCloudStore() {
     cloudReady = true;
     await saveCloudStore();
   }
+  if(revision!==sessionRevision)return;
   cloudReady = !error && store.canSave !== false;
   if (profileWasMissing) await saveCloudStore();
 }
@@ -239,10 +243,12 @@ async function initializeCloud() {
     applySession(sessionData?.user || null, true);
   });
 }
-function activeSet() {
+function activeSet(useRound = true) {
   if (classStudyId) {
+    if(useRound && stage==='mode' && session?.studySet?.id===`class-${classStudyId}`) return normalizeSet({...session.studySet,...store.classProgress?.[classStudyId]});
     const exam = VociSchool.getExam(classStudyId);
     if (exam) return normalizeSet({ ...exam.set_data, ...store.classProgress?.[classStudyId], id: `class-${classStudyId}`, name: exam.title, examDate: exam.exam_date });
+    return null;
   }
   return store.sets.find(set => set.id === store.activeSetId) || null;
 }
@@ -360,8 +366,9 @@ function render() {
   document.body.dataset.stage=stage;
   document.querySelectorAll('[data-nav]').forEach(el=>el.setAttribute('aria-current',el.dataset.nav===stage?'page':'false'));
   document.querySelector('#page-location').textContent=({intro:'Mein Lernplatz',sets:'Lernsets',setup:'Lernset zusammenstellen',dashboard:'Dein Lernset',mode:'Üben',progress:'Lernfortschritt',school:'Schule & Abos',classes:'Klassen'})[stage] || 'Voci';
-  if (classStudyId && !VociSchool.getExam(classStudyId)) { classStudyId = ''; stopMatchTimer(); stage = 'classes'; }
+  if (classStudyId && !VociSchool.getExam(classStudyId) && !(stage==='mode'&&session?.studySet?.id===`class-${classStudyId}`)) { classStudyId = ''; stopMatchTimer(); stage = 'classes'; }
   app.innerHTML = stage === 'school' ? VociSchool.renderSchool() : stage === 'classes' ? VociSchool.renderClasses() : stage === 'progress' ? renderProgress() : stage === 'intro' ? renderIntro() : stage === 'sets' ? renderSets() : stage === 'setup' ? renderSetup() : stage === 'dashboard' ? renderDashboard() : renderMode();
+  updateClassRoundNotice();
   if (classStudyId && stage === 'dashboard') {
     app.insertAdjacentHTML('afterbegin', '<p class="school-alert">Klassenprüfung · Die Angaben werden von deiner Lehrperson aktualisiert. Dein Lernfortschritt bleibt privat.</p>');
     app.querySelectorAll('[data-action="edit-set"], .share-panel').forEach(element => { element.hidden = true; });
@@ -374,6 +381,19 @@ function render() {
     VociGeography.bind(session,render);
     document.querySelector(session.answered?'[data-geo-action="next"]':session.reveal?'[data-geo-action="solution"]':'#geo-answer')?.focus();
   }
+}
+function pinClassRound(set) {
+  if(!classStudyId)return;
+  session.studySet=structuredClone(set);
+  session.contentRevision=VociSchool.getExam(classStudyId)?.updated_at;
+}
+function updateClassRoundNotice() {
+  if(stage!=='mode'||!classStudyId||!session?.studySet)return;
+  const exam=VociSchool.getExam(classStudyId);
+  if(exam&&exam.updated_at===session.contentRevision)return;
+  let banner=document.querySelector('#class-round-update');
+  if(!banner){banner=document.createElement('p');banner.id='class-round-update';banner.className='school-alert';banner.setAttribute('role','status');app.prepend(banner);}
+  banner.textContent=exam?'Die Lehrperson hat diese Prüfung geändert. Du beendest diese Runde mit den bisherigen Inhalten. Die nächste Runde verwendet den aktuellen Stand.':'Diese Klassenprüfung wurde entfernt oder ist nicht mehr verfügbar. Du kannst die laufende Runde beenden; eine neue Runde ist nicht mehr möglich.';
 }
 function renderIntro() {
   const upcoming=store.sets.filter(s=>s.examDate>=todayISO()).sort((a,b)=>a.examDate.localeCompare(b.examDate))[0];
@@ -503,7 +523,9 @@ function renderTestResult() {
 }
 
 function startMode(mode, options = {}) {
-  stopMatchTimer(); const words = options.words || wordsFor();
+  const set=activeSet(false);if(!set)return notify('Diese Prüfung ist nicht mehr verfügbar.');
+  if(mode==='test'&&(!Number.isInteger(options.count)||options.count<1))return notify('Gib eine ganze Zahl ab 1 ein.');
+  stopMatchTimer(); const available=wordsFor(set),words=options.words?options.words.filter(w=>available.some(a=>a.id===w.id)):available;
   if (!words.length) return notify('Wähle zuerst mindestens ein Lernziel aus.');
   activeMode = mode;
   if (mode === 'match') { const deck = shuffled(words).slice(0, 12); session = { deck, translations: shuffled(deck), matched: new Set(), selectedLeft: '', selectedRight: '', message: '', locked: false, startedAt: 0, seconds: 0, penalties: 0, logged: false }; }
@@ -514,7 +536,7 @@ function startMode(mode, options = {}) {
     session = { deck, options: choiceOptions, index: 0, kind: options.kind, scope: options.scope || 'all', direction: options.direction || 'german', correct: 0, answered: false, correctCurrent: false, answerId: '', typedAnswer: '', logged: false };
   }
   if (mode === 'test') { const count = Math.min(words.length, Math.max(1, Number(options.count) || words.length)); session = { deck: shuffled(words).slice(0, count), index: 0, correct: 0, answers: [], logged: false }; }
-  stage = 'mode'; render(); if (mode === 'match') startMatchTimer();
+  pinClassRound(set);stage = 'mode'; render(); if (mode === 'match') startMatchTimer();
 }
 function stopMatchTimer() { clearInterval(matchTimer); matchTimer = 0; }
 function startMatchTimer() { stopMatchTimer(); matchTimer = setInterval(() => { if (session?.startedAt) { session.seconds = Math.floor((Date.now() - session.startedAt) / 1000); const timer = document.querySelector('#timer'); if (timer) timer.textContent = formatSeconds(session.seconds + session.penalties); } }, 500); }
@@ -543,9 +565,11 @@ function nextQuiz() {
 
 function startPractice(mode, deck) {
   try {
+    const set=activeSet(false);if(!set)return notify('Diese Prüfung ist nicht mehr verfügbar.');
+    if(classStudyId && session?.contentRevision!==VociSchool.getExam(classStudyId)?.updated_at)deck=undefined;
     stopMatchTimer();
-    session=VociPractice.start(activeSet(),mode,grammarCatalogs,deck);
-    session.contentRevision=classStudyId?VociSchool.getExam(classStudyId)?.updated_at:null;
+    session=VociPractice.start(set,mode,grammarCatalogs,deck);
+    pinClassRound(set);
     activeMode=mode;stage='mode';render();
   } catch(error) { notify(error.message); }
 }
@@ -556,7 +580,8 @@ function finishPractice() {
   replaceSet(normalizeSet(VociContent.recordStudyResult(activeSet(),result,session.answers)));
 }
 async function startGeography(mode,previous){
-  try{await VociGeography.load();session=VociGeography.start(activeSet(),mode,previous);activeMode=`geography-${mode}`;stage='mode';render();}
+  const revision=sessionRevision,examId=classStudyId,setId=activeSet(false)?.id;
+  try{await VociGeography.load();if(revision!==sessionRevision||examId!==classStudyId||setId!==activeSet(false)?.id)return;const set=activeSet(false);if(!set)return notify('Diese Prüfung ist nicht mehr verfügbar.');if(classStudyId&&session?.contentRevision!==VociSchool.getExam(classStudyId)?.updated_at)previous=undefined;session=VociGeography.start(set,mode,previous);pinClassRound(set);activeMode=`geography-${mode}`;stage='mode';render();}
   catch(error){notify(error.message);}
 }
 function finishGeography(){

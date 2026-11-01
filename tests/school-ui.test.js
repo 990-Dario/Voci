@@ -43,6 +43,12 @@ test('Klassenansicht, private Vorbereitung und unabhängige Lernsetkopie', {skip
     await page.locator('[data-action="flash-known"]').click();
     const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('voci-learning-state')));
     assert.equal(saved.sets.length,0);assert.equal(saved.classProgress['33333333-3333-3333-3333-333333333333'].cards.known.length,1);
+    await page.evaluate(async()=>{window.__schoolFixture.classes[0].exams[0].title='Aktualisierte Prüfung';window.__schoolFixture.classes[0].exams[0].updated_at='2030-01-01T00:00:00Z';await VociSchool.refresh(false);});
+    assert.equal(await page.evaluate(()=>activeSet().name),'Klassenprüfung','The running round keeps its original content');
+    await page.locator('#class-round-update').waitFor({state:'visible'});
+    await page.locator('[data-action="dashboard"]').click();
+    await page.getByRole('heading',{name:'Aktualisierte Prüfung',exact:true}).waitFor();
+    await page.evaluate(async()=>{window.__schoolFixture.classes[0].exams[0].title='Klassenprüfung';await VociSchool.refresh(false);});
     await page.locator('[data-school-action="classes"]').click();
     await page.locator('[data-school-action="copy-exam"]').click();
     await page.locator('[data-nav="sets"]').click();
@@ -60,6 +66,18 @@ test('Klassenansicht, private Vorbereitung und unabhängige Lernsetkopie', {skip
     await page.setViewportSize({width:390,height:844});
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
     if(process.env.VOCI_UI_SCREENSHOTS)await page.screenshot({path:process.env.VOCI_UI_SCREENSHOTS+'/school-mobile.png',fullPage:true});
+    const loadedName=await page.evaluate(async()=>{
+      const pending=[];const original=supabaseClient.from;
+      supabaseClient.from=()=>({select:()=>({eq:()=>({maybeSingle:()=>new Promise(resolve=>pending.push(resolve))})})});
+      const user=currentUser;
+      const oldLoad=applySession(user);const newLoad=applySession(user);
+      const state=name=>({sets:[{version:2,id:'cloud-test',name,subjectId:'en',blocks:[],examDate:''}],profile:{schoolLevel:'primary'}});
+      pending[1]({data:{state:state('Neuer Stand')},error:null});await newLoad;
+      pending[0]({data:{state:state('Veralteter Stand')},error:null});await oldLoad;
+      supabaseClient.from=original;
+      return store.sets[0].name;
+    });
+    assert.equal(loadedName,'Neuer Stand','A late response from an older session must not replace the latest state');
     assert.deepEqual(errors,[]);
   } finally {await browser.close();await server.close();}
 });
