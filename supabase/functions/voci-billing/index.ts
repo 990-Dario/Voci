@@ -33,6 +33,16 @@ Deno.serve(async (request: Request) => {
       return Response.json({ok:true},{headers});
     }
     if(!['checkout','prepare_payment_method','resume_payment'].includes(input.action)) throw new Error('Unbekannte Zahlungsaktion.');
+    if(input.action==='resume_payment'&&existing&&!['canceled','incomplete_expired'].includes(existing.status)){
+      const invoiceId=typeof existing.latest_invoice==='string'?existing.latest_invoice:existing.latest_invoice?.id;
+      const invoice=invoiceId?await stripe(`invoices/${encodeURIComponent(invoiceId)}`):null;
+      if(invoice?.status==='open'&&invoice.hosted_invoice_url){
+        const url=new URL(invoice.hosted_invoice_url);
+        if(url.protocol==='https:'&&url.hostname==='invoice.stripe.com')return Response.json({url:url.href},{headers});
+      }
+      if(invoice?.status==='paid')return Response.json({ok:true,message:'Die Rechnung ist bezahlt. Die Zugriffe werden nach der Zahlungsbestätigung aktualisiert.'},{headers});
+      throw new Error('Für dieses Abo ist keine offene Zahlungsseite verfügbar. Bitte kontaktiere Voci.');
+    }
     const plan=String(input.plan||activation?.plan), subjects=Array.isArray(input.subjects)?input.subjects.map(String).sort():[];
     if((plan==='individual')!==!school) throw new Error('Ungültiger Tarif für diese Rolle.');
     const amount=price(plan,subjects,context.subjects);
@@ -41,11 +51,11 @@ Deno.serve(async (request: Request) => {
     const name=plan==='individual'?`Voci · ${subjects.length} Fächer`:plan==='school_small'?'Voci Schule · bis 50 Lehrpersonen':'Voci Schule · über 50 Lehrpersonen';
     const base=new URL(env('VOCI_APP_URL'));base.search='';base.hash='';
     if(school&&activation&&!existing&&input.action!=='resume_payment'){
+      const reservation=await paymentReservation(user.id,school,plan,subjects,'setup',lock.id);
+      if(reservation.url)return Response.json({url:reservation.url},{headers});
       await rpc('voci_set_activation_payment',{school,lease_id:lock.id,details:{plan}});
       let customer=activation.stripe_customer;
       if(!customer){const created=await stripe('customers',{email:context.email,'metadata[voci_school]':school},`school-customer-${school}`);customer=created.id;await rpc('voci_set_activation_payment',{school,lease_id:lock.id,details:{customer}});}
-      const reservation=await paymentReservation(user.id,school,plan,subjects,'setup',lock.id);
-      if(reservation.url)return Response.json({url:reservation.url},{headers});
       const values=setupSessionValues({...activation,plan,stripe_customer:customer},base.href,reservation.id);
       values.expires_at=String(Math.floor(Date.now()/1000)+23*3600);
       const session=await stripe('checkout/sessions',values,`setup-${reservation.id}`);

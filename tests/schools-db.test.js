@@ -42,6 +42,12 @@ test('Schulaktivierung: Zürcher Folgetag, Rechte, Freimonat und zweite Administ
     await assert.rejects(rpc('review_admin',{id:req2.request_id,approve:true,email_domain:'schule.ch'}),/Offener Antrag/);
     await as(admin);const snap=(await db.query('select public.voci_school_snapshot() as d')).rows[0].d;assert.equal(snap.activation.status,'free_month');assert.equal(snap.activation.stripe_customer,undefined);
     const ctx=(await db.query('select public.voci_billing_context($1,$2) as d',[admin,school])).rows[0].d;assert.equal(ctx.payment_allowed,true);
+    await db.query("update voci_private.school_activations set status='payment_failed',free_until=null,setup_session_id='cs_replacement' where school_id=$1",[school]);
+    const replacementLease='90000000-0000-0000-0000-000000000009';
+    await db.query('select public.voci_billing_acquire($1,$2)',[school,replacementLease]);
+    await db.query('select public.voci_set_activation_payment($1,$2,$3::jsonb)',[school,replacementLease,JSON.stringify({payment_method:'pm_replacement',completed_session:'cs_replacement'})]);
+    await db.query('select public.voci_billing_release($1,$2)',[school,replacementLease]);
+    assert.equal((await db.query('select public.voci_claim_activations(5) as d')).rows[0].d.length,1,'Verified replacement card retries a failed activation');
     await db.exec('set role authenticated');await assert.rejects(db.exec('select public.voci_claim_activations(5)'),/permission denied/);await db.exec('reset role');
   }finally{await db.close();}
 });

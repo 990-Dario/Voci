@@ -31,6 +31,8 @@ test('subject navigation, saved mathematics, calculator Enter, correction and re
       return [0,-1,1.5,NaN].map(count=>{stage='dashboard';startMode('test',{count});return stage;});
     });
     assert.deepEqual(invalidCounts,['dashboard','dashboard','dashboard','dashboard']);
+    await page.evaluate(()=>{store.sets=[normalizeSet({id:'" autofocus onfocus="alert(1)',name:'Sicher',subjectId:'en',blocks:[]})];stage='sets';render();});
+    assert.equal(await page.locator('[onfocus]').count(),0,'Stored IDs cannot create HTML attributes');
     assert.deepEqual(errors,[]);
   }finally{await browser.close();await server.close();}
 });

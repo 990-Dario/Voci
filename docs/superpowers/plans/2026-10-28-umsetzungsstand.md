@@ -13,6 +13,10 @@ Stand: 1. November 2026. Verbindlicher Überblick: [vollständiger Umsetzungs- u
 
 ## Gesicherte Zwischenstände und Prüfungen
 
+Prüfung vom 7. November 2026: Vollständiger lokaler Lauf mit 43 bestandenen Tests und null übersprungenen Fällen. Zusätzliche Korrekturen betreffen Wortfortschritt, Karten-Klickflächen, Checkboxen und Metadaten. Produkt- und Gestaltungsdokumentation aktualisiert. Nachweise und weiterhin offene Abnahmen: [Prüfbericht](../../PRUEFBERICHT_2026-11-07.md). Die Veröffentlichung ist weiterhin offen.
+
+Oberflächenkorrekturen vom 6. November 2026: Prüfungsdatum und Fach sind in Klassenprüfungen wieder sichtbar. Kleine Schaltflächen, mobile Navigation und Schliessen-Schaltflächen haben mindestens 44 Pixel Höhe; Schuleingaben verwenden 16 Pixel Schrift. Die Prüfungsauswahl sperrt ungebuchte Fächer mit Erklärung und berücksichtigt Einzelabo, Schulabo, Aktivierungsbeginn und Gratismonat. Bei einem nicht mehr gebuchten Prüfungsfach bleiben Inhalte und Speichern gesperrt, bis ein verfügbares Fach gewählt wird. Browserprüfung bei 320/390/768/1366 Pixeln sowie lokale Rechteprüfungen bestanden; die serverseitige Berechtigungsprüfung bleibt verbindlich. Diese Korrekturen sind lokal und noch nicht veröffentlicht.
+
 - `bfd6bcd`: Fächer, Karten, neue Oberfläche und Klasseninhalte V2.
 - `706a19a`: Schulaktivierung, neue Preise und vorbereitete Zahlungsabläufe.
 - Zuletzt dokumentiert: 29 lokale Daten-/Logik-/Datenbankprüfungen sowie 3 Browserprüfungen bestanden, ohne übersprungene Fälle in diesen Läufen. Keine vollständige Produktionsabnahme.

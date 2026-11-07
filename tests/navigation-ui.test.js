@@ -1,0 +1,68 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {localServer}=require('./local-server.js');
+
+test('vocabulary navigation preserves options, answers, repetition and end-only test results',async()=>{
+  const {chromium}=require(process.env.VOCI_PLAYWRIGHT_PATH||'playwright');
+  const server=await localServer();
+  const browser=await chromium.launch({channel:process.env.VOCI_BROWSER_CHANNEL||'chrome',headless:true});
+  const page=await browser.newPage({viewport:{width:1366,height:900}}),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.route('**/*',route=>route.request().url().startsWith(server.url)?route.continue():route.abort());
+  const shot=async name=>{if(process.env.VOCI_UI_SCREENSHOTS)await page.screenshot({path:`${process.env.VOCI_UI_SCREENSHOTS}/${name}.png`,fullPage:true});};
+  try{
+    await page.goto(server.url);await page.locator('[data-nav="sets"]').waitFor();
+    await page.getByRole('button',{name:'Mathematik',exact:true}).waitFor();
+    await shot('home-desktop');await page.setViewportSize({width:390,height:844});await shot('home-mobile');
+    await page.setViewportSize({width:1366,height:900});
+    await page.evaluate(()=>{
+      const groups=vocabulary.filter(g=>g.language==='en').slice(0,3);
+      const set=normalizeSet({id:'regression',name:'Meine Prüfung',language:'en',objectives:groups.map(objectiveKey)});
+      store.sets=[set];store.activeSetId=set.id;saveStore();stage='dashboard';render();
+    });
+    await shot('vocabulary-dashboard');
+    await page.locator('[data-action="start-match"]').click();
+    assert.equal(await page.locator('.match-column').first().locator('button').count(),12);
+    const rows=await page.locator('.match-column').first().locator('button').evaluateAll(els=>new Set(els.map(el=>Math.round(el.getBoundingClientRect().top))).size);
+    assert.equal(rows,4);await shot('matching-desktop');
+    await page.evaluate(()=>{handleMatchPick('left',session.deck[0].id);handleMatchPick('right',session.deck[1].id);});
+    assert.equal(await page.evaluate(()=>session.penalties),1);
+    await page.locator('[data-action="dashboard"]').click();
+    await page.locator('[data-action="start-quiz"][data-kind="choice"]').click();
+    const options=await page.locator('.choice-button').allTextContents();
+    await page.locator('.choice-button').first().click();
+    assert.deepEqual(await page.locator('.choice-button').allTextContents(),options);
+    await page.locator('[data-action="quiz-next"]').press('Enter');
+    assert.equal(await page.evaluate(()=>session.index),1);
+    await page.locator('[data-action="dashboard"]').click();
+    await page.locator('[data-action="start-quiz"][data-kind="write"][data-scope="all"]').click();
+    assert.equal(await page.locator('#quiz-answer').evaluate(el=>el===document.activeElement),true);
+    await page.locator('#quiz-answer').fill('Falsche Antwort');await page.locator('#quiz-answer').press('Enter');
+    assert.equal(await page.locator('#quiz-answer').inputValue(),'Falsche Antwort');
+    await page.locator('[data-action="quiz-next"]').press('Enter');
+    assert.equal(await page.locator('#quiz-answer').inputValue(),'');
+    await page.locator('[data-action="dashboard"]').click();
+    await page.locator('[data-action="start-quiz"][data-kind="write"][data-scope="wrong"]').click();
+    assert.ok(await page.evaluate(()=>session.deck.every(w=>activeSet().quizWrong.includes(w.id))));
+    await page.locator('[data-action="dashboard"]').click();
+    await page.evaluate(()=>startMode('flash',{words:wordsFor().slice(0,1),direction:'foreign'}));
+    assert.equal(await page.locator('.flashcard-face').innerText(),await page.evaluate(()=>session.deck[0].translation));
+    await page.locator('[data-action="flip-card"]').click();await page.locator('[data-action="flash-practice"]').click();
+    await page.locator('[data-action="start-flash-practice"]').click();
+    assert.equal(await page.evaluate(()=>session.deck.length),1);
+    await page.locator('[data-action="flip-card"]').click();await page.locator('[data-action="flash-known"]').click();
+    assert.equal(await page.evaluate(()=>activeSet().cards.practice.length),0);
+    await page.locator('[data-action="start-flash"]').click();assert.ok(await page.evaluate(()=>session.deck.length>1));
+    await page.locator('[data-action="dashboard"]').click();await page.locator('#test-count').fill('99999');
+    await page.locator('[data-action="start-test"]').click();assert.equal(await page.evaluate(()=>session.deck.length),await page.evaluate(()=>wordsFor().length));
+    await page.evaluate(()=>startMode('test',{count:2}));
+    await page.locator('input[name="answer"]').fill('falsch');await page.locator('input[name="answer"]').press('Enter');
+    assert.equal(await page.locator('.test-result-list').count(),0);
+    assert.equal(await page.evaluate(()=>activeSet().results.length),0);
+    await page.locator('input[name="answer"]').fill('falsch');await page.locator('input[name="answer"]').press('Enter');
+    assert.equal(await page.evaluate(()=>activeSet().results.at(-1).type),'Übungstest');
+    await page.reload();await page.locator('[data-nav="sets"]').click();await page.getByRole('heading',{name:'Meine Prüfung',exact:true}).waitFor();
+    assert.equal(await page.evaluate(()=>store.sets[0].cards.known.length),1);
+    assert.deepEqual(errors,[]);
+  }finally{await browser.close();await server.close();}
+});

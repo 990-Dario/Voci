@@ -21,7 +21,13 @@ test('world filters, tiny-state click, no penalty for pan, name mode and persist
     while(await page.evaluate(()=>session.index<session.deck.length)){
       id=await page.evaluate(()=>session.deck[session.index].id);
       const marker=page.locator(`circle[data-geo-country="${id}"]`);
-      if(await marker.count()){await marker.click();markerClicks++;}
+      if(await marker.count()){
+        const target=await marker.boundingBox();
+        assert.equal(await marker.evaluate(el=>getComputedStyle(el).strokeWidth),'30px');
+        await page.mouse.click(target.x+target.width/2+15,target.y+target.height/2);
+        assert.equal(await page.evaluate(()=>session.answered),true,'The transparent touch area selects the small country');
+        markerClicks++;
+      }
       else await page.locator(`path[data-geo-country="${id}"]`).press('Enter');
       await page.locator('[data-geo-action="next"]').click();
     }
@@ -29,6 +35,7 @@ test('world filters, tiny-state click, no penalty for pan, name mode and persist
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('voci-learning-state')).sets[0].results.at(-1).unit),'points');
     await page.screenshot({path:'.superpowers/sdd/2026-10-28-gesamtumbau/geography-desktop.png',fullPage:true});
     await page.getByRole('button',{name:'Zurück zum Lernset',exact:true}).click();await page.getByRole('button',{name:'Namen schreiben',exact:true}).click();
+    await page.getByRole('heading',{name:'Wie heisst dieses Land?'}).waitFor();
     const name=await page.evaluate(()=>session.deck[0].name);await page.locator('#geo-answer').fill(name);await page.locator('#geo-answer').press('Enter');assert.equal(await page.locator('#geo-answer').inputValue(),name);
     await page.getByRole('button',{name:'Namensliste einblenden'}).click();assert.ok(await page.locator('.geo-names li').count()>0);
     await page.setViewportSize({width:390,height:844});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);

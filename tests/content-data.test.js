@@ -40,3 +40,13 @@ test('results retain last thirty rounds and cumulative per-item progress',()=>{
   assert.equal(set.results.length,30); assert.equal(set.results[0].score/set.results[0].total,.5);
   assert.deepEqual(set.progress.byItem['geo:ch'],{attempts:32,correct:1,lastScore:75,lastPracticedAt:'2026-10-28T12:00:00Z'});
 });
+test('card repetitions change only their item and do not create artificial test results',()=>{
+  const original=C.normalizeLearningSet(legacy);
+  let set=C.recordItemProgress(original,[{itemId:'voci:one',correct:false,score:0}]);
+  set=C.recordItemProgress(set,[{itemId:'voci:one',correct:true,score:100}]);
+  assert.equal(set.progress.byItem['voci:one'].attempts,2);
+  assert.equal(set.progress.byItem['voci:one'].correct,1);
+  assert.deepEqual(original.progress.byItem,{});
+  assert.deepEqual(set.results,original.results);
+  assert.throws(()=>C.recordItemProgress(set,[{itemId:'__proto__',score:0}]),/Ungültiger/);
+});

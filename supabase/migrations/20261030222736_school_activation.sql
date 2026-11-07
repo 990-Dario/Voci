@@ -352,7 +352,8 @@ begin
   if details ? 'payment_method' then
     if a.setup_session_id is distinct from details->>'completed_session' then return; end if;
     if coalesce(details->>'payment_method','') !~ '^pm_[A-Za-z0-9]+$' then raise exception 'Ungültige Kartenbestätigung.'; end if;
-    update voci_private.school_activations set stripe_payment_method=details->>'payment_method',next_attempt_at=now() where school_id=school;
+    update voci_private.school_activations set stripe_payment_method=details->>'payment_method',
+      status=case when status='payment_failed' then 'scheduled' else status end,next_attempt_at=now() where school_id=school;
   end if;
 end $$;
 

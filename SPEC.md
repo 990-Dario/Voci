@@ -1,4 +1,6 @@
-# Spec: Voci – Schüler-Version
+# Spec: Voci – Lernplattform
+
+Aktueller Gesamtumfang: fünf Fächer, fachneutrale Lernsets, Grammatik, Geometrie mit Rechner, Geografie mit UN195/IOC206/CH26 sowie Schul- und Klassenfunktionen. Verbindliche Details und Veröffentlichungsgrenzen stehen in `docs/superpowers/plans/2026-10-28-gesamtumbau.md`. Die folgenden Abschnitte beschreiben den weiterhin unterstützten Vokabelkern; die ursprüngliche Gruppierung «Abfragen» erscheint heute als zwei eigene Kacheln für Multiple Choice und Schreiben.
 
 Die optionale Erweiterung für Schulen und Lehrpersonen ist in `docs/LEHRPERSONENFUNKTION.md` beschrieben. Die Aktivierung steht in `docs/SCHULFUNKTION_EINRICHTEN.md`; sie benötigt die zusätzliche Migration und Serverfunktionen.
 
@@ -29,7 +31,7 @@ Statische Web-App mit HTML, CSS und JavaScript. Vokabeln liegen versioniert als 
 
 - Entwicklung: `python -m http.server 8000`
 - Prüfung: im Browser manuell auf Desktop- und mobiler Breite; zusätzlich die vier Lernmodi und das Wiederherstellen lokaler Daten prüfen.
-- Build/Test/Lint: nicht vorgesehen, solange keine Build-Werkzeuge eingeführt werden.
+- Tests: `npm test`; Browserprüfungen benötigen Playwright/Chrome und `VOCI_PLAYWRIGHT_PATH`, Datenbankprüfungen `VOCI_PGLITE_PATH`. Für die Abnahme dürfen keine Prüfungen wegen fehlender Umgebung übersprungen sein. Die statische App benötigt keinen Build.
 
 ## Project Structure
 

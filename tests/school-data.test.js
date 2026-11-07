@@ -1,6 +1,21 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const { individualPrice, parseClassExport } = require('../school-data.js');
+const { individualPrice, parseClassExport, availableSubjects } = require('../school-data.js');
+
+test('Fächerauswahl berücksichtigt Einzelabo, Schulstart, Freimonat und Ablauf',()=>{
+  const now=Date.parse('2026-11-06T12:00:00Z'),future='2026-12-01T00:00:00Z';
+  const data={school:{id:'school'},subjects:[{id:'en'},{id:'math'}],subscriptions:[{user_id:'teacher',status:'active',period_end:future,subjects:['math']}]};
+  assert.deepEqual(availableSubjects(data,'teacher',now),['math']);
+  assert.deepEqual(availableSubjects(data,'other',now),[]);
+  data.subscriptions.push({school_id:'school',status:'active',period_end:future});
+  assert.deepEqual(availableSubjects(data,'teacher',now),['en','math']);
+  data.activation={scheduled_at:future,status:'scheduled'};
+  assert.deepEqual(availableSubjects(data,'teacher',now),['math']);
+  data.activation={scheduled_at:'2026-11-01',status:'free_month',free_until:future};
+  data.subscriptions=[];
+  assert.deepEqual(availableSubjects(data,'teacher',now),['en','math']);
+  assert.deepEqual(availableSubjects(data,'teacher',Date.parse(future)),[]);
+});
 
 test('Fächerpreise: Start 3 CHF, ab dem vierten Fach +1', () => {
   assert.deepEqual([1,2,3,4,5].map(individualPrice), [3,5,7,8,9]);

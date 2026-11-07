@@ -34,6 +34,45 @@ test('Klassenansicht, private Vorbereitung und unabhängige Lernsetkopie', {skip
     },{objective});
     await page.locator('[data-school-action="classes"]').click();
     await page.locator('[data-school-action="open-class"]').click();
+    assert.equal(await page.locator('.exam-meta').isVisible(),true);
+    assert.match(await page.locator('.exam-meta').innerText(),/01\.12\.2026.*Englisch/);
+    await page.evaluate(async()=>{
+      window.__schoolFixture.subjects=VociContent.subjects;
+      window.__schoolFixture.subscriptions=[{user_id:currentUser.id,status:'active',period_end:'2099-01-01',subjects:['math']}];
+      await VociSchool.refresh(false);
+    });
+    await page.locator('[data-school-action="new-exam"]').click();
+    assert.equal(await page.locator('[name="exam_subject"]').inputValue(),'math');
+    assert.equal(await page.locator('[name="exam_subject"] option[value="en"]').evaluate(el=>el.disabled),true);
+    assert.match(await page.locator('[name="exam_subject"] option[value="en"]').innerText(),/nicht im Abo/);
+    assert.equal(await page.locator('[name="exam_subject"] option[value="math"]').evaluate(el=>el.disabled),false);
+    if(process.env.VOCI_UI_SCREENSHOTS)await page.screenshot({path:process.env.VOCI_UI_SCREENSHOTS+'/exam-subject-desktop.png',fullPage:true});
+    for(const width of [320,390,768,1366]){
+      await page.setViewportSize({width,height:900});
+      assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+      assert.ok(await page.locator('#school-dialog .dialog-close').evaluate(el=>el.getBoundingClientRect().height>=44));
+      assert.ok(await page.locator('#school-dialog input[name="title"]').evaluate(el=>parseFloat(getComputedStyle(el).fontSize)>=16));
+    }
+    await page.setViewportSize({width:390,height:844});
+    if(process.env.VOCI_UI_SCREENSHOTS)await page.screenshot({path:process.env.VOCI_UI_SCREENSHOTS+'/exam-subject-mobile.png',fullPage:true});
+    await page.locator('[data-school-form="exam"] button[type="submit"]').scrollIntoViewIfNeeded();
+    assert.equal(await page.locator('[data-school-form="exam"] button[type="submit"]').isVisible(),true);
+    await page.keyboard.press('Escape');
+    await page.locator('[data-school-action="edit-exam"]').click();
+    assert.equal(await page.locator('#exam-objectives').evaluate(el=>el.disabled),true);
+    assert.equal(await page.locator('[data-school-form="exam"] button[type="submit"]').evaluate(el=>el.disabled),true);
+    await page.locator('[name="exam_subject"]').selectOption('math');
+    assert.equal(await page.locator('#exam-objectives').evaluate(el=>el.disabled),false);
+    assert.equal(await page.locator('[data-school-form="exam"] button[type="submit"]').evaluate(el=>el.disabled),false);
+    await page.keyboard.press('Escape');
+    await page.evaluate(async()=>{
+      window.__schoolFixture.subscriptions=[{school_id:window.__schoolFixture.school.id,status:'active',period_end:'2099-01-01',subjects:[]}];
+      await VociSchool.refresh(false);
+    });
+    await page.locator('[data-school-action="new-exam"]').click();
+    assert.equal(await page.locator('[name="exam_subject"] option:disabled').count(),0);
+    await page.keyboard.press('Escape');
+    await page.setViewportSize({width:1366,height:900});
     if(process.env.VOCI_UI_SCREENSHOTS)await page.screenshot({path:process.env.VOCI_UI_SCREENSHOTS+'/school-desktop.png',fullPage:true});
     await page.locator('[data-school-action="study"]').click();
     await page.getByRole('heading',{name:'Klassenprüfung',exact:true}).waitFor();
@@ -41,7 +80,7 @@ test('Klassenansicht, private Vorbereitung und unabhängige Lernsetkopie', {skip
     await page.locator('[data-action="start-flash"]').click();
     await page.locator('[data-action="flip-card"]').click();
     await page.locator('[data-action="flash-known"]').click();
-    const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('voci-learning-state')));
+    const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(typeof localStoreKey==='undefined'?'voci-learning-state':localStoreKey)));
     assert.equal(saved.sets.length,0);assert.equal(saved.classProgress['33333333-3333-3333-3333-333333333333'].cards.known.length,1);
     await page.evaluate(async()=>{window.__schoolFixture.classes[0].exams[0].title='Aktualisierte Prüfung';window.__schoolFixture.classes[0].exams[0].updated_at='2030-01-01T00:00:00Z';await VociSchool.refresh(false);});
     assert.equal(await page.evaluate(()=>activeSet().name),'Klassenprüfung','The running round keeps its original content');
@@ -78,6 +117,29 @@ test('Klassenansicht, private Vorbereitung und unabhängige Lernsetkopie', {skip
       return store.sets[0].name;
     });
     assert.equal(loadedName,'Neuer Stand','A late response from an older session must not replace the latest state');
+    const isolation=await page.evaluate(async()=>{
+      const first=currentUser;store.sets=[normalizeSet({id:'private',name:'Privater Stand',subjectId:'en',blocks:[]})];persistLocalStore();
+      await applySession({id:'other-account',user_metadata:{}});
+      const otherNames=store.sets.map(set=>set.name);
+      await applySession(null,true);
+      const guestNames=store.sets.map(set=>set.name);
+      await applySession(first);
+      return {otherNames,guestNames,restored:store.sets.map(set=>set.name)};
+    });
+    assert.deepEqual(isolation,{otherNames:[],guestNames:[],restored:['Privater Stand']});
+    const ordering=await page.evaluate(async()=>{
+      const original=supabaseClient.from,calls=[],pending=[];
+      supabaseClient.from=()=>({upsert:row=>{calls.push(row.state.sets[0].name);return new Promise(resolve=>pending.push(resolve));}});
+      store.sets[0].name='Erster Stand';const first=saveCloudStore();
+      await new Promise(resolve=>setTimeout(resolve,0));
+      store.sets[0].name='Zweiter Stand';const second=saveCloudStore();
+      await new Promise(resolve=>setTimeout(resolve,0));
+      const simultaneous=calls.length;
+      pending.shift()({});await first;await new Promise(resolve=>setTimeout(resolve,0));
+      pending.shift()({});await second;supabaseClient.from=original;
+      return {simultaneous,calls};
+    });
+    assert.deepEqual(ordering,{simultaneous:1,calls:['Erster Stand','Zweiter Stand']});
     assert.deepEqual(errors,[]);
   } finally {await browser.close();await server.close();}
 });

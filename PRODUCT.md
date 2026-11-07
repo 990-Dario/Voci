@@ -12,11 +12,11 @@ delegated: static HTML, CSS, and JavaScript without a framework or dependencies 
 
 ## Users
 
-Students preparing for English and French vocabulary exams based on their school textbooks.
+Students preparing for exams in German, English, French, mathematics and geography; teachers and verified school administrators manage shared class announcements.
 
 ## Product Purpose
 
-Students choose the vocabulary they need for an exam by language, Unit/Unité, and learning objective, set the exam date, and practice with focused learning modes. The first version serves students; teacher features come later.
+Students select subject content, optionally set an exam date and practice independently. English/French retain textbook vocabulary and add grammar; German provides grammar, mathematics covers geometry and Pythagoras, and geography provides map exercises. Paid teacher and school features are implemented locally; operational setup and release verification remain pending.
 
 ## Positioning
 
@@ -37,7 +37,7 @@ Students select English or French, choose one or more Units/Unités and learning
 
 ## Evidence on Hand
 
-No textbook vocabulary files or other learning-content assets have been provided yet. Do not present sample vocabulary as official textbook content.
+User-supplied Open World units 1–21 are included. Grammar questions are original draft exercises awaiting expert review. Map data derives from Natural Earth and swisstopo. Availability of source files does not establish redistribution rights or official publisher approval.
 
 ## Product Principles
 

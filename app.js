@@ -7,6 +7,7 @@ const accountDialog = document.querySelector('#account-dialog');
 const accountForm = document.querySelector('#account-form');
 const storageNote = document.querySelector('#storage-note');
 const STORAGE_KEY = 'voci-learning-state';
+let localStoreKey = STORAGE_KEY;
 const cloudConfig = globalThis.VOCI_SUPABASE || {};
 const supabaseClient = cloudConfig.url && cloudConfig.anonKey && globalThis.supabase?.createClient
   ? globalThis.supabase.createClient(cloudConfig.url, cloudConfig.anonKey)
@@ -24,6 +25,7 @@ let matchTimer = 0;
 let currentUser = null;
 let cloudReady = false;
 let cloudSaveTimer = 0;
+let cloudSaveQueue = Promise.resolve();
 let authMode = 'login';
 let showOtherSchoolLevel = false;
 let latestShareLink = '';
@@ -93,9 +95,9 @@ function normalizeStore(value) {
 }
 function loadStore() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY) || '{}';
+    const raw = localStorage.getItem(localStoreKey) || '{}';
     const saved = JSON.parse(raw);
-    if (raw !== '{}' && !localStorage.getItem(`${STORAGE_KEY}-before-v2`)) localStorage.setItem(`${STORAGE_KEY}-before-v2`,raw);
+    if (raw !== '{}' && !localStorage.getItem(`${localStoreKey}-before-v2`)) localStorage.setItem(`${localStoreKey}-before-v2`,raw);
     if (Array.isArray(saved.sets)) {
       return normalizeStore(saved);
     }
@@ -109,7 +111,7 @@ function loadStore() {
 }
 function persistLocalStore() {
   if (store.canSave === false) { notify('Ein gespeichertes Lernset kann nicht gelesen werden. Die ursprünglichen Daten bleiben geschützt. Bitte exportiere deine Sicherung, bevor du weiter speicherst.'); return false; }
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); return true; }
+  try { localStorage.setItem(localStoreKey, JSON.stringify(store)); return true; }
   catch { notify('Der Lernstand kann auf diesem Gerät gerade nicht gespeichert werden.'); return false; }
 }
 function saveStore() {
@@ -126,12 +128,21 @@ function queueCloudSave() {
 async function saveCloudStore() {
   if (!supabaseClient || !currentUser || !cloudReady || store.canSave === false) return;
   const revision=sessionRevision;
-  const { error } = await supabaseClient.from('learning_states').upsert({
+  const row = {
     user_id: currentUser.id,
     state: structuredClone(store),
     updated_at: new Date().toISOString()
-  }, { onConflict: 'user_id' });
-  if (revision===sessionRevision && error) notify('Der Lernstand konnte gerade nicht online gespeichert werden. Deine Daten bleiben auf diesem Gerät.');
+  };
+  cloudSaveQueue = cloudSaveQueue.catch(()=>{}).then(async()=>{
+    if (revision!==sessionRevision || currentUser?.id!==row.user_id) return;
+    try {
+      const { error } = await supabaseClient.from('learning_states').upsert(row, { onConflict: 'user_id' });
+      if (error) throw error;
+    } catch {
+      if (revision===sessionRevision) notify('Der Lernstand konnte gerade nicht online gespeichert werden. Deine Daten bleiben auf diesem Gerät.');
+    }
+  });
+  await cloudSaveQueue;
 }
 function updateAccountControls() {
   if (currentUser) {
@@ -209,7 +220,10 @@ async function applySession(user, clearOnLogout = false) {
   if (userChanged) {
     clearTimeout(cloudSaveTimer); cloudReady = false; stopMatchTimer(); session = null;
     classStudyId = '';
-    if (hadUser && user) { store = normalizeStore({}); stage = 'intro'; }
+    // Anonymous or legacy caches have no proven owner and must never be uploaded to another account.
+    localStoreKey = user ? `${STORAGE_KEY}:user:${user.id}` : STORAGE_KEY;
+    store = loadStore();
+    stage = 'intro';
   }
   currentUser = user;
   if (currentUser) {
@@ -219,8 +233,6 @@ async function applySession(user, clearOnLogout = false) {
   }
   else if (clearOnLogout && hadUser) {
     clearTimeout(cloudSaveTimer);
-    store = { sets: [], activeSetId: '', profile: { schoolLevel: 'primary' } };
-    persistLocalStore();
     stage = 'intro';
     classStudyId = '';
     stopMatchTimer();
@@ -344,22 +356,22 @@ function daysUntil(value) { return value ? Math.ceil((new Date(`${value}T00:00:0
 function formatSeconds(seconds) { return `${Math.floor(seconds / 60).toString().padStart(2, '0')}:${(seconds % 60).toString().padStart(2, '0')}`; }
 function normalizeAnswer(value) { return String(value).trim().toLocaleLowerCase('de-CH').replace(/[’']/g, "'"); }
 function notify(message) { notice.textContent = message; notice.hidden = false; clearTimeout(notify.timeout); notify.timeout = setTimeout(() => { notice.hidden = true; }, 3600); }
-function logResult(type, score, total, detail = '') {
+function logResult(type, score, total, detail = '', itemResults = []) {
   const set = activeSet();
-  replaceSet(normalizeSet(VociContent.recordStudyResult(set,{type,score,total,detail})));
+  replaceSet(normalizeSet(VociContent.recordStudyResult(set,{type,score,total,detail},itemResults)));
 }
 function recordCard(wordId, category) {
   const set = activeSet();
   set.cards.known = set.cards.known.filter(id => id !== wordId);
   set.cards.practice = set.cards.practice.filter(id => id !== wordId);
   set.cards[category].push(wordId);
-  replaceSet(set);
+  replaceSet(normalizeSet(VociContent.recordItemProgress(set,[{itemId:`voci:${wordId}`,correct:category==='known',score:category==='known'?100:0}])));
 }
 function recordQuizAnswer(wordId, correct) {
   const set = activeSet();
   set.quizWrong = set.quizWrong.filter(id => id !== wordId);
   if (!correct) set.quizWrong.push(wordId);
-  replaceSet(set);
+  replaceSet(normalizeSet(VociContent.recordItemProgress(set,[{itemId:`voci:${wordId}`,correct,score:correct?100:0}])));
 }
 
 function render() {
@@ -409,7 +421,7 @@ function renderSets() {
   return `<div class="page-top"><div><h1>Meine Lernsets</h1><p class="subtle">Jede Prüfung erhält ihr eigenes Lernset und ihren eigenen Fortschritt.</p></div><button class="back-link" data-action="home">← Zur Startseite</button></div>
     <section class="sets-layout">${sets.length ? sets.map(set => {
       const words = wordsFor(set); const last = set.results.at(-1);
-      return `<article class="set-card ${set.id === store.activeSetId ? 'is-active' : ''}"><div><h2>${escapeHTML(setLabel(set))}</h2><p>${VociContent.subject(set.subjectId).name} · ${selectionSummary(set)} · ${escapeHTML(formatDate(set.examDate))}</p><small>${last ? `Letzte Übung: ${last.type} ${last.score}/${last.total}` : 'Noch keine Übung abgeschlossen'}</small></div><div class="set-actions"><button class="button button-small" data-action="open-set" data-id="${set.id}">Öffnen</button><button class="button button-secondary button-small" data-action="edit-set" data-id="${set.id}">Ändern</button><button class="text-link danger-link" data-action="delete-set" data-id="${set.id}">Löschen</button></div></article>`;
+      return `<article class="set-card ${set.id === store.activeSetId ? 'is-active' : ''}"><div><h2>${escapeHTML(setLabel(set))}</h2><p>${VociContent.subject(set.subjectId).name} · ${selectionSummary(set)} · ${escapeHTML(formatDate(set.examDate))}</p><small>${last ? `Letzte Übung: ${escapeHTML(last.type)} ${last.score}/${last.total}` : 'Noch keine Übung abgeschlossen'}</small></div><div class="set-actions"><button class="button button-small" data-action="open-set" data-id="${escapeHTML(set.id)}">Öffnen</button><button class="button button-secondary button-small" data-action="edit-set" data-id="${escapeHTML(set.id)}">Ändern</button><button class="text-link danger-link" data-action="delete-set" data-id="${escapeHTML(set.id)}">Löschen</button></div></article>`;
     }).join('') : '<div class="empty-state"><h2>Noch kein Lernset</h2><p>Erstelle ein Lernset für deine nächste Prüfung.</p></div>'}</section>
     <div class="answer-actions"><button class="button" data-action="new-set">+ Neues Lernset</button></div>`;
 }
@@ -473,11 +485,11 @@ function renderDashboard() {
   return `<div class="page-top"><div><h1>${escapeHTML(setLabel(set))}</h1><p class="subtle">${VociContent.subject(set.subjectId).name} · ${selectionSummary(set)}</p></div><button class="back-link" data-action="sets">← Meine Lernsets</button></div>
     <section class="dashboard-hero"><div><h2>${escapeHTML(deadline)}</h2><p>Prüfung: ${escapeHTML(formatDate(set.examDate))}</p></div><div class="exam-badge" ${words.length?'':'hidden'}><strong>${known}/${words.length}</strong><span>Karteikarten: Kann ich</span></div></section>
     ${renderSharePanel()}${renderSubjectModules(set)}<section aria-labelledby="modes-title" ${words.length?'':'hidden'}><h2 id="modes-title">Wie möchtest du lernen?</h2><div class="mode-grid">
-      <article class="mode-card mode-card-match"><div class="mode-card-head"><span class="mode-count">${Math.min(words.length, 12)} von ${words.length} Wörtern</span></div><h3>Zuordnen auf Zeit</h3><p>Finde alle Paare. Bei einem Fehler kommt eine Strafsekunde dazu.</p><button class="button button-small" data-action="start-match">Spiel starten →</button></article>
-      <article class="mode-card"><div class="mode-card-head"><span class="mode-count">${known} kann ich · ${practice} noch üben</span></div><h3>Karteikarten</h3><p>Sortiere jede Karte in «Kann ich» oder «Noch üben».</p><div class="mode-actions">${directionSelect('flash')}<button class="button button-small" data-action="start-flash">Alle wiederholen</button><button class="button button-secondary button-small" data-action="start-flash-practice" ${practice ? '' : 'disabled'}>Noch üben</button></div></article>
-      <article class="mode-card"><div class="mode-card-head"><span class="mode-count">${wrong} nochmals abfragen</span></div><h3>Multiple Choice</h3><p>Wähle die richtige Antwort aus.</p><div class="mode-actions">${directionSelect('choice')}<button class="button button-small" data-action="start-quiz" data-kind="choice" data-scope="all">Alle abfragen</button>${wrong ? '<button class="text-link" data-action="start-quiz" data-kind="choice" data-scope="wrong">Nur falsche</button>' : ''}</div></article>
-      <article class="mode-card"><div class="mode-card-head"><span class="mode-count">${wrong} nochmals abfragen</span></div><h3>Schreiben</h3><p>Schreibe die richtige Antwort selbst auf.</p><div class="mode-actions">${directionSelect('write')}<button class="button button-secondary button-small" data-action="start-quiz" data-kind="write" data-scope="all">Alle abfragen</button>${wrong ? '<button class="text-link" data-action="start-quiz" data-kind="write" data-scope="wrong">Nur falsche</button>' : ''}</div></article>
-      <article class="mode-card mode-card-test"><div class="mode-card-head"><span class="mode-count">Ergebnis am Ende</span></div><h3>Kleiner Übungstest</h3><p>Gib die Anzahl Fragen ein. Bei einer zu hohen Zahl kommen alle Vokabeln.</p><div class="mode-actions"><label class="mode-select">Vokabeln <input id="test-count" class="mode-number-input" type="text" inputmode="numeric" pattern="[0-9]*" value="${words.length}" aria-label="Anzahl Vokabeln im Test"></label><button class="button button-small" data-action="start-test">Test starten →</button></div></article>
+      <article class="mode-card mode-card-match"><h3>Zuordnen auf Zeit</h3><div class="mode-card-head"><span class="mode-count">${Math.min(words.length, 12)} von ${words.length} Wörtern</span></div><p>Finde alle Paare. Bei einem Fehler kommt eine Strafsekunde dazu.</p><button class="button button-small" data-action="start-match">Spiel starten →</button></article>
+      <article class="mode-card"><h3>Karteikarten</h3><div class="mode-card-head"><span class="mode-count">${known} kann ich · ${practice} noch üben</span></div><p>Sortiere jede Karte in «Kann ich» oder «Noch üben».</p><div class="mode-actions">${directionSelect('flash')}<button class="button button-small" data-action="start-flash">Alle wiederholen</button><button class="button button-secondary button-small" data-action="start-flash-practice" ${practice ? '' : 'disabled'}>Noch üben</button></div></article>
+      <article class="mode-card"><h3>Multiple Choice</h3><div class="mode-card-head"><span class="mode-count">${wrong} nochmals abfragen</span></div><p>Wähle die richtige Antwort aus.</p><div class="mode-actions">${directionSelect('choice')}<button class="button button-small" data-action="start-quiz" data-kind="choice" data-scope="all">Alle abfragen</button>${wrong ? '<button class="text-link" data-action="start-quiz" data-kind="choice" data-scope="wrong">Nur falsche</button>' : ''}</div></article>
+      <article class="mode-card"><h3>Schreiben</h3><div class="mode-card-head"><span class="mode-count">${wrong} nochmals abfragen</span></div><p>Schreibe die richtige Antwort selbst auf.</p><div class="mode-actions">${directionSelect('write')}<button class="button button-secondary button-small" data-action="start-quiz" data-kind="write" data-scope="all">Alle abfragen</button>${wrong ? '<button class="text-link" data-action="start-quiz" data-kind="write" data-scope="wrong">Nur falsche</button>' : ''}</div></article>
+      <article class="mode-card mode-card-test"><h3>Kleiner Übungstest</h3><div class="mode-card-head"><span class="mode-count">Ergebnis am Ende</span></div><p>Gib die Anzahl Fragen ein. Bei einer zu hohen Zahl kommen alle Vokabeln.</p><div class="mode-actions"><label class="mode-select">Vokabeln <input id="test-count" class="mode-number-input" type="text" inputmode="numeric" pattern="[0-9]*" value="${words.length}" aria-label="Anzahl Vokabeln im Test"></label><button class="button button-small" data-action="start-test">Test starten →</button></div></article>
     </div></section>
     <section class="history-section"><h2>Dein Lernfortschritt</h2>${history.length ? `<ul class="history-list">${history.map(result => `<li><strong>${escapeHTML(result.type)}</strong><span>${result.score}/${result.total}${result.detail ? ` · ${escapeHTML(result.detail)}` : ''}</span><time datetime="${escapeHTML(result.date)}">${new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'numeric' }).format(new Date(result.date))}</time></li>`).join('')}</ul>` : '<p class="subtle">Schliesse eine Übung oder einen Test ab, dann erscheint dein Resultat hier.</p>'}</section>`;
 }
@@ -753,8 +765,8 @@ app.addEventListener('submit', event => {
   if (form.dataset.form === 'quiz-write') { const word = session.deck[session.index]; answerQuiz(normalizeAnswer(answer) === normalizeAnswer(answerFor(word, session.direction)) ? word.id : 'wrong', answer); }
   if (form.dataset.form === 'test-answer') {
     const word = session.deck[session.index]; const correct = normalizeAnswer(answer) === normalizeAnswer(word.term);
-    session.answers.push({ prompt: word.translation, answer, expected: word.term, correct }); if (correct) session.correct += 1; session.index += 1;
-    if (session.index >= session.deck.length && !session.logged) { session.logged = true; logResult('Übungstest', session.correct, session.deck.length); }
+    session.answers.push({ itemId:`voci:${word.id}`, prompt: word.translation, answer, expected: word.term, correct, score:correct?100:0 }); if (correct) session.correct += 1; session.index += 1;
+    if (session.index >= session.deck.length && !session.logged) { session.logged = true; logResult('Übungstest', session.correct, session.deck.length,'',session.answers); }
     render();
   }
 });

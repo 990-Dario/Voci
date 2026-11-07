@@ -69,6 +69,10 @@
     if (!Number.isInteger(result.score) || !Number.isInteger(result.total) || result.total <= 0 || result.score < 0 || result.score > result.total) throw new Error('Ungültiges Lernergebnis.');
     const date = result.date || new Date().toISOString();
     copy.results = [...copy.results,{...result,date,subjectId:copy.subjectId,unit:result.unit === 'points' ? 'points' : 'answers'}].slice(-30);
+    return recordItemProgress(copy,itemResults,date);
+  }
+  function recordItemProgress(set,itemResults,date=new Date().toISOString()) {
+    const copy=normalizeLearningSet(set);
     for (const item of itemResults) {
       if (typeof item.itemId !== 'string' || ['__proto__','constructor','prototype'].includes(item.itemId) || !Number.isFinite(item.score) || item.score < 0 || item.score > 100) throw new Error('Ungültiger Aufgabenfortschritt.');
       const previous = copy.progress.byItem[item.itemId] || {attempts:0,correct:0};
@@ -76,5 +80,5 @@
     }
     return copy;
   }
-  return {subjects,subject,validateSelection,normalizeLearningSet,normalizeSets,modesFor,createStudySnapshot,cloneLearningSet,recordStudyResult};
+  return {subjects,subject,validateSelection,normalizeLearningSet,normalizeSets,modesFor,createStudySnapshot,cloneLearningSet,recordStudyResult,recordItemProgress};
 });

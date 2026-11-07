@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T12:00:00+01:00",
+  "title": "Design System: Voci Lernpfad",
+  "extensions": {
+    "colorMeta": {"forest":{"role":"primary","displayName":"Tannengrün"},"yellow":{"role":"secondary","displayName":"Aktionsgelb"}},
+    "shadows": [{"name":"dialog","value":"0 22px 70px rgb(31 41 38 / .26)","purpose":"Geöffnete Dialoge"}],
+    "motion": [{"name":"ease-out","value":"cubic-bezier(.22,1,.36,1)","purpose":"Ergebnisübergang"}],
+    "breakpoints": [{"name":"mobile-navigation","value":"800px"},{"name":"phone","value":"520px"}]
+  },
+  "components": [{"name":"Hauptaktion","kind":"button","refersTo":"button-primary","description":"Nächster Lernschritt","html":"<button class=\"button\">Weiterlernen</button>","css":".button{background:var(--sun);color:var(--ink);border:0;border-radius:8px;padding:11px 20px;min-height:46px;font:inherit;font-weight:650}.button:hover{background:#e7c33e}.button:focus-visible{outline:3px solid #a57700;outline-offset:3px}"}],
+  "narrative": {"northStar":"Lernpfad – Tannengrün und Gelb","overview":"Ein ruhiger, gut lesbarer Lernplatz für fünf Fächer.","keyCharacteristics":["Lokale Schrift","Grüne Navigation","Gelbe Hauptaktionen"],"rules":[],"dos":["Lerninhalte und Prüfungsdaten sichtbar halten"],"donts":["Farben als einzige Rückmeldung verwenden"]}
+}

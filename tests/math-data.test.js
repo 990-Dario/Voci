@@ -19,3 +19,10 @@ test('every topic has deterministic valid questions with diagrams and solutions'
     if(q.values.c&&topic.id.startsWith('triangle'))assert.ok(q.values.a+q.values.b>q.values.c);
   }
 });
+test('right triangle sketches label the vertical leg separately from the hypotenuse',()=>{
+  for(const id of ['triangle-right-area','triangle-right-perimeter','pythagoras-hypotenuse']){
+    const q=M.generateQuestion(id,7);
+    assert.match(q.diagram,new RegExp('<text x="38" y="100"[^>]*>b = '+q.values.b));
+    assert.ok(!q.diagram.includes('y="98" text-anchor="middle">b ='));
+  }
+});

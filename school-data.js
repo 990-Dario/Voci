@@ -42,5 +42,15 @@
       return true;
     } catch {return false;}
   }
-  return { individualPrice, parseClassExport };
+  function availableSubjects(snapshot, userId, now = Date.now()) {
+    const active = s => s.status === 'active' && Date.parse(s.period_end) > now;
+    const a = snapshot.activation;
+    const started = !a || Date.parse(a.scheduled_at) <= now;
+    const free = a?.status === 'free_month' && started && Date.parse(a.free_until) > now;
+    const schoolPaid = snapshot.subscriptions.some(s => s.school_id === snapshot.school?.id && active(s)) &&
+      (!a || started && ['active','free_month'].includes(a.status));
+    if (free || schoolPaid) return snapshot.subjects.map(s => s.id);
+    return [...new Set(snapshot.subscriptions.filter(s => s.user_id === userId && active(s)).flatMap(s => s.subjects || []))];
+  }
+  return { individualPrice, parseClassExport, availableSubjects };
 });
