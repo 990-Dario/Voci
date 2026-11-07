@@ -30,4 +30,8 @@ Noch einzurichten beziehungsweise abzunehmen: `VOCI_APP_URL`, Stripe-Testschlüs
 
 ## Rückfall
 
+## Korrektur der Website-Veröffentlichung
+
+Die öffentliche Seite wird von GitHub Pages aus `main` erzeugt. Der erste Push auf den Arbeitsbranch hatte deshalb die Website nicht aktualisiert. Zur Behebung wird der geprüfte Arbeitsstand ohne Force-Push nach `main` übernommen. `.nojekyll` sorgt dafür, dass GitHub Pages die statische App direkt veröffentlicht. Die anschliessende Kontrolle erfolgt an der öffentlichen Pages-Adresse und anhand des Deploymentstatus.
+
 Der vorherige Oberflächenstand bleibt über `main` verfügbar. Bei Problemen keine Datenbank zurücksetzen oder Lernstände löschen. Die neuen Serverfunktionen sind ohne vollständige Konfiguration nicht betriebsbereit; vor Rückbau zuerst aktuelle Daten und Funktionen sichern. Nach einem UI-Rückfall dürfen neue Fachsets nicht mit einem älteren Client überschrieben werden.
